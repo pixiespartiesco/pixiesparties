@@ -3329,7 +3329,7 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 0.125rem solid rgba(0, 0, 0, 0.125);
+  border: 0.125rem solid 0.125rem solid rgba(246, 170, 163, 1);
   border-radius: 0.5rem; }
   .card > hr {
     margin-right: 0;
