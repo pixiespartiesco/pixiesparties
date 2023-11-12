@@ -20,12 +20,12 @@
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
-    <url>
+<!--     <url>
         <loc>https://www.pixiesparties.ca/booking.html</loc>
         <lastmod>2023-10-31</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
-    </url>
+    </url> -->
     <url>
         <loc>https://www.pixiesparties.ca/photobackdrops.html</loc>
         <lastmod>2023-10-31</lastmod>
