@@ -85,8 +85,8 @@ Pixies Parties  - Privacy Policy - Calgary Children's Party Entertainment
 
 	
 	   $(function(){
-	     $("#navbar").load("navbar.html"); 
-	     $("#footer").load("footer.html"); 
+	     $("#navbar").load("navbar"); 
+	     $("#footer").load("footer"); 
 	   });
 </script>
 <style type="text/css">
@@ -445,7 +445,7 @@ or
 UK data protection authority
 </a>
 . <br></br> If you are located in Switzerland, you may contact the 
-<a target="_blank" href="https://www.edoeb.admin.ch/edoeb/en/home.html">
+<a target="_blank" href="https://www.edoeb.admin.ch/edoeb/en/home">
 Federal Data Protection and Information Commissioner
 </a>
 . <br></br> Withdrawing your consent: If we are relying on your consent to process your personal information, which may be express and/or implied consent depending on the applicable law, you have the right to withdraw your consent at any time. You can withdraw your consent at any time by contacting us by using the contact details provided in the section 'HOW CAN YOU CONTACT US ABOUT THIS NOTICE?' below. <br></br> However, please note that this will not affect the lawfulness of the processing before its withdrawal nor, when applicable law allows, will it affect the processing of your personal information conducted in reliance on lawful processing grounds other than consent. <br></br> Opting out of marketing and promotional communications: You can unsubscribe from our marketing and promotional communications at any time by clicking on the unsubscribe link in the emails that we send, or by contacting us using the details provided in the section '
