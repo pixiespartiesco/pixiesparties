@@ -3,68 +3,62 @@
 <!--  created with sitemap generator https://octopus.do  -->
 
     <url>
-        <loc>https://www.pixiesparties.ca</loc>
-        <lastmod>2023-12-11</lastmod>
+        <loc>https://www.pixiesparties.ca/</loc>
+        <lastmod>2023-12-04</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.pixiesparties.ca/characters</loc>
-        <lastmod>2023-12-11</lastmod>
+        <loc>https://www.pixiesparties.ca/characters.html</loc>
+        <lastmod>2023-12-04</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.pixiesparties.ca/party-packages</loc>
-        <lastmod>2023-12-11</lastmod>
+        <loc>https://www.pixiesparties.ca/party-packages.html</loc>
+        <lastmod>2023-12-04</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.pixiesparties.ca/booking</loc>
-        <lastmod>2023-12-11</lastmod>
+        <loc>https://www.pixiesparties.ca/booking.html</loc>
+        <lastmod>2023-12-04</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.pixiesparties.ca/photobackdrops</loc>
-        <lastmod>2023-12-11</lastmod>
+        <loc>https://www.pixiesparties.ca/photobackdrops.html</loc>
+        <lastmod>2023-12-04</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.pixiesparties.ca/contact</loc>
-        <lastmod>2023-12-11</lastmod>
+        <loc>https://www.pixiesparties.ca/contact.html</loc>
+        <lastmod>2023-12-04</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.pixiesparties.ca/about</loc>
-        <lastmod>2023-12-11</lastmod>
+        <loc>https://www.pixiesparties.ca/about.html</loc>
+        <lastmod>2023-12-04</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.pixiesparties.ca/company-promise</loc>
-        <lastmod>2023-12-11</lastmod>
+        <loc>https://www.pixiesparties.ca/company-promise.html</loc>
+        <lastmod>2023-12-04</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.pixiesparties.ca/privacypolicy</loc>
-        <lastmod>2023-12-11</lastmod>
+        <loc>https://www.pixiesparties.ca/privacypolicy.html</loc>
+        <lastmod>2023-12-04</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.pixiesparties.ca/cancellation</loc>
-        <lastmod>2023-12-11</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://www.pixiesparties.ca/faq</loc>
-        <lastmod>2023-12-11</lastmod>
+        <loc>https://www.pixiesparties.ca/cancellation.html</loc>
+        <lastmod>2023-12-04</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
