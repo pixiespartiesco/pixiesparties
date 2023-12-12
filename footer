@@ -97,16 +97,6 @@ Copyright © 2023 Pixie's Parties Co. - All Rights Reserved
 <script>
     (function(w,d,t,r,u)    {        var f,n,i;        w[u]=w[u]||[],f=function()        {            var o={ti:"187064573"};            o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")        },        n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function()        {            var s=this.readyState;            s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)        },        i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)    })    (window,document,"script","//bat.bing.com/bat.js","uetq");
 </script>
-<!-- MailerLite Universal -->
-<script>
-
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '588062');
-</script>
-<!-- End MailerLite Universal -->
 <!-- Meta Pixel Code -->
 <script>
 
