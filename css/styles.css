@@ -5001,6 +5001,9 @@ button.bg-dark:focus {
   .d-print-inline-flex {
     display: inline-flex !important; } }
 
+iframe {
+  border: 0;
+}
 .embed-responsive {
   position: relative;
   display: block;
