@@ -278,3 +278,9 @@ b, strong {
     padding-left: 0;
     margin-bottom: 0;
 }
+.link-dark {
+	color: var(--secondary)!important;
+}
+.ml-3, .mx-3 {
+    margin-left: 1rem!important;
+}
