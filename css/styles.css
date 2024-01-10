@@ -2964,7 +2964,9 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #fff;  }
+  color: #fff; 
+	font-family: Caveat;
+	font-size: x-large; }
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
   .nav-link.disabled {
