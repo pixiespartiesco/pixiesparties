@@ -2963,7 +2963,8 @@ input[type="button"].btn-block {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem 1rem;
+  color: #fff;  }
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
   .nav-link.disabled {
@@ -3044,7 +3045,8 @@ input[type="button"].btn-block {
   font-family:	Caveat;
   font-size: 1.25rem;
   line-height: inherit;
-  white-space: nowrap; }
+  white-space: nowrap; 
+  color: white; }
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
 
@@ -3056,7 +3058,8 @@ input[type="button"].btn-block {
   list-style: none; }
   .navbar-nav .nav-link {
     padding-right: 0;
-    padding-left: 0; }
+    padding-left: 0; 
+	color: white;}
   .navbar-nav .dropdown-menu {
     position: static;
     float: none; }
