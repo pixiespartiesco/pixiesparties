@@ -281,3 +281,7 @@ b, strong {
 .ml-3, .mx-3 {
     margin-left: 1rem!important;
 }
+.lead {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
