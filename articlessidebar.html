@@ -1,100 +1,87 @@
+<script>
+function articlesSearch() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('searchBox');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("searchList");
+  li = ul.getElementsByTagName('li');
 
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+<style>
+#searchBox {
+  background-image: url('/css/search.png'); 
+  background-position: 10px 12px; 
+  background-repeat: no-repeat; 
+  background-size: auto 50%;
+  width: 100%; 
+  font-size: 16px;
+  padding: 12px 20px 12px 40px; 
+  border: 1px solid #ddd; 
+  margin-bottom: 12px; 
+}
+
+#searchList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#searchList li a {
+  border: 1px solid #ddd; 
+  margin-top: -1px;
+  padding: 12px; 
+  text-decoration: none;
+  font-size: 18px; 
+  color: var(--quaternary); 
+  display: block; 
+}
+
+#searchList li a:hover:not(.header) {
+  background-color: #eee; 
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.show{
+	display: block;
+}
+.keyword{
+	display:none;
+}
+</style>
 <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
     <a href="articles.html" class="h2 d-flex align-items-center flex-shrink-0 link-dark text-decoration-none border-bottom" style="color: var(--secondary);">
       <i class="bi bi-arrow-left-circle-fill"></i>
       <span class="fs-5 fw-semibold ml-3">Articles</span>
     </a>
-    <div class="list-group list-group-flush border-bottom scrollarea">
-	  <a href="articles-whirlwind-wonders.html" class="list-group-item list-group-item-action py-3 lh-tight">
-        <div class="mb-1">
-          <strong class="mb-1">Whirlwind Wonders</strong>
-		</div>
-        <div class="mb-1">
-          <small class="text-muted">January 17, 2024</small>
-        </div>
-        <div class="col-10 mb-1 small">Throwing an Unforgettable Birthday for Kids Aged 6-8!</div>
-      </a>
-	  <a href="articles-tiny-tots.html" class="list-group-item list-group-item-action py-3 lh-tight">
-        <div class="mb-1">
-          <strong class="mb-1">Tiny Tots</strong>
-		</div>
-        <div class="mb-1">
-          <small class="text-muted">January 17, 2024</small>
-        </div>
-        <div class="col-10 mb-1 small">Crafting a Magical Birthday Fiesta for Kids 3-5!</div>
-      </a>
-      <a href="articles-tea-party.html" class="list-group-item list-group-item-action py-3 lh-tight">
-        <div class="mb-1">
-          <strong class="mb-1">A Royal Affair</strong>
-		</div>
-        <div class="mb-1">
-          <small class="text-muted">January 10, 2024</small>
-        </div>
-        <div class="col-10 mb-1 small">Hosting the Ultimate Princess Tea Party!</div>
-      </a>
-      <a href="articles-ahoy-matey.html" class="list-group-item list-group-item-action py-3 lh-tight">
-        <div class="mb-1">
-          <strong class="mb-1">Hoist the Jolly Roger</strong>
-		</div>
-        <div class="mb-1">
-          <small class="text-muted">January 10, 2024</small>
-        </div>
-        <div class="col-10 mb-1 small">Hosting an Epic Pirate Adventure Party!</div>
-      </a>
-      <a href="articles-frozen-fantasy.html" class="list-group-item list-group-item-action py-3 lh-tight">
-        <div class="mb-1">
-          <strong class="mb-1">A Frozen Fantasy</strong>
-		</div>
-        <div class="mb-1">
-          <small class="text-muted">January 8, 2024</small>
-        </div>
-        <div class="col-10 mb-1 small">The Ultimate Ice Queen Celebration!</div>
-      </a>
-      <a href="articles-untangled.html" class="list-group-item list-group-item-action py-3 lh-tight">
-        <div class="mb-1">
-          <strong class="mb-1">Untangling the Magic</strong>
-		</div>
-        <div class="mb-1">
-          <small class="text-muted">January 8, 2024</small>
-        </div>
-        <div class="col-10 mb-1 small">Hosting a Rapunzel-Inspired Birthday Extravaganza!</div>
-      </a>
-      <a href="articles-magical-experience.html" class="list-group-item list-group-item-action py-3 lh-tight">
-        <div class="mb-1">
-          <strong class="mb-1">Magical Experience</strong>
-		</div>
-        <div class="mb-1">
-          <small class="text-muted">December 21, 2023</small>
-        </div>
-        <div class="col-10 mb-1 small">Hosting a Magical Birthday Bash for Young Witches and Wizards!</div>
-      </a>
-      <a href="articles-dive-adventure.html" class="list-group-item list-group-item-action py-3 lh-tight">
-        <div class="mb-1">
-          <strong class="mb-1">Dive into Adventure</strong>
-		</div>
-        <div class="mb-1">
-          <small class="text-muted">December 17, 2023</small>
-        </div>
-        <div class="col-10 mb-1 small">Creating the Ultimate Mermaid Birthday Party!</div>
-      </a>
-      <a href="articles-beauty-brilliance.html" class="list-group-item list-group-item-action py-3 lh-tight">
-        <div class="mb-1">
-          <strong class="mb-1">Beauty and Brilliance</strong>
-		</div>
-        <div class="mb-1">
-          <small class="text-muted">December 14, 2023</small>
-        </div>
-        <div class="col-10 mb-1 small">Crafting a Belle-Themed Birthday Ball! </div>
-      </a>
-      <a href="articles-royal-guide.html" class="list-group-item list-group-item-action py-3 lh-tight">
-        <div class="mb-1">
-          <strong class="mb-1">A Perfect Princess Party</strong>
-		</div>
-        <div class="mb-1">
-          <small>December 8, 2023</small>
-        </div>
-        <div class="col-10 mb-1 small">Your Royal Guide to Hosting a Perfect Princess Party for Kids!</div>
-      </a>
-    </div>
-	
-  </div>
+	<input type="text" id="searchBox"  onfocus="showList()" onkeyup="articlesSearch()" placeholder="Search...">
+	<ul id="searchList">
+		<li><a href="articles-whirlwind-wonders.html"><h3>Whirlwind Wonders</h3><h4>Throwing an Unforgettable Birthday for Kids Aged 6-8!</h4><small class="text-muted">January 17, 2024</small><p class="keyword">kids, older</p></a></li>
+		<li><a href="articles-tiny-tots.html"><h3>Tiny Tots</h3><h4>Crafting a Magical Birthday Fiesta for Kids 3-5!</h4><small class="text-muted">January 17, 2024</small><p class="keyword">kids, younger, toddler</p></a></li>
+		<li><a href="articles-tea-party.html"><h3>A Royal Affair</h3><h4>Hosting the Ultimate Princess Tea Party!</h4><small class="text-muted">January 10, 2024</small><p class="keyword">tea</p></a></li>
+		<li><a href="articles-ahoy-matey.html"><h3>Hoist the Jolly Roger</h3><h4>Hosting an Epic Pirate Adventure Party!</h4><small class="text-muted">January 10, 2024</small><p class="keyword">pirate, boys</p></a></li>
+		<li><a href="articles-frozen-fantasy.html"><h3>A Frozen Fantasy</h3><h4>The Ultimate Ice Queen Celebration!</h4><small class="text-muted">January 8, 2024</small><p class="keyword">elsa, frozen, olaf, anna</p></a></li>
+		<li><a href="articles-untangled.html"><h3>Untangling the Magic</h3><h4>Hosting a Rapunzel-Inspired Birthday Extravaganza!</h4><small class="text-muted">January 8, 2024</small><p class="keyword">rapunzel, tangled, flynn</p></a></li>
+		<li><a href="articles-magical-experience.html"><h3>Magical Experience</h3><h4>Hosting a Magical Birthday Bash for Young Witches and Wizards!</h4><small class="text-muted">December 21, 2023</small><p class="keyword">hermione, harry potter, wizard, witch, hogwarts</p></a></li>
+		<li><a href="articles-dive-adventure.html"><h3>Dive into Adventure</h3><h4>Creating the Ultimate Mermaid Birthday Party!</h4><small class="text-muted">December 17, 2023</small><p class="keyword">mermaid, ariel, little mermaid</p></a></li>
+		<li><a href="articles-beauty-brilliance.html"><h3>Beauty and Brilliance</h3><h4>Crafting a Belle-Themed Birthday Ball!</h4><small class="text-muted">December 14, 2023</small><p class="keyword">belle, beauty, beast, ball</p></a></li>
+		<li><a href="articles-royal-guide.html"><h3>A Perfect Princess Party</h3><h4>Your Royal Guide to Hosting a Perfect Princess Party for Kids!</h4><small class="text-muted">December 8, 2023</small><p class="keyword">princess, ariel, belle, elsa, anna, cinderella, rapunzel</p></a></li>
+	</ul>	
+</div>
