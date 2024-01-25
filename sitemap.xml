@@ -50,6 +50,12 @@
         <priority>0.5</priority>
     </url>
     <url>
+        <loc>https://www.pixiesparties.ca/articles-super-duper.html</loc>
+        <lastmod>2024-01-25</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
         <loc>https://www.pixiesparties.ca/articles-neverland.html</loc>
         <lastmod>2024-01-25</lastmod>
         <changefreq>always</changefreq>
