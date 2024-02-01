@@ -285,3 +285,7 @@ b, strong {
     font-size: 1.5rem;
     font-weight: normal;
 }
+.address a {
+	color: inherit;
+    text-decoration: underline;
+}
