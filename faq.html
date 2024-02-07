@@ -136,46 +136,71 @@ Frequently Asked Questions
 </div>
 </div>
 <!-- About Section Content-->
-<div class="container d-flex align-items-center flex-column text-left">
-<ul>
-<li>What types of children's parties do you specialize in?
-<ul><li>We specialize in enchanting princess parties, mystical pirate adventures, and more magical themes.</li></ul>
+<script>
+function articlesSearch() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('searchBox');
+  filter = input.value.toUpperCase();
+  console.log(filter);
+  ul = document.getElementById("searchList");
+  li = ul.getElementsByTagName('li');
+  
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i];
+	console.log(a);
+    txtValue = a.textContent || a.innerText;
+	console.log(txtValue);
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+<div class="container d-flex align-items-center flex-column text-left" style="padding-left: 4rem; padding-right: 4rem;">
+<input type="text" id="searchBox" onkeyup="articlesSearch()" placeholder="Search..." class="searchBox">
+<ul id="searchList" class="list-unstyled">
+<li class="mb-2"><h3>What types of children's parties do you specialize in?</h3>
+<p>We specialize in enchanting princess parties, mystical pirate adventures, and more magical themes.</p>
 </li>
-<li>Where are you located, and what areas do you serve?
-<ul><li>Pixies Parties is based in Calgary, AB, and we happily bring the magic to surrounding areas.</li></ul>
+<li class="mb-2"><h3>Where are you located, and what areas do you serve?</h3>
+<p>Pixies Parties is based in Calgary, AB, and we happily bring the magic to surrounding areas.</p>
 </li>
-<li>What characters do you offer for parties?
-<ul><li>Our delightful characters include Belle, Snow Queen, Snow Sister, Cinderella, Rapunzel, Ariel, A Wizarding Student, and Penny the Pirate!</li></ul>
+<li class="mb-2"><h3>What characters do you offer for parties?</h3>
+<p>Our delightful characters include Belle, Snow Queen, Snow Sister, Cinderella, Rapunzel, Ariel, Barbie, A Wizarding Student, and Penny the Pirate!</p>
 </li>
-<li>How much does a party package cost?
-<ul><li>Pricing varies based on the package and location, but you can find detailed pricing information on our <a aria-label="party packages" href="party-packages.html">website.</a></li></ul>
+<li class="mb-2"><h3>How much does a party package cost?</h3>
+<p>Pricing varies based on the package and location, but you can find detailed pricing information on our <a aria-label="party packages" href="party-packages.html">website.</a></p>
 </li>
-<li>How long do your parties typically last?
-<ul><li>Party durations vary by package, but we'll make sure to provide you with a party that suits your needs.</li></ul>
+<li class="mb-2"><h3>How long do your parties typically last?</h3>
+<p>Party durations vary by package, but we'll make sure to provide you with a party that suits your needs.</p>
 </li>
-<li>What activities and games do you offer at your parties?
-<ul><li>We offer a range of whimsical activities, including storytime, themed games, and interactive adventures.</li></ul>
+<li class="mb-2"><h3>What activities and games do you offer at your parties?</h3>
+<p>We offer a range of whimsical activities, including storytime, themed games, and interactive adventures.</p>
 </li>
-<li>Do you provide costumes and accessories for the children?
-<ul><li>While children can dress up and immerse themselves in the fantasy, Pixies Parties does not provide costumes for the children to wear.</li></ul>
+<li class="mb-2"><h3>Do you provide costumes and accessories for the children?</h3>
+<p>While children can dress up and immerse themselves in the fantasy, Pixies Parties does not provide costumes for the children to wear.</p>
 </li>
-<li>Are your entertainers trained and experienced with children?
-<ul><li>Our entertainers are not only skilled performers but also experienced in creating a magical experience for kids.</li></ul>
+<li class="mb-2"><h3>Are your entertainers trained and experienced with children?</h3>
+<p>Our entertainers are not only skilled performers but also experienced in creating a magical experience for kids.</p>
 </li>
-<li>How far in advance should I book a party?
-<ul><li>We recommend booking your enchanting event at least 2 weeks in advance to secure your preferred date.</li></ul>
+<li class="mb-2"><h3>How far in advance should I book a party?</h3>
+<p>We recommend booking your enchanting event at least 2 weeks in advance to secure your preferred date.</p>
 </li>
-<li>Do you accommodate special requests or custom themes?
-<ul><li>We're happy to discuss customizations and special requests to make your child's dream party come true.</li></ul>
+<li class="mb-2"><h3>Do you accommodate special requests or custom themes?</h3>
+<p>We're happy to discuss customizations and special requests to make your child's dream party come true.</p>
 </li>
-<li>What COVID-19 safety measures do you have in place?
-<ul><li>Ensuring the safety and well-being of children is our priority. We follow all recommended guidelines for a safe and enchanting party experience. All of our performers are fully vaccinated.</li></ul>
+<li class="mb-2"><h3>What COVID-19 safety measures do you have in place?</h3>
+<p>Ensuring the safety and well-being of children is our priority. We follow all recommended guidelines for a safe and enchanting party experience. All of our performers are fully vaccinated.</p>
 </li>
-<li>What's your cancellation policy?
-<ul><li>We understand that life's surprises happen, and we'll do our best to accommodate changes. A $100 deposit is required at the time of booking. More information is available on the <a aria-label="cancellation policy" href="cancellation.html">cancellation policy page</a></li></ul>
+<li class="mb-2"><h3>What's your cancellation policy?</h3>
+<p>We understand that life's surprises happen, and we'll do our best to accommodate changes. A $100 deposit is required at the time of booking. More information is available on the <a aria-label="cancellation policy" href="cancellation.html">cancellation policy page</a></p>
 </li>
-<li>How much does it cost to add a second character to a package?
-<ul><li>As a sole performer, I'm currently only able to offer solo bookings. While I don't have the capacity to add a second character to the package, rest assured that I'll bring an abundance of magic and excitement to your child's party all on my own!</li></ul>
+<li class="mb-2"><h3>How much does it cost to add a second character to a package?</h3>
+<p>As a sole performer, I'm currently only able to offer solo bookings. While I don't have the capacity to add a second character to the package, rest assured that I'll bring an abundance of magic and excitement to your child's party all on my own!</p>
 </li>
 </ul>
 </div>
