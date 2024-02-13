@@ -50,6 +50,12 @@
         <priority>0.5</priority>
     </url>
     <url>
+        <loc>https://www.pixiesparties.ca/articles-jurassic.html</loc>
+        <lastmod>2024-02-13</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
         <loc>https://www.pixiesparties.ca/articles-cosmic-adventure.html</loc>
         <lastmod>2024-02-06</lastmod>
         <changefreq>always</changefreq>
