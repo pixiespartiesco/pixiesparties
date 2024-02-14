@@ -1,18 +1,14 @@
-<!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
 
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
+    <div id="fb-root"></div><!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
     <script>
       var chatbox = document.getElementById('fb-customer-chat');
       chatbox.setAttribute("page_id", "122951230891556");
       chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
+    </script> <!-- Your SDK code -->
+     
     <script>
+
       window.fbAsyncInit = function() {
         FB.init({
           xfbml            : true,
@@ -27,54 +23,65 @@
         js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
-    </script>
-<!-- End Messenger Chat Plugin Code -->
-<nav class="navbar fixed-top bg-body-tertiary navbar-expand-lg bg-secondary">
-
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">
-      <img src="assets/img/logowhite.webp" alt="Logo" height="80" class="d-inline-block align-text-top">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="bi bi-list text-white"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="characters.html">Characters</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="party-packages.html">Party Packages</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="booking.html">Booking</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            More
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="about.html">About</a></li>
-            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-            <li><a class="dropdown-item" href="virtualvisit.html">Virtual Visits</a></li>
-            <li><a class="dropdown-item" href="cancellation.html">Cancellation Policy</a></li>
-            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
-            <li><a class="dropdown-item" href="articles.html">Party Tips</a></li>
+    </script> <!-- End Messenger Chat Plugin Code -->
+    <nav class="navbar fixed-top bg-body-tertiary navbar-expand-lg bg-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="assets/img/logowhite.webp" alt="Logo" height="80" class=
+        "d-inline-block align-text-top"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#characters">Characters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#packages">Party Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#booking">Booking</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="about.html">About</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html#contact">Contact</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="virtualvisit.html">Virtual Visits</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cancellation.html">Cancellation Policy</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="faq.html">FAQ</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="articles.html">Party Tips</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bi-instagram social" target="_blank" href="https://www.instagram.com/pixiesparties/"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bi-tiktok social" target="_blank" href="https://www.tiktok.com/@pixiesparties"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bi-facebook social" target="_blank" href="https://www.facebook.com/pixiespartiesco/"></a>
+            </li>
           </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link bi-instagram social" target="_blank" href="https://www.instagram.com/pixiesparties/"></a></li>
-        <li class="nav-item"><a class="nav-link bi-tiktok social" target="_blank" href="https://www.tiktok.com/@pixiesparties"></a></li>
-        <li class="nav-item"><a class="nav-link bi-facebook social" target="_blank" href="https://www.facebook.com/pixiespartiesco/"></a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<header class="masthead bg-primary text-white text-center">
-<div class="container d-flex align-items-center flex-column">
-<!-- Masthead Avatar Image-->
-<img class="masthead-avatar rounded" style="padding-top: 100px;" src="assets/img/logowhite.webp" alt="Pixies Parties - Enchanting Entertainment"> 
-</div>
-</header>
+        </div>
+      </div>
+    </nav>
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Avatar Image-->
+        <img class="masthead-avatar rounded" style="padding-top: 100px;" src="assets/img/logowhite.webp" alt=
+        "Pixies Parties - Enchanting Entertainment">
+      </div>
+    </header>
