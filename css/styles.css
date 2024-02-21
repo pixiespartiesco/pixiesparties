@@ -103,9 +103,16 @@ a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-se
 *, ::after, ::before {
     box-sizing: border-box;
 }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1, .h2, .h3, h1, h2, h3 {
     margin-bottom: 2rem;
 	margin-top: 0;
+    font-family: Caveat,"SB Heading",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: 700;
+    line-height: 1.2;
+}
+.h4, .h5, .h6, h4, h5, h6 {
+	margin-bottom: 0.5rem;
+	margin-top: 1.5rem;
     font-family: Caveat,"SB Heading",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-weight: 700;
     line-height: 1.2;
