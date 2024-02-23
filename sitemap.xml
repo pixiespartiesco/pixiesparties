@@ -25,6 +25,12 @@
         <priority>0.5</priority>
     </url>
     <url>
+        <loc>https://www.pixiesparties.ca/articles-retro.html</loc>
+        <lastmod>2024-02-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
         <loc>https://www.pixiesparties.ca/articles-fairy.html</loc>
         <lastmod>2024-02-21</lastmod>
         <changefreq>always</changefreq>
