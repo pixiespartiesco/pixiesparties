@@ -52,9 +52,10 @@ body {
     background-color: var(--secondary)!important
 }
 a {
-    color: #cf33d6;
     text-decoration: none;
     background-color: transparent;
+	color: inherit !important;
+    font-style: italic;
 }
 a.bg-primary:focus,a.bg-primary:hover,button.bg-primary:focus,button.bg-primary:hover {
     background-color: var(--tertiary)!important
@@ -70,6 +71,7 @@ a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-se
 }
 .navbar-nav .dropdown-menu{
 	background-color: var(--secondary);
+	color: white;
 	border: 0;
 }
 .navbar-toggler {
@@ -194,7 +196,7 @@ a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-se
 	text-align: center;
 }
 .btn-secondary {
-    color: #fff;
+    color: #fff !important;
     background-color: #a93dae;
     border-color: #a93dae;
 }
