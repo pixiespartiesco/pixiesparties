@@ -46,34 +46,33 @@
        "priceRange": "$$",
        "address": {
          "@type": "PostalAddress",
-         "streetAddress": "100 Anderson Dr SE",
+         "streetAddress": "1600 90 Ave SW",
          "addressLocality": "Calgary",
          "addressRegion": "AB",
-         "postalCode": "T2J 3V1",
+         "postalCode": "T2V 5A8",
          "addressCountry": "CA"
        },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 50.9525539,
-        "longitude": -114.0662573
+        "latitude": 50.9735634,
+        "longitude": -114.0992811
       },
        "openingHoursSpecification": [
-    {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-	  "Friday",
-       "Saturday"
-     
-    ],
-    "opens": "10:00",
-    "closes": "22:00"
-    }
-    ]
+			{
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": [
+			  "Sunday",
+			  "Monday",
+			  "Tuesday",
+			  "Wednesday",
+			  "Thursday",
+			  "Friday",
+			  "Saturday"
+			  ],
+			"opens": "10:00",
+			"closes": "22:00"
+			}
+		]
     }
 
     </script>
@@ -83,12 +82,6 @@
         
            $(function(){
              $("#navbar").load("navbar.html"); 
-             $("#eventdiv").load("sectionevent.html"); 
-             $("#charactersdiv").load("sectioncharacters.html"); 
-             $("#packagesdiv").load("sectionpackages.html"); 
-             $("#addonsdiv").load("sectionaddons.html"); 
-             $("#bookingdiv").load("sectionbooking.html"); 
-             $("#contactdiv").load("sectioncontact.html");
              $("#footer").load("footer.html"); 
            });
     </script><!-- Font Awesome icons (free version)-->
@@ -113,14 +106,20 @@
     <style type="text/css">
     div.c1 {display: block;}
     </style>
+    <style type="text/css">
+    div.c3 {width:100%;--bs-gutter-x: 0;}
+    iframe.c2 {width:100%;height:1408px;border:0;}
+    a.c1 {width:70%;}
+    </style>
   </head>
   <body id="page-top">
     <div id="navbar"></div>
-    <section class="page-section bg-primary text-white mb-0" id="about">
+    <section class="page-section bg-primary text-white mb-0 p-3" id="about">
       <div class="container">
         <p class="pre-wrap lead">
-          Welcome to Pixies Parties – where magical moments come to life!</p>
-		  <p>
+          Welcome to Pixies Parties – where magical moments come to life!
+        </p>
+        <p>
           Our enchanting entertainers, including Belle, Ariel, Cinderella, and more, bring fairy tales to Calgary, AB. Explore our
           spellbinding selection of party packages and photo backdrops, perfect for princess parties and kids' gatherings. Let your
           imagination soar as you browse through our captivating characters. Book your party today for a whimsical adventure your
@@ -129,25 +128,556 @@
       </div>
     </section>
     <section class="page-section bg-secondary text-white portfolio" id="event">
-      <div id="eventdiv"/>
+      <div class="text-center">
+        <h2 class="page-section-heading d-inline-block">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewbox=
+          "0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg> Ties and Tiaras Ball <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-star-fill" viewbox="0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg>
+        </h2>
+      </div>
+      <div class="container d-flex align-items-center flex-column">
+        <img src="assets/img/events/tiesandtiaras1.webp" class="img-fluid rounded mx-auto d-block w-25">
+        <p>
+          Get ready for a magical evening of enchantment and family fun at Pixies Parties' Ties and Tiaras Ball!<br>
+          Join us for a delightful celebration of love, laughter, and the special bond between parents and children.<br>
+        </p>
+        <div class="row row-cols-2">
+          <div class="col">
+            <h4>
+              When
+            </h4>
+            <p>
+              Saturday, June 29, 2024<br>
+              6:00 PM - 8:00 PM
+            </p>
+          </div>
+          <div class="col">
+            <h4>
+              Where
+            </h4>
+            <p>
+              Willow Ridge Community Association<br>
+              <a href="https://maps.app.goo.gl/FQURz3SUc7cHo6ci8" target="_blank">680 Acadia Dr SE, Calgary, AB</a>
+            </p>
+          </div>
+        </div>
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewbox=
+          "0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg> Royal Parade: Little princes and princesses are invited to strut their stuff around the dance floor!
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewbox=
+          "0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg><br>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewbox=
+          "0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg> Parent-Child Dance-Off: Show off your moves on the dance floor with your little ones! <svg xmlns=
+          "http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewbox="0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg><br>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewbox=
+          "0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg> Craft Station: Get creative and make memories together with delightful crafts! <svg xmlns=
+          "http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewbox="0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg><br>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewbox=
+          "0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg> Royal Photo Booth: Capture the magic with enchanting photos to cherish forever! <svg xmlns=
+          "http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewbox="0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg><br>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewbox=
+          "0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg> Special Guests: Enjoy a visit with your favourite royal characters! <svg xmlns="http://www.w3.org/2000/svg"
+          width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewbox="0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg><br>
+          <br>
+          Don't miss out on this heartwarming event! Reserve your tickets now and create memories fit for a storybook!
+        </p>
+		<div class="row w-100 justify-content-center col">
+          <a class="btn btn-secondary c1" aria-label="Buy Tickets on Eventbrite" target="_blank" href="https://www.eventbrite.ca/e/ties-and-tiaras-ball-tickets-853015922587">Buy Tickets on Eventbrite</a>
+        </div>
+      </div>
     </section>
     <section class="page-section bg-white text-secondary portfolio" id="characters">
-      <div id="charactersdiv"/>
+      <div class="text-center">
+        <h1 class="page-section-heading d-inline-block">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewbox=
+          "0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg> Characters <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=
+          "bi bi-star-fill" viewbox="0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg>
+        </h1>
+      </div>
+      <div class="container d-flex align-items-center flex-column">
+        <p>
+          Discover the enchanting world of Pixies Parties' characters! Our roster includes beloved princesses, super heroes, and
+          other favourite characters! Dive into the realms of fantasy as you explore the details of each character. Whether your
+          child dreams of fairies or pirates, we have the perfect children's party entertainer to make their dreams come true!
+        </p>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+          <div class="col card h-100 border-0 bg-transparent">
+            <img src="assets/img/characters/pixie.webp" class="card-img-top" alt="Pixie the Party Fairy">
+            <div class="card-body">
+              <h2 class="card-title">
+                Pixie the Party Fairy
+              </h2>
+            </div>
+          </div>
+          <div class="col card h-100 border-0 bg-transparent">
+            <img src="assets/img/characters/cindy.webp" class="card-img-top" alt="Cinderella">
+            <div class="card-body">
+              <h2 class="card-title">
+                Cinderella
+              </h2>
+            </div>
+          </div>
+          <div class="col card h-100 border-0 bg-transparent">
+            <img src="assets/img/characters/arielballoons.webp" class="card-img-top" alt="Ariel">
+            <div class="card-body">
+              <h2 class="card-title">
+                Ariel
+              </h2>
+            </div>
+          </div>
+          <div class="col card h-100 border-0 bg-transparent">
+            <img src="assets/img/characters/bellereading.webp" class="card-img-top" alt="Belle">
+            <div class="card-body">
+              <h2 class="card-title">
+                Belle
+              </h2>
+            </div>
+          </div>
+          <div class="col card h-100 border-0 bg-transparent">
+            <img src="assets/img/characters/punz.webp" class="card-img-top" alt="Rapunzel">
+            <div class="card-body">
+              <h2 class="card-title">
+                Rapunzel
+              </h2>
+            </div>
+          </div>
+          <div class="col card h-100 border-0 bg-transparent">
+            <img src="assets/img/comingsoon/UnavailableBlue.webp" class="card-img-top" alt="Elsa">
+            <div class="card-body">
+              <h2 class="card-title">
+                Snow Queen
+              </h2>
+            </div>
+          </div>
+          <div class="col card h-100 border-0 bg-transparent">
+            <img src="assets/img/characters/snowsister.webp" class="card-img-top" alt="Anna">
+            <div class="card-body">
+              <h2 class="card-title">
+                Snow Sister
+              </h2>
+            </div>
+          </div>
+          <div class="col card h-100 border-0 bg-transparent">
+            <img src="assets/img/characters/witch.webp" class="card-img-top" alt="Hermione">
+            <div class="card-body">
+              <h2 class="card-title">
+                Wizarding Student
+              </h2>
+            </div>
+          </div>
+          <div class="col card h-100 border-0 bg-transparent">
+            <img src="assets/img/characters/spiderhero.webp" class="card-img-top" alt="Spider-Gwen">
+            <div class="card-body">
+              <h2 class="card-title">
+                Spider Hero
+              </h2>
+            </div>
+          </div>
+          <div class="col card h-100 border-0 bg-transparent">
+            <img src="assets/img/characters/pirate.webp" class="card-img-top" alt="Penny the Pirate">
+            <div class="card-body">
+              <h2 class="card-title">
+                Penny the Pirate
+              </h2>
+            </div>
+          </div>
+          <div class="col card h-100 border-0 bg-transparent">
+            <img src="assets/img/characters/barbie.webp" class="card-img-top" alt="Barbie">
+            <div class="card-body">
+              <h2 class="card-title">
+                Barbie
+              </h2>
+            </div>
+          </div>
+          <div class="col card h-100 border-0 bg-transparent">
+            <img src="assets/img/comingsoon/blue.webp" class="card-img-top" alt="Alice">
+            <div class="card-body">
+              <h2 class="card-title">
+                Alice in Wonderland
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row w-100 justify-content-center col">
+          <a class="btn btn-secondary c1" aria-label="book your party today" href="index.html#booking">Book Your Party Today!</a>
+        </div>
+      </div>
     </section>
     <section class="page-section bg-primary text-white portfolio" id="packages">
-      <div id="packagesdiv"/>
+      <div class="text-center">
+        <h2 class="page-section-heading d-inline-block">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewbox=
+          "0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg> Party Packages <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=
+          "bi bi-star-fill" viewbox="0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg>
+        </h2>
+      </div>
+      <div class="container d-flex align-items-center flex-column">
+        <p>
+          Our party packages are crafted to make your little one's special day truly enchanting. Choose from a treasure trove of
+          themes, including princess extravaganzas, wizardry wonders, and high-seas adventures. Dive into a world where imagination
+          knows no bounds, and every party is a personalized masterpiece. We sprinkle our events with a pinch of pixie dust to
+          ensure your child's joy is as boundless as the Alberta skies. From captivating characters to whimsical wonders, Pixies
+          Parties in Calgary is your ticket to unforgettable celebrations. Let's turn moments into memories – book your party
+          today and let the enchantment begin!
+        </p>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-4">
+			<div class="col">
+				<div class="card p-1 h-100 bg-white text-secondary">
+				<img src="assets/img/packages/pink.webp" class="card-img-top" alt="package name">
+				<div class="card-body">
+				  <h3 class="card-title">
+					Pink Package
+				  </h3>
+				  <p class="card-text">
+					60 Minutes with 1 Princess<br>
+					Magical Story<br>
+					Sing-along<br>
+					Crafts<br>
+					Princess Makeup<br>
+					Happy Birthday Song<br>
+					Photo Opportunities<br>
+					Includes supplies for 10 children<br>
+				  </p>
+				</div>
+				<div class="card-footer bg-white">
+				  $200
+				</div>
+			  </div>
+			</div>
+          <div class="col">
+    <div class="card p-1 h-100 bg-white text-secondary">
+            <img src="assets/img/packages/purple.webp" class="card-img-top" alt="package name">
+            <div class="card-body">
+              <h3 class="card-title">
+                Purple Package
+              </h3>
+              <p class="card-text">
+                90 Minutes with 1 Princess<br>
+                Magical Story<br>
+                Sing-along<br>
+                Crafts<br>
+                Happy Birthday Song<br>
+                Photo Opportunities<br>
+                Princess Makeup<br>
+                Princess Lessons<br>
+                Glitter Tattoos<br>
+                Coronation Ceremony<br>
+                Tiara gift for the birthday kid<br>
+                Includes supplies for 10 children<br>
+              </p>
+            </div>
+            <div class="card-footer bg-white">
+              $300
+            </div>
+          </div>
+          
+			</div>
+          <div class="col">
+    <div class="card p-1 h-100 bg-white text-secondary">
+            <img src="assets/img/packages/super.webp" class="card-img-top" alt="package name">
+            <div class="card-body">
+              <h3 class="card-title">
+                Super Package
+              </h3>
+              <p class="card-text">
+                60 Minutes with 1 Hero<br>
+                Thrilling Story<br>
+                Superhero Game<br>
+                Crafts<br>
+                Temporary Tattoos<br>
+                Happy Birthday Song<br>
+                Photo Opportunities<br>
+                Includes supplies for 10 children<br>
+              </p>
+            </div>
+            <div class="card-footer bg-white">
+              $200
+            </div>
+          </div>
+          
+			</div>
+          <div class="col">
+    <div class="card p-1 h-100 bg-white text-secondary">
+            <img src="assets/img/packages/patronus.webp" class="card-img-top" alt="package name">
+            <div class="card-body">
+              <h3 class="card-title">
+                Patronus Package
+              </h3>
+              <p class="card-text">
+                60 Minutes with 1 Witch<br>
+                Magical Story<br>
+                Spellcasting for Muggles<br>
+                Crafts<br>
+                Temporary Tattoos<br>
+                Happy Birthday Song<br>
+                Photo Opportunities<br>
+                Includes supplies for 10 children<br>
+              </p>
+            </div>
+            <div class="card-footer bg-white">
+              $200
+            </div>
+          </div>
+          
+			</div>
+          <div class="col">
+    <div class="card p-1 h-100 bg-white text-secondary">
+            <img src="assets/img/packages/pirate.webp" class="card-img-top" alt="package name">
+            <div class="card-body">
+              <h3 class="card-title">
+                Pirate Package
+              </h3>
+              <p class="card-text">
+                60 Minutes with 1 Pirate<br>
+                Thrilling Story<br>
+                Pirate Game<br>
+                Crafts<br>
+                Temporary Tattoos<br>
+                Happy Birthday Song<br>
+                Photo Opportunities<br>
+                Includes supplies for 10 children<br>
+              </p>
+            </div>
+            <div class="card-footer bg-white">
+              $200
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row w-100 justify-content-center col">
+        <a class="btn btn-secondary c1 mt-4" aria-label="book your party today" href="index.html#booking">Book Your Party Today!</a>
+      </div>
     </section>
     <section class="page-section bg-white text-secondary portfolio" id="addons">
-      <div id="addonsdiv"/>
+      <div class="text-center">
+        <h2 class="page-section-heading d-inline-block">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewbox=
+          "0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg> Add-Ons <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=
+          "bi bi-star-fill" viewbox="0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg>
+        </h2>
+      </div>
+      <div class="container d-flex align-items-center flex-column ">
+	  <p></p>
+	  <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+        <div class="col">
+		<div class=" card h-100 bg-transparent border-1">
+          <img src="assets/img/home/magicmirror.webp" class="card-img-top" alt="virtual visit">
+          <div class="card-body">
+            <h3 class="card-title">
+              Virtual Visits
+            </h3>
+            <p class="card-text">
+              Host a virtual party with your favourite character.
+            </p>
+            <h5 class="card-title">
+              $80
+            </h5>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a class="btn btn-secondary w-100" aria-label="more info" href="virtualvisit.html" target="_blank">Virtual Visit</a>
+          </div>
+        </div>
+        </div>
+        <div class="col">
+		<div class=" card h-100 bg-transparent border-1">
+          <img src="assets/img/addons/teaparty.webp" class="card-img-top" alt="tea party">
+          <div class="card-body">
+            <h3 class="card-title">
+              Tea Party
+            </h3>
+            <p class="card-text">
+              Host a magical tea party with your favourite princess!
+            </p>
+            <h5 class="card-title">
+              $100 - $200
+            </h5>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a class="btn btn-secondary w-100" aria-label="more info" href="teaparty.html" target="_blank">Tea Party</a>
+          </div>
+        </div>
+        </div>
+        <div class="col">
+		<div class=" card h-100 bg-transparent border-1">
+          <img src="assets/img/addons/archroundpurple.webp" class="card-img-top" alt="package name">
+          <div class="card-body">
+            <h3 class="card-title">
+              Photo Backdrop
+            </h3>
+            <p class="card-text">
+              Our pixies will come early before your party to setup the backdrop. Custom designs available.
+            </p>
+            <h5 class="card-title">
+              $150
+            </h5>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a class="btn btn-secondary w-100" aria-label="photo backdrops" href="photobackdrops.html" target="_blank">Photo
+            Backdrops</a>
+          </div>
+        </div>
+        </div>
+        <div class="col">
+		<div class=" card h-100 bg-transparent border-1">
+          <img src="assets/img/addons/glitter.webp" class="card-img-top" alt="package name">
+          <div class="card-body">
+            <h3 class="card-title">
+              Additional Guests
+            </h3>
+            <p class="card-text">
+              Our Party packages include supplies for 10 guests. Additional guests require additional magic!
+            </p>
+            <h5 class="card-title">
+              $10
+            </h5>
+          </div>
+        </div>
+        </div>
+        <div class="col">
+		<div class=" card h-100 bg-transparent border-1">
+          <img src="assets/img/addons/castle.webp" class="card-img-top" alt="package name">
+          <div class="card-body">
+            <h3 class="card-title">
+              Travel Fee
+            </h3>
+            <p class="card-text">
+              Our horse drawn carriages have a limited range. If your castle is outside of Calgary we have to give the horses extra
+              carrots.
+            </p>
+            <h5 class="card-title">
+              Calculated based on distance and travel time.
+            </h5>
+          </div>
+        </div>
+          <div class="card-footer bg-transparent border-0">
+            <a class="btn btn-secondary w-100" target="_blank" aria-label="service zone map" href=
+            "https://www.google.com/maps/d/edit?mid=1UXx3V2tMFJQ3axyER073PjddMeWi88s&amp;usp=sharing">More Info</a>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="page-section bg-primary text-white portfolio" id="booking">
-      <div id="bookingdiv"/>
+      <div class="text-center">
+        <h2 class="page-section-heading d-inline-block">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewbox=
+          "0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg> Book Your Party <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=
+          "bi bi-star-fill" viewbox="0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg>
+        </h2>
+      </div>
+      <div class="container d-flex align-items-center flex-column">
+        <p>
+          Booking a Pixies Party is as easy as a wand wave! Secure your preferred date effortlessly and embark on a journey to
+          create cherished memories for your little one. Our seamless booking process ensures a stress-free experience, allowing
+          you to focus on the excitement of your upcoming celebration. Simply fill out our user-friendly form, and voilà, your
+          Pixies Party is in the works! We can't wait to bring the magic to your doorstep and make your child's dreams come true.
+          Book your Calgary event with Pixies Parties today, and let the enchantment unfold!
+        </p>
+        <div class="d-grid gap-2 d-md-block mb-2">
+          <a class="btn btn-secondary" aria-label="characters" href="#characters">Characters</a> <a class="btn btn-secondary"
+          aria-label="party packages" href="#packages">Party Packages</a> <a class="btn btn-secondary" aria-label=
+          "cancellation policy" href="cancellation.html" target="_blank">Cancellation Policy</a> <a class="btn btn-secondary"
+          aria-label="frequently asked questions" href="faq.html" target="_blank">FAQ</a>
+        </div>
+        <p class="c1">
+          Not ready to book yet? Send us an email and we will answer any questions you have.
+        </p>
+        <div class="d-grid gap-2 d-md-block">
+          <a class="btn btn-secondary" aria-label="contact" href="#contact">Email</a>
+        </div>
+      </div>
+      <div class="container">
+        <!-- About Section Heading-->
+        <div class="text-center">
+          <iframe src="https://koalendar.com/e/pixies-parties-booking?embed=true" width="100%" height="800px" frameborder=
+          "0"></iframe>
+        </div>
+      </div>
     </section>
     <section class="page-section bg-white text-secondary portfolio" id="contact">
-      <div id="contactdiv"/>
+      <div class="text-center">
+        <h2 class="page-section-heading d-inline-block">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewbox=
+          "0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg> Contact <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=
+          "bi bi-star-fill" viewbox="0 0 16 16">
+          <path d=
+          "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+          </path></svg>
+        </h2>
+      </div>
+      <div class="container d-flex align-items-center flex-column">
+        <p>
+          Have questions or want to discuss your upcoming children's party entertainment needs?<br>
+          Get in touch with Pixies Parties today! Our friendly team in Calgary, AB, is here to help you with any questions.
+        </p>
+        <div class="row c3" id="contact">
+          <iframe src="https://form.jotform.com/233449002535249" class="c2"></iframe>
+        </div>
+      </div>
     </section>
-    <div id="footer"></div>
-	<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+    <div id="footer"></div><!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
     <div class="scroll-to-top d-lg-none position-fixed c1">
       <a class="js-scroll-trigger d-block text-center text-white rounded" aria-label="Scroll to top of page" href=
       "#page-top"><svg class="svg-inline--fa fa-chevron-up fa-w-14" aria-hidden="true" focusable="false" data-prefix="fa"
