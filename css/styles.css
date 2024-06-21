@@ -200,6 +200,11 @@ a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-se
     background-color: #a93dae;
     border-color: #a93dae;
 }
+.btn-secondary:hover {
+    color: #fff !important;
+    background-color: #923597;
+    border-color: #923597;
+}
 .btn, .btn-link, .dropdown-item, .form-control, .small, small {
     font-weight: 400;
 }
