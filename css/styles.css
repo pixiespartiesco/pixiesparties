@@ -13,7 +13,7 @@
   --gray: #6c757d;
   --gray-dark: #343a40;
   --primary: #F59BCB;
-  --secondary: #BF72B7;
+  --secondary: #B560AC;
   --tertiary: #E68AB6;
   --quaternary: #B56DAE;
   --success: #28a745;
@@ -216,8 +216,8 @@ a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-se
     vertical-align: middle;
 }
 .footer {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: var(--secondary);
     color: #fff;
 }
@@ -228,7 +228,7 @@ a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-se
 	text-decoration: none;
 }
 .copyright {
-    background-color: var(--quaternary);
+    background-color: var(--secondary);
 }
 .text-left {
     text-align: left!important;
