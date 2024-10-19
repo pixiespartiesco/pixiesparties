@@ -290,7 +290,7 @@ b, strong {
     border-top-right-radius: 0.5rem;
 }
 .card-title{
-	margin-top: margin-bottom: var(--bs-card-title-spacer-y);
+	margin-top: var(--bs-card-title-spacer-y);
 }
 .pb-3, .py-3 {
     padding-bottom: 1rem!important;
