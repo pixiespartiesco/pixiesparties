@@ -77,15 +77,13 @@
 
     </script>
     <script>
-
-
-        
            $(function(){
              $("#navbar").load("navbar.html"); 
              $("#footer").load("footer.html"); 
+			 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+			 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
            });
     </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-grid.min.css" rel="stylesheet">
@@ -122,6 +120,12 @@
         <p>
           Whether you’re looking to hire an entertainer for a princess party, a magical adventure, or a fairy tale celebration, we bring the magic to life. Our enchanting characters and captivating performances are perfect for birthday parties, children's events, and more. Discover why we're the best children's entertainers in Calgary and book your unforgettable kids' party today. Let us make your child's special day a magical experience they'll never forget!
         </p>
+		<div class="row gap-2 m-2">
+          <a class="col btn btn-secondary" aria-label="characters" href="#characters">Characters</a> 
+		  <a class="col btn btn-secondary" aria-label="party packages" href="#packages">Party Packages</a> 
+		  <a class="col btn btn-secondary" aria-label="availability" href="#booking" target="_blank">Availability</a> 
+		  <a class="col btn btn-secondary" aria-label="booking" href="#booking" target="_blank">Booking</a>
+        </div>
 		<div class="card w-100 bg-white text-secondary">
 			<div class="row g-0 p-2">
 				<div class="col-md-5">
@@ -276,7 +280,7 @@
 			<div class="card-footer  bg-transparent border-0">
 			</div>
           </div></div>
-	<div class="col"><div class="card h-100 border-0 bg-transparent">
+		<div class="col"><div class="card h-100 border-0 bg-transparent">
             <img src="assets/img/characters/pixie.webp" class="card-img-top" alt="Pixie the Party Fairy">
             <div class="card-body">
               <h2 class="card-title">
@@ -309,7 +313,7 @@
 			<div class="card-footer  bg-transparent border-0">
 			</div>
           </div></div>
-          <div class="col"><div class=" card h-100 border-0 bg-transparent">
+          <!-- <div class="col"><div class=" card h-100 border-0 bg-transparent">
             <img src="assets/img/characters/pirate.webp" class="card-img-top" alt="Penny the Pirate">
             <div class="card-body">
               <h2 class="card-title">
@@ -319,7 +323,7 @@
             </div>
 			<div class="card-footer  bg-transparent border-0">
 			</div>
-          </div></div>
+          </div></div> -->
           <div class="col"><div class=" card h-100 border-0 bg-transparent">
             <img src="assets/img/characters/barbie.webp" class="card-img-top" alt="Barbie">
             <div class="card-body">
@@ -364,7 +368,8 @@
 				  </h3>
 				  <h4 class="card-subtitle">$200 <sup>+gst</sup> / hour</h4>
 				  <p class="card-text">
-					Includes supplies for 10 children<br>
+					<strong><em>- 60 Minute Party -</em></strong><br>
+					Includes supplies for <a href="#" data-bs-toggle="tooltip" data-bs-title="Additional children can be added for $10 each">10 children</a><br>
 					Magical Story<br>
 					Sing-along<br>
 					Crafts<br>
@@ -393,13 +398,17 @@
 					  </h3>
 					  <h4 class="card-subtitle">$200 <sup>+gst</sup> / hour</h4>
 					  <p class="card-text">
-						Includes supplies for 10 children<br>
+						<strong><em>- 60 Minute Party -</em></strong><br>
+						Includes supplies for <a href="#" data-bs-toggle="tooltip" data-bs-title="Additional children can be added for $10 each">10 children</a><br>
 						Magical Story<br>
 						Crafts<br>
 						Potions Lesson<br>
 						Charms Class<br>
 						Happy Birthday Song<br>
 						Photo Opportunities<br>
+						<hr>
+						<strong><em>- 90 Minute Party -</em></strong><br>
+						DIY Potions
 					  </p>
 					</div>
 					<div class="card-footer bg-white border-0">
@@ -417,7 +426,7 @@
 				  </h3>
 				  <h4 class="card-subtitle">$200 <sup>+gst</sup> / hour</h4>
 				  <p class="card-text">
-					Includes supplies for 10 children<br>
+					Includes supplies for <a href="#" data-bs-toggle="tooltip" data-bs-title="Additional children can be added for $10 each">10 children</a><br>
 					Thrilling Story<br>
 					Crafts<br>
 					Superhero Lesson<br>
@@ -432,7 +441,7 @@
 				</div>
 			  </div>
 			</div>
-         <div class="col">
+         <!-- <div class="col">
 			<div class="card p-1 h-100 bg-white text-secondary">
 				<img src="assets/img/packages/pirate.webp" class="card-img-top" alt="package name">
 				<div class="card-body">
@@ -441,7 +450,7 @@
 				  </h3>
 				  <h4 class="card-subtitle">$200 <sup>+gst</sup> / hour</h4>
 				  <p class="card-text">
-					Includes supplies for 10 children<br>
+					Includes supplies for <a href="#" data-bs-toggle="tooltip" data-bs-title="Additional children can be added for $10 each">10 children</a><br>
 					Thrilling Story<br>
 					Pirate Game<br>
 					Crafts<br>
@@ -454,7 +463,7 @@
 				  <a class="btn btn-secondary c1 mt-4" aria-label="book now" target="_blank" href="https://koalendar.com/e/pixies-parties-booking">Book Now!</a>
 				</div>
 			  </div>
-			</div>
+			</div> -->
           <div class="col">
 			<div class="card p-1 h-100 bg-white text-secondary">
 				<img src="assets/img/packages/barbie.webp" class="card-img-top" alt="package name">
@@ -464,13 +473,15 @@
 				  </h3>
 				  <h4 class="card-subtitle">$200 <sup>+gst</sup> / hour</h4>
 				  <p class="card-text">
-					Includes supplies for 10 children<br>
+					Includes supplies for <a href="#" data-bs-toggle="tooltip" data-bs-title="Additional children can be added for $10 each">10 children</a><br>
 					Fun Story<br>
 					Crafts<br>
 					Barbie Makeup<br>
 					Temporary Tattoos<br>
 					Happy Birthday Song<br>
 					Photo Opportunities<br>
+					<!-- <hr>
+					Choose from Fashion Barbie or Glam Barbie -->
 				  </p>
 				</div>
 				<div class="card-footer bg-white border-0">
@@ -497,7 +508,7 @@
 			</div>
       </div>
       <div class="row w-100 justify-content-center col">
-        <a class="btn btn-secondary c1 mt-4" aria-label="book your party today" href="index.html#booking">Book Your Party Today!</a>
+        <a class="btn btn-secondary c1 mt-4" aria-label="book your party today" href="index.html#booking">Check our availability for your party</a>
       </div>
     </section>
     <section class="page-section bg-white text-secondary portfolio" id="addons">
@@ -631,21 +642,17 @@
           Booking a Pixies Party is as easy as waving your magic wand! 
 		  We offer a simple and hassle-free process to bring magic to your child’s special day. 
 		  Start by exploring our variety of party packages and selecting the one that best fits your needs. 
-		  Once you've chosen your package, fill out our easy online booking form with your details, preferred date, and character selection. 
+		  You can easily see our availability in the booking form, no need to send an email!
+		  Once you've chosen your package, fill out our easy online booking form with your details and character selection. 
 		  Our team will confirm your reservation and take care of the rest, ensuring a seamless and stress-free experience. 
 		  Let us handle the details so you can focus on enjoying the celebration!
         </p>
-        <div class="d-grid gap-2 d-md-block mb-2">
-          <a class="btn btn-secondary" aria-label="characters" href="#characters">Characters</a> <a class="btn btn-secondary"
-          aria-label="party packages" href="#packages">Party Packages</a> <a class="btn btn-secondary" aria-label=
-          "cancellation policy" href="cancellation.html" target="_blank">Cancellation Policy</a> <a class="btn btn-secondary"
-          aria-label="frequently asked questions" href="faq.html" target="_blank">FAQ</a>
-        </div>
-        <p class="c1">
-          Not ready to book yet? Send us an email and we will answer any questions you have.
-        </p>
-        <div class="d-grid gap-2 d-md-block">
-          <a class="btn btn-secondary" aria-label="contact" href="#contact">Email</a>
+        <div class="row gap-2 m-2">
+          <a class="col btn btn-secondary" aria-label="characters" href="#characters">Characters</a> 
+		  <a class="col btn btn-secondary" aria-label="party packages" href="#packages">Party Packages</a> 
+		  <a class="col btn btn-secondary" aria-label="cancellation policy" href="cancellation.html" target="_blank">Cancellation Policy</a> 
+		  <a class="col btn btn-secondary" aria-label="frequently asked questions" href="faq.html" target="_blank">FAQ</a>
+          <a class="col btn btn-secondary" aria-label="contact" href="#contact">Contact</a>
         </div>
       </div>
       <div class="container">
