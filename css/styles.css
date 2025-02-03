@@ -15,7 +15,7 @@
   --primary: #F59BCB;
   --secondary: #B560AC;
   --tertiary: #E68AB6;
-  --quaternary: #B56DAE;
+  --quaternary: #c983c2;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
@@ -51,6 +51,12 @@ body {
 }
 .bg-secondary {
     background-color: var(--secondary)!important
+}
+.bg-tertiary {
+    background-color: var(--tertiary)!important
+}
+.bg-quaternary {
+    background-color: var(--quaternary)!important
 }
 a {
     text-decoration: none;
@@ -342,6 +348,11 @@ b, strong {
 	overflow-x: auto;
   scrollbar-width: thin;
   scrollbar-color: #E390B9 #e7aac8;
+}
+.scrolling-wrapper .bg-white{
+	overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #efebeb #e3e0e0;
 }
 
 /* Works on Chrome, Edge, and Safari */
