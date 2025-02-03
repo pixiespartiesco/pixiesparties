@@ -46,8 +46,14 @@ body {
     background-color: #fff;
 	text-align: center;
 }
+
+.bg-white {
+    background-color: #fff!important;
+	scrollbar-color: #efebeb #e3e0e0;
+}
 .bg-primary {
-    background-color: var(--primary)!important
+    background-color: var(--primary)!important;
+	scrollbar-color: #E390B9 #e7aac8;
 }
 .bg-secondary {
     background-color: var(--secondary)!important
@@ -263,9 +269,6 @@ a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-se
 .d-flex {
     display: flex!important;
 }
-.bg-white {
-    background-color: #fff!important;
-}
 .mb-1, .my-1 {
     margin-bottom: 0.25rem!important;
 }
@@ -348,11 +351,6 @@ b, strong {
 	overflow-x: auto;
   scrollbar-width: thin;
   scrollbar-color: #E390B9 #e7aac8;
-}
-.scrolling-wrapper .bg-white{
-	overflow-x: auto;
-  scrollbar-width: thin;
-  scrollbar-color: #efebeb #e3e0e0;
 }
 
 /* Works on Chrome, Edge, and Safari */
