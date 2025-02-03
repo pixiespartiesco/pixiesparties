@@ -350,7 +350,7 @@ b, strong {
 .scrolling-wrapper{
 	overflow-x: auto;
   scrollbar-width: thin;
-  scrollbar-color: #E390B9 #e7aac8;
+  /*scrollbar-color: #E390B9 #e7aac8;*/
 }
 
 /* Works on Chrome, Edge, and Safari */
