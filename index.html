@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete">
   <head>
@@ -78,8 +80,6 @@
     </script>
     <script>
            $(function(){
-             $("#navbar").load("navbar.html"); 
-             $("#footer").load("footer.html"); 
 			 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 			 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
            });
@@ -136,7 +136,7 @@
 	<!-- End Meta Pixel Code -->
   </head>
   <body id="page-top" class="bg-primary text-white">
-    <div id="navbar"></div>
+    {% include navbar.html %}
 	
       <div class="container bg-primary text-white" id="about">
         <h1>
@@ -734,7 +734,8 @@
 	</div>
     </div>
     
-    <div id="footer"></div><!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+    {% include footer.html %}
+	<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
     <div class="scroll-to-top d-lg-none position-fixed c1">
       <a class="js-scroll-trigger d-block text-center text-white rounded" aria-label="Scroll to top of page" href=
       "#page-top"><svg class="svg-inline--fa fa-chevron-up fa-w-14" aria-hidden="true" focusable="false" data-prefix="fa"

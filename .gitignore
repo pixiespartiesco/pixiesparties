@@ -2,4 +2,12 @@
 .DS_Store
 assets/.DS_Store
 assets/img/.DS_Store
+
 .DS_Store
+# Jekyll files to ignore
+_site/
+.jekyll-cache/
+
+# Bundler/Ruby files to ignore
+.bundle/
+vendor/bundle/
