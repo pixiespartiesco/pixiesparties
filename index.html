@@ -137,6 +137,7 @@
   </head>
   <body id="page-top" class="bg-primary text-white">
     {% include navbar.html %}
+	{% include masthead.html %}
 	
       <div class="container bg-primary text-white" id="about">
         <h1>
@@ -148,8 +149,8 @@
 		<div class="row gap-2 m-2">
           <a class="col btn btn-secondary" aria-label="characters" href="#characters" style="text-wrap-mode: nowrap;">Characters</a> 
 		  <a class="col btn btn-secondary" aria-label="party packages" href="#packages" style="text-wrap-mode: nowrap;">Party Packages</a> 
-		  <a class="col btn btn-secondary" aria-label="cancellation policy" href="cancellation.html" target="_blank" style="text-wrap-mode: nowrap;">Cancellation Policy</a> 
-		  <a class="col btn btn-secondary" aria-label="frequently asked questions" href="faq.html" target="_blank" style="text-wrap-mode: nowrap;">FAQ</a>
+		  <a class="col btn btn-secondary" aria-label="cancellation policy" href="/cancellation" target="_blank" style="text-wrap-mode: nowrap;">Cancellation Policy</a> 
+		  <a class="col btn btn-secondary" aria-label="frequently asked questions" href="/faq" target="_blank" style="text-wrap-mode: nowrap;">FAQ</a>
         </div>
 		<div class="card w-80 bg-white text-secondary">
 			<script type="application/ld+json">
@@ -191,7 +192,7 @@
 						"highPrice": 30,
 						"lowPrice": 15,
 						"priceCurrency": "CAD",
-						"url": "https://www.pixiesparties.ca/events.html",
+						"url": "https://www.pixiesparties.ca/events",
 						"validFrom": "2025-11-20T07:00:00Z"
 					},
 					{
@@ -202,7 +203,7 @@
 						"name": "Adult Admission",
 						"price": 15,
 						"priceCurrency": "CAD",
-						"url": "https://www.pixiesparties.ca/events.html",
+						"url": "https://www.pixiesparties.ca/events",
 						"validFrom": "2025-11-20T07:00:00Z"
 					},
 					{
@@ -213,7 +214,7 @@
 						"name": "Child Admission",
 						"price": 30,
 						"priceCurrency": "CAD",
-						"url": "https://www.pixiesparties.ca/events.html",
+						"url": "https://www.pixiesparties.ca/events",
 						"validFrom": "2025-11-20T07:00:00Z"
 					},
 					{
@@ -224,7 +225,7 @@
 						"name": "Tiara",
 						"price": 15,
 						"priceCurrency": "CAD",
-						"url": "https://www.pixiesparties.ca/events.html",
+						"url": "https://www.pixiesparties.ca/events",
 						"validFrom": "2025-11-20T07:00:00Z"
 					}
 				],
@@ -244,25 +245,25 @@
 				<div class="col-12 col-md-8" style="align-content: center;padding: 2rem;">
 					<h2 class="card-title">2026 Ties and Tiaras Ball</h2>
 					<p>Step into a magical world of fun and fantasy at the <strong>Ties and Tiaras Ball!</strong> Join us on <strong>Saturday, April 18th, 2026</strong>, from <strong>3:00 PM to 5:00 PM</strong> at Riverbend Community Association, for an unforgettable afternoon filled with joy and family-friendly activities.</p>
-					<a class="btn btn-secondary c1 mt-4" aria-label="book now" target="_blank" href="events.html">Tickets Available Now!</a>
+					<a class="btn btn-secondary c1 mt-4" aria-label="book now" target="_blank" href="events">Tickets Available Now!</a>
 				</div>
 				<div class="col-12 col-md-4">
 				  <div id="carouselExample" class="carousel slide rounded-start carousel-fade" data-bs-ride="carousel">
 					  <div class="carousel-inner">
 						<div class="carousel-item active">
-						  <img src="assets/img/events/tiestiaras1.webp" class="d-block w-100" alt="Ties and Tiaras Ball 2026">
+						  <img src="/assets/img/events/tiestiaras1.webp" class="d-block w-100" alt="Ties and Tiaras Ball 2026">
 						</div>
 						<div class="carousel-item">
-						  <img src="assets/img/events/ttb3.webp" class="d-block w-100" alt="Ties and Tiaras Ball 2026">
+						  <img src="/assets/img/events/ttb3.webp" class="d-block w-100" alt="Ties and Tiaras Ball 2026">
 						</div>
 						<div class="carousel-item">
-						  <img src="assets/img/events/ttb2.webp" class="d-block w-100" alt="Ties and Tiaras Ball 2026">
+						  <img src="/assets/img/events/ttb2.webp" class="d-block w-100" alt="Ties and Tiaras Ball 2026">
 						</div>
 						<div class="carousel-item">
-						  <img src="assets/img/events/ttb1.webp" class="d-block w-100" alt="Ties and Tiaras Ball 2026">
+						  <img src="/assets/img/events/ttb1.webp" class="d-block w-100" alt="Ties and Tiaras Ball 2026">
 						</div>
 						<div class="carousel-item">
-						  <img src="assets/img/events/ttb4.webp" class="d-block w-100" alt="Ties and Tiaras Ball 2026">
+						  <img src="/assets/img/events/ttb4.webp" class="d-block w-100" alt="Ties and Tiaras Ball 2026">
 						</div>
 					  </div>
 					  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -293,7 +294,7 @@
         </p>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-5 g-4 justify-content-md-center">
           <div class="col"><div class=" card h-100 border-0  bg-white text-secondary">
-            <a  href="characters/cinderella.html"><img src="assets/img/characters/cindy.webp" class="card-img-top" alt="Cinderella Princess Party Entertainer Calgary"></a>
+            <a  href="/characters/cinderella"><img src="/assets/img/characters/cindy.webp" class="card-img-top" alt="Cinderella Princess Party Entertainer Calgary"></a>
             <div class="card-body">
               <h2 class="card-title">
                 Cinderella
@@ -301,12 +302,12 @@
 			  <p>Classic and elegant, Cinderella charms with her timeless story and graceful demeanour.</p>
             </div>
 			<div class="card-footer text-end  bg-transparent border-0">
-			<a  href="characters/cinderella.html">more...</a>
+			<a  href="/characters/cinderella">more...</a>
 			</div>
           </div></div>
 		  
 		<div class="col"><div class=" card h-100 border-0 bg-white text-secondary">
-            <a  href="characters/snowwhite.html"><img src="assets/img/characters/snowwhite.webp" class="card-img-top" alt="Snow White Princess Party Entertainer Calgary"></a>
+            <a  href="/characters/snowwhite"><img src="/assets/img/characters/snowwhite.webp" class="card-img-top" alt="Snow White Princess Party Entertainer Calgary"></a>
             <div class="card-body">
               <h2 class="card-title">
                 Snow White
@@ -314,12 +315,12 @@
 			  <p>Gentle and kind, Snow White brings her classic charm and cheerful spirit to every celebration.</p>
             </div>
 			<div class="card-footer  text-end  bg-transparent border-0">
-			<a  href="characters/snowwhite.html">more...</a>
+			<a  href="/characters/snowwhite">more...</a>
 			</div>
           </div>
         </div>
           <div class="col"><div class=" card h-100 border-0  bg-white text-secondary">
-            <a  href="characters/ariel.html"><img src="assets/img/characters/arielballoons.webp" class="card-img-top" alt="Ariel Little Mermaid Princess Party Entertainer Calgary"></a>
+            <a  href="/characters/ariel"><img src="/assets/img/characters/arielballoons.webp" class="card-img-top" alt="Ariel Little Mermaid Princess Party Entertainer Calgary"></a>
             <div class="card-body">
               <h2 class="card-title">
                 Princess Ariel
@@ -327,23 +328,23 @@
 			  <p>Curious and adventurous, Ariel mesmerizes with her tales of her underwater world and mermaid magic.</p>
             </div>
 			<div class="card-footer  text-end   bg-white text-secondary border-0">
-            <a  href="characters/ariel.html">more...</a>
+            <a  href="/characters/ariel">more...</a>
 			</div>
           </div></div>
           <!-- <div class="col"><div class=" card h-100 border-0  bg-white text-secondary">
-            <img src="assets/img/characters/arielmermaid.webp" class="card-img-top" alt="Ariel">
+            <img src="/assets/img/characters/arielmermaid.webp" class="card-img-top" alt="Ariel">
             <div class="card-body">
               <h2 class="card-title">
                 Mermaid Ariel
               </h2>
 			  <p>Ariel is ready to bring the magic of the ocean to your next party or event!</p>
-			  <p><small><em>* Due to limited mobility, Mermaid Ariel is only available for <a target="_blank" href="corporate.html" style="text-decoration: underline;"> Corporate bookings</a></em></small></p>
+			  <p><small><em>* Due to limited mobility, Mermaid Ariel is only available for <a target="_blank" href="corporate" style="text-decoration: underline;"> Corporate bookings</a></em></small></p>
             </div>
 			<div class="card-footer  text-end   bg-white text-secondary border-0">
 			</div>
           </div></div> -->
           <div class="col"><div class=" card h-100 border-0  bg-white text-secondary">
-            <a  href="characters/belle.html"><img src="assets/img/characters/bellereading.webp" class="card-img-top" alt="Belle Beauty and the Beast Princess Party Entertainer Calgary"/></a>
+            <a  href="/characters/belle"><img src="/assets/img/characters/bellereading.webp" class="card-img-top" alt="Belle Beauty and the Beast Princess Party Entertainer Calgary"/></a>
             <div class="card-body">
               <h2 class="card-title">
                 Belle
@@ -351,11 +352,11 @@
 			  <p>Intelligent and kind, Belle enchants with her love for books and tales of the Beast.</p>
             </div>
 			<div class="card-footer  text-end   bg-white text-secondary border-0">
-            <a  href="characters/belle.html">more...</a>
+            <a  href="/characters/belle">more...</a>
 			</div>
           </div></div>
           <div class="col"><div class=" card h-100 border-0  bg-white text-secondary">
-            <a  href="characters/rapunzel.html"><img src="assets/img/characters/punz.webp" class="card-img-top" alt="Rapunzel Tangled Princess Party Entertainer Calgary"></a>
+            <a  href="/characters/rapunzel"><img src="/assets/img/characters/punz.webp" class="card-img-top" alt="Rapunzel Tangled Princess Party Entertainer Calgary"></a>
             <div class="card-body">
               <h2 class="card-title">
                 Rapunzel
@@ -363,11 +364,11 @@
 			  <p>Spirited and adventurous, Rapunzel captivates with her long hair and tales of freedom.</p>
             </div>
 			<div class="card-footer  text-end   bg-white text-secondary border-0">
-            <a  href="characters/rapunzel.html">more...</a>
+            <a  href="/characters/rapunzel">more...</a>
 			</div>
           </div></div>
           <div class="col"><div class=" card h-100 border-0  bg-white text-secondary">
-            <a  href="characters/elsa.html"><img src="assets/img/characters/snowqueen.webp" class="card-img-top" alt="Elsa Frozen Princess Party Entertainer Calgary"></a>
+            <a  href="/characters/elsa"><img src="/assets/img/characters/snowqueen.webp" class="card-img-top" alt="Elsa Frozen Princess Party Entertainer Calgary"></a>
             <div class="card-body">
               <h2 class="card-title">
                 Elsa
@@ -375,11 +376,11 @@
 			  <p>Queen of ice and snow, Elsa enchants with her powerful presence and Frozen-themed fun.</p>
             </div>
 			<div class="card-footer  text-end   bg-white text-secondary border-0">
-            <a  href="characters/elsa.html">more...</a>
+            <a  href="/characters/elsa">more...</a>
 			</div>
           </div></div>
           <div class="col"><div class=" card h-100 border-0  bg-white text-secondary">
-            <a  href="characters/anna.html"><img src="assets/img/characters/snowsister.webp" class="card-img-top" alt="Anna Frozen Princess Party Entertainer Calgary"></a>
+            <a  href="/characters/anna"><img src="/assets/img/characters/snowsister.webp" class="card-img-top" alt="Anna Frozen Princess Party Entertainer Calgary"></a>
             <div class="card-body">
               <h2 class="card-title">
                 Anna
@@ -387,11 +388,11 @@
 			  <p>Energetic and optimistic, Anna delights with her tales of Arendelle and heartwarming adventures.</p>
             </div>
 			<div class="card-footer  text-end   bg-white text-secondary border-0">
-            <a  href="characters/anna.html">more...</a>
+            <a  href="/characters/anna">more...</a>
 			</div>
           </div></div>
 		  <div class="col"><div class=" card h-100 border-0  bg-white text-secondary">
-            <a  href="characters/merida.html"><img src="assets/img/characters/merida.webp" class="card-img-top" alt="Merida Brave Princess Party Entertainer Calgary"></a>
+            <a  href="/characters/merida"><img src="/assets/img/characters/merida.webp" class="card-img-top" alt="Merida Brave Princess Party Entertainer Calgary"></a>
             <div class="card-body">
               <h2 class="card-title">
                 Merida
@@ -399,11 +400,11 @@
 			  <p>Brave and bold, Merida will bring the adventure to to your party.</p>
             </div>
 			<div class="card-footer  text-end   bg-white text-secondary border-0">
-            <a  href="characters/merida.html">more...</a>
+            <a  href="/characters/merida">more...</a>
 			</div>
           </div></div>
 		  <div class="col"><div class=" card h-100 border-0  bg-white text-secondary">
-            <a  href="characters/glinda.html"><img src="assets/img/characters/glinda.webp" class="card-img-top" alt="Glinda Elphaba Wicked Princess Party Entertainer Calgary"></a>
+            <a  href="/characters/glinda"><img src="/assets/img/characters/glinda.webp" class="card-img-top" alt="Glinda Elphaba Wicked Princess Party Entertainer Calgary"></a>
             <div class="card-body">
               <h2 class="card-title">
                 Glinda
@@ -411,11 +412,11 @@
 			  <p>This <i>popular</i> witch will bring her bubbly charm to your party!</p>
             </div>
 			<div class="card-footer  text-end   bg-white text-secondary border-0">
-            <a  href="characters/glinda.html">more...</a>
+            <a  href="/characters/glinda">more...</a>
 			</div>
           </div></div>
           <div class="col"><div class="card h-100 border-0  bg-white text-secondary">
-            <a  href="characters/paperbagprincess.html"><img src="assets/img/characters/paperbagprincess.webp" class="card-img-top" alt="Paper Bag Princess Party Entertainer Calgary"></a>
+            <a  href="/characters/paperbagprincess"><img src="/assets/img/characters/paperbagprincess.webp" class="card-img-top" alt="Paper Bag Princess Party Entertainer Calgary"></a>
             <div class="card-body">
               <h2 class="card-title">
                 Paper Bag Princess
@@ -423,11 +424,11 @@
 			  <p>She's fierce, clever, and ready to bring her adventurous spirit to your next party! </p>
             </div>
 			<div class="card-footer  text-end   bg-white text-secondary border-0">
-            <a  href="characters/paperbagprincess.html">more...</a>
+            <a  href="/characters/paperbagprincess">more...</a>
 			</div>
           </div></div>
 		<div class="col"><div class="card h-100 border-0  bg-white text-secondary">
-            <a  href="characters/pixie.html"><img src="assets/img/characters/pixie.webp" class="card-img-top" alt="Pixie the Party Fairy Princess Party Entertainer Calgary"></a>
+            <a  href="/characters/pixie"><img src="/assets/img/characters/pixie.webp" class="card-img-top" alt="Pixie the Party Fairy Princess Party Entertainer Calgary"></a>
             <div class="card-body">
               <h2 class="card-title">
                 Pixie the Party Fairy
@@ -435,11 +436,11 @@
 			  <p>Sparkling and playful, Pixie brings a touch of enchantment and wonder to any event.</p>
             </div>
 			<div class="card-footer  text-end   bg-white text-secondary border-0">
-            <a  href="characters/pixie.html">more...</a>
+            <a  href="/characters/pixie">more...</a>
 			</div>
           </div></div>
           <div class="col"><div class=" card h-100 border-0  bg-white text-secondary">
-            <a  href="characters/hermione.html"><img src="assets/img/characters/witch.webp" class="card-img-top" alt="Hermione Harry Potter Party Entertainer Calgary"></a>
+            <a  href="/characters/hermione"><img src="/assets/img/characters/witch.webp" class="card-img-top" alt="Hermione Harry Potter Party Entertainer Calgary"></a>
             <div class="card-body">
               <h2 class="card-title">
                 Hermione
@@ -447,13 +448,13 @@
 			  <p>Smart and brave, Hermione brings her magical adventures and knowledge of spells to your party.</p>
             </div>
 			<div class="card-footer  text-end   bg-white text-secondary border-0">
-            <a  href="characters/hermione.html">more...</a>
+            <a  href="/characters/hermione">more...</a>
 			</div>
           </div></div>
 		  
           <div class="col">
 		  <div class=" card h-100 border-0  bg-white text-secondary">
-            <a  href="characters/spidergwen.html"><img src="assets/img/characters/spiderhero.webp" class="card-img-top" alt="Spider-Gwen Ghost Spider Spiderman Superhero Party Entertainer Calgary"></a>
+            <a  href="/characters/spidergwen"><img src="/assets/img/characters/spiderhero.webp" class="card-img-top" alt="Spider-Gwen Ghost Spider Spiderman Superhero Party Entertainer Calgary"></a>
             <div class="card-body">
               <h2 class="card-title">
                 Ghost Spider
@@ -461,14 +462,14 @@
 			  <p>The heroic and agile spider-powered girl, ready to swing into action and save the day.</p>
             </div>
 			<div class="card-footer  text-end   bg-white text-secondary border-0">
-            <a  href="characters/spidergwen.html">more...</a>
+            <a  href="/characters/spidergwen">more...</a>
 			</div>
           </div>
 		  </div>  
 		  
 		  <div class="col">
 		  <div class=" card h-100 border-0  bg-white text-secondary">
-           <a  href="characters/barbie.html"> <img src="assets/img/characters/barbie.webp" class="card-img-top" alt="Barbie Party Entertainer Calgary"></a>
+           <a  href="/characters/barbie"> <img src="/assets/img/characters/barbie.webp" class="card-img-top" alt="Barbie Party Entertainer Calgary"></a>
             <div class="card-body">
               <h2 class="card-title">
                 Barbie
@@ -476,13 +477,13 @@
 			  <p>Glamorous and stylish, Barbie adds a touch of fashion and fun to every party.</p>
             </div>
 			<div class="card-footer  text-end   bg-white text-secondary border-0">
-           <a  href="characters/barbie.html">more...</a>
+           <a  href="/characters/barbie">more...</a>
 			</div>
           </div>
         </div> 
 		
           <!-- <div class="col"><div class=" card h-100 border-0  bg-white text-secondary">
-            <a  href="characters/pirate.html"><img src="assets/img/characters/pirate.webp" class="card-img-top" alt="Penny the Pirate Party Entertainer Calgary"></a>
+            <a  href="/characters/pirate"><img src="/assets/img/characters/pirate.webp" class="card-img-top" alt="Penny the Pirate Party Entertainer Calgary"></a>
             <div class="card-body">
               <h2 class="card-title">
                 Penny the Pirate
@@ -490,7 +491,7 @@
 			  <p>Bold and daring, Penny brings thrilling tales of the high seas and treasure hunts.</p>
             </div>
 			<div class="card-footer  text-end   bg-white text-secondary border-0">
-            <a  href="characters/pirate.html">more...</a>
+            <a  href="/characters/pirate">more...</a>
 			</div>
           </div>
 		  </div> -->
@@ -499,7 +500,7 @@
 		</div>
 		
  <!--        <div class="row w-100 justify-content-center col">
-          <a class="btn btn-secondary c1" style="margin-top: 12px;" aria-label="book your party today" href="index.html#booking">Book Your Party Today!</a>
+          <a class="btn btn-secondary c1" style="margin-top: 12px;" aria-label="book your party today" href="index#booking">Book Your Party Today!</a>
         </div> -->
       </div>
     </div>
@@ -524,7 +525,7 @@
         <div class="row justify-content-md-center g-2" id="birthdayparty">
 			<div class="col-12 col-md-6 col-lg-4 col-xl-3">
 			<div class="card p-1 h-100 bg-white text-secondary">
-				<img src="assets/img/packages/classicparty.webp" class="card-img-top" alt="classic birthday party package">
+				<img src="/assets/img/packages/classicparty.webp" class="card-img-top" alt="classic birthday party package">
 				<div class="card-header bg-white">
 				<h3 class="card-title">Classic Party Package</h3>
 					<h4 class="card-subtitle">60 minutes</h4>
@@ -551,7 +552,7 @@
 			</div>
 			<div class="col-12 col-md-6 col-lg-4 col-xl-3">
 			<div class="card p-1 h-100 bg-white text-secondary">
-				<img src="assets/img/packages/deluxeparty.webp" class="card-img-top" alt="deluxe birthday party package">
+				<img src="/assets/img/packages/deluxeparty.webp" class="card-img-top" alt="deluxe birthday party package">
 				<div class="card-header bg-white">
 					<h3 class="card-title">Deluxe Party Package</h3>
 					<h4 class="card-subtitle">90 minutes</h4>
@@ -579,7 +580,7 @@
 			</div>
           <div class="col-12 col-md-6 col-lg-4 col-xl-3" id="corporate">
 			<div class="card p-1 h-100 bg-white text-secondary">
-				<img src="assets/img/packages/meetgreet.webp" class="card-img-top" alt="corporate festival library school daycare ">
+				<img src="/assets/img/packages/meetgreet.webp" class="card-img-top" alt="corporate festival library school daycare ">
 				<div class="card-header bg-white">
 					<h3 class="card-title">Character Meet and Greet</h3>
 					<h4 class="card-subtitle">45 minutes - 3 hours</h4>
@@ -621,7 +622,7 @@
 	  <div class="row justify-content-md-center g-2">
         <div class="col-12 col-md-6 col-lg-4 col-xl-3">
 		<div class="card p-1 h-100 bg-white text-secondary">
-          <img src="assets/img/addons/glitter.webp" class="card-img-top" alt="extra guests glitter supplies">
+          <img src="/assets/img/addons/glitter.webp" class="card-img-top" alt="extra guests glitter supplies">
           <div class="card-body">
             <h3 class="card-title">
               Additional Guests
@@ -640,7 +641,7 @@
         </div>
         <div class="col-12 col-md-6 col-lg-4 col-xl-3">
 		<div class="card p-1 h-100 bg-white text-secondary">
-          <img src="assets/img/addons/castle.webp" class="card-img-top" alt="package name">
+          <img src="/assets/img/addons/castle.webp" class="card-img-top" alt="package name">
           <div class="card-body">
             <h3 class="card-title">
               Travel Fee
@@ -650,13 +651,13 @@
             </p>
           </div>
           <div class="card-footer  bg-white text-secondary border-0">
-            <a class="btn btn-secondary w-100" aria-label="more info" href="travelfees.html" >More details</a>
+            <a class="btn btn-secondary w-100" aria-label="more info" href="travelfees" >More details</a>
           </div>
         </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 col-xl-3">
 		<div class="card p-1 h-100 bg-white text-secondary">
-          <img src="assets/img/addons/castlebackdrop.webp" class="card-img-top" alt="package name">
+          <img src="/assets/img/addons/castlebackdrop.webp" class="card-img-top" alt="package name">
           <div class="card-body">
             <h3 class="card-title">
               Castle Photo Backdrop
@@ -697,8 +698,8 @@
         <div class="row gap-2 m-2">
           <a class="col btn btn-secondary" aria-label="characters" href="#characters" style="text-wrap-mode: nowrap;">Characters</a> 
 		  <a class="col btn btn-secondary" aria-label="party packages" href="#packages" style="text-wrap-mode: nowrap;">Party Packages</a> 
-		  <a class="col btn btn-secondary" aria-label="cancellation policy" href="cancellation.html" target="_blank" style="text-wrap-mode: nowrap;">Cancellation Policy</a> 
-		  <a class="col btn btn-secondary" aria-label="frequently asked questions" href="faq.html" target="_blank" style="text-wrap-mode: nowrap;">FAQ</a>
+		  <a class="col btn btn-secondary" aria-label="cancellation policy" href="cancellation" target="_blank" style="text-wrap-mode: nowrap;">Cancellation Policy</a> 
+		  <a class="col btn btn-secondary" aria-label="frequently asked questions" href="faq" target="_blank" style="text-wrap-mode: nowrap;">FAQ</a>
           <a class="col btn btn-secondary" aria-label="contact" href="https://form.jotform.com/233449002535249" target="_blank" style="text-wrap-mode: nowrap;">Contact</a>
         </div>
       </div>
@@ -751,7 +752,7 @@
      
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script> <!-- Core theme JS-->
      
-    <script src="js/scripts.js"></script>
+    <script src="/js/scripts.js"></script>
 
 	<script src="https://form.jotform.com/static/feedback2.js"></script>
 	<script>
