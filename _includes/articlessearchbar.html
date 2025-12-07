@@ -78,7 +78,7 @@ function articlesSearch() {
 <ul id="searchList">
 {% for post in site.posts %}
 	<li class="mb-3 border-bottom pb-2">
-		<a href="{{ post.url | relative_url }}" class="text-decoration-none link-primary fw-medium">
+		<a href="{{ post.url | relative_url }}" class="text-decoration-none fw-medium">
 			{{ post.title | truncatewords: 8 }}
 		</a>
 		<p class="text-muted small mt-1 mb-0">{{ post.date | date: "%B %d" }}</p>

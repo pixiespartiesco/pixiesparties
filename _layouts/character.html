@@ -66,7 +66,7 @@
                         <!-- Loop through all characters in your _characters folder -->
                         {% for c in site.characters %}                            
 							<li class="mb-3 border-bottom pb-2">
-								<a href="{{ c.url | relative_url }}" class="text-decoration-none link-primary fw-medium">
+								<a href="{{ c.url | relative_url }}" class="text-decoration-none fw-medium">
 									{{ c.title | truncatewords: 8 }}
 								</a>
 							</li>
