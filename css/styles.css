@@ -12,16 +12,23 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #EB76B1;
-  --secondary: #B560AC;
-  --tertiary: #E68AB6;
-  --quaternary: #c983c2;
+  --bs-secondary: #B560AC;
+  --bs-secondary-rgb: rgb(181, 96, 172);
+  --bs-primary: #EB76B1;
+  --bs-primary-rgb:rgb(235, 118, 177);
+  --bs-tertiary: #E68AB6;
+  --bs-tertiary-rgb:rgb(230, 138, 182);
+  --bs-quaternary: #c983c2;
+  --bs-quaternary-rgb:rgb(201, 131, 194);
   --success: #28a745;
-  --info: #17a2b8;
+  --bs-info: #c983c2;
+  --bs-info-rgb:rgb(201, 131, 194);
   --warning: #ffc107;
   --danger: #dc3545;
-  --light: #f8f9fa;
-  --dark: #343a40;
+  --bs-light: #efdced;
+  --bs-light-rgb: rgb(239, 220, 237);
+  --bs-dark: #452142;
+  --bs-dark-rgb:rgb(69, 33, 66);
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -42,7 +49,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: var(--secondary);
+    color: var(--bs-secondary);
     background-color: #fff;
 	text-align: center;
 }
@@ -52,17 +59,25 @@ body {
 	scrollbar-color: #efebeb #e3e0e0;
 }
 .bg-primary {
-    background-color: var(--primary)!important;
+    background-color: var(--bs-primary)!important;
 	scrollbar-color: #E390B9 #e7aac8;
 }
 .bg-secondary {
-    background-color: var(--secondary)!important
+    background-color: var(--bs-secondary)!important
 }
 .bg-tertiary {
-    background-color: var(--tertiary)!important
+    background-color: var(--bs-tertiary)!important
 }
 .bg-quaternary {
-    background-color: var(--quaternary)!important
+    background-color: var(--bs-quaternary)!important
+}
+.callout {
+    background-color: var(--bs-light) !important;
+    color: var(--bs-dark) !important;
+    border: var(--bs-dark) !important;
+    border-width: 1;
+    width: 75%;
+    display: inline-block !important;
 }
 a {
     text-decoration: none;
@@ -71,10 +86,10 @@ a {
     font-style: italic;
 }
 a.bg-primary:focus,a.bg-primary:hover,button.bg-primary:focus,button.bg-primary:hover {
-    background-color: var(--tertiary)!important
+    background-color: var(--bs-tertiary)!important
 }
 a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-secondary:hover {
-    background-color: var(--quaternary)!important
+    background-color: var(--bs-quaternary)!important
 }
 .nav-link {
 	color: #fff;
@@ -83,7 +98,7 @@ a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-se
 	font-size: x-large;
 }
 .navbar-nav .dropdown-menu{
-	background-color: var(--secondary);
+	background-color: var(--bs-secondary);
 	color: white;
 	border: 0;
 }
@@ -104,7 +119,7 @@ a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-se
     width: 15rem;
 }
 .text-secondary {
-    color: var(--secondary)!important;
+    color: var(--bs-secondary)!important;
 }
 .d-inline-block {
     display: inline-block!important;
@@ -153,9 +168,9 @@ a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-se
     width: 100%;
     max-width: 7rem;
     height: 0.25rem;
-    background-color: var(--secondary);
+    background-color: var(--bs-secondary);
     border-radius: 1rem;
-    border-color: var(--secondary)!important;
+    border-color: var(--bs-secondary)!important;
 }
 .divider-custom .divider-custom-line:first-child {
     margin-right: 1rem;
@@ -196,7 +211,7 @@ a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-se
     word-wrap: break-word;
 }
 .text-body-secondary {
-    color: var(--secondary)!important;
+    color: var(--bs-secondary)!important;
 }
 .btn {
     display: inline-block;
@@ -230,7 +245,7 @@ a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-se
 .footer {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: var(--secondary);
+    background-color: var(--bs-secondary);
     color: #fff;
 }
 .social {
@@ -240,7 +255,7 @@ a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-se
 	text-decoration: none;
 }
 .copyright {
-    background-color: var(--secondary);
+    background-color: var(--bs-secondary);
 }
 .text-left {
     text-align: left!important;
@@ -323,7 +338,7 @@ b, strong {
     margin-bottom: 0;
 }
 .link-dark {
-	color: var(--secondary)!important;
+	color: var(--bs-secondary)!important;
 }
 .ml-3, .mx-3 {
     margin-left: 1rem!important;
@@ -407,25 +422,50 @@ b, strong {
 
 .hanging-indent-list {
   list-style: circle; /* Or 'circle', 'square', etc. for your desired bullet style */
-  padding-left: 1.5em; /* Adjust this value to control the indent of the entire list item */
+  padding-left: 1.5rem; /* Adjust this value to control the indent of the entire list item */
   text-align: left;
   display: inline-block;
   padding: 0;
 }
 
 .hanging-indent-list li {
-  text-indent: 0em; /* Negative value moves the first line (bullet) to the left */
-  /* Adjust this value to align the bullet point with the desired position within the padding-left */
+  padding-left: 2em; /* Adjust this value to control the indent depth */
+  text-indent: -2em; /* This negative value should match the padding-left */
 }
 .hanging-indent-list-emoji {
   list-style: none; /* Or 'circle', 'square', etc. for your desired bullet style */
-  padding-left: 2em; /* Adjust this value to control the indent of the entire list item */
+  padding-left: 2rem; /* Adjust this value to control the indent of the entire list item */
   text-align: left;
   display: inline-block;
   padding: 0;
 }
 
 .hanging-indent-list-emoji li {
-  text-indent: -1.5em; /* Negative value moves the first line (bullet) to the left */
-  /* Adjust this value to align the bullet point with the desired position within the padding-left */
+  padding-left: 1.5em; /* Adjust this value to control the indent depth */
+  text-indent: -1.5em; /* This negative value should match the padding-left */
+}
+
+.article-body {
+    margin: 4em;
+}
+.article-body img {
+    width: 70%;
+}
+.article-body ul {
+	list-style: circle; /* Or 'circle', 'square', etc. for your desired bullet style */
+	padding-left: 1.5rem; /* Adjust this value to control the indent of the entire list item */
+	text-align: left;
+	display: inline-block;
+	padding: 0;
+}
+.aritcle-body li {
+	padding-left: 2em; /* Adjust this value to control the indent depth */
+	text-indent: -2em; /* This negative value should match the padding-left */
+}
+.article-body blockquote {
+	background: var(--bs-light);
+    border: var(--bs-dark);
+    border-width: 1px;
+    border-radius: var(--bs-border-radius) !important;
+    padding: 1em;
 }

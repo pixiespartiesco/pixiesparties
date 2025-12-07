@@ -1,0 +1,72 @@
+# Site settings
+title: Pixies Parties
+email: contact@pixiesparties.ca
+description: >- # This means to ignore newlines until "baseurl:"
+  Hire the best children's party entertainers in Calgary! 
+  Pixies Parties offers princess, superhero, and character visits for unforgettable kids' birthday parties. 
+  Book your party today!
+#baseurl: "/your-project-name" # the subpath of your site, e.g. /blog
+url: "https://www.pixiesparties.ca" # the base hostname & protocol for your site
+
+# Theme settings
+#theme: minima # Or your chosen theme, e.g., jekyll-theme-minimal
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:year/:month/:day/:title/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Defaults for front matter
+defaults:
+  - scope:
+      path: "_posts" # An empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Erin Mackey"
+  - scope:
+      path: "_characters"
+      type: "characters"
+    values:
+      layout: "character"
+
+# Collections (optional)
+collections:
+  characters:
+    output: true
+    permalink: /characters/:name/
+    sort_by: rank
+    order:
+      - cinderella.md
+      - snowhite.md
+      - belle.md
+      - rapunzel.md
+      - ariel.md
+      - elsa.md
+
+permalink: /about/
+permalink: /cancellation/
+permalink: /company-promise/
+permalink: /contact/
+permalink: /events/
+permalink: /faq/
+permalink: /privacypolicy/
+permalink: /travelfees/
+permalink: /virtualvisit/
+permalink: /characters/
+permalink: /articles/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
