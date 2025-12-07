@@ -76,6 +76,14 @@ function articlesSearch() {
 <input type="text" id="searchBox" onkeyup="articlesSearch()" placeholder="Search...">
 <div id="searchDropdown" class="dropdown-content">
 <ul id="searchList">
+{% for post in site.posts %}
+	<li class="mb-3 border-bottom pb-2">
+		<a href="{{ post.url | relative_url }}" class="text-decoration-none link-primary fw-medium">
+			{{ post.title | truncatewords: 8 }}
+		</a>
+		<p class="text-muted small mt-1 mb-0">{{ post.date | date: "%B %d" }}</p>
+	</li>
+{% endfor %}
 <li><a href="/articles/ties-tiaras-2026.html"><h3>Ties and Tiaras Ball 2026</h3><h4>A Magical Family Event</h4><p class="keyword">princess party, family events, calgary, family fun, yyc</p></a></li>
 <li><a href="/articles/party-basics.html"><h3>Perfect Party Guide</h3><h4>A Beginner's Guide to Hosting a Memorable Kid's Birthday Party</h4><p class="keyword">beginner, new parent, first party</p></a></li>
 <li><a href="/articles/unicorn.html"><h3>Magical Unicorn Dreams</h3><h4> Hosting a Enchanting Birthday Party for Kids!</h4><p class="keyword">unicorn, magic, sparkle, glitter, rainbow, fantasy</p></a></li>
