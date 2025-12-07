@@ -35,34 +35,23 @@
     {% include navbar.html %}
 
 	<main class="container my-5">
-        <!-- Start of the main content row -->
         <div class="row">
-            
-            <!-- 1. MAIN ARTICLE CONTENT COLUMN (8/12 width on large screens) -->
-            <div class="col-lg-8">
-                <div class="article-body bg-white text-secondary rounded p-3">
-                    {{ content }}
+			<div class="col-lg-9">
+                <div class="bg-white text-secondary rounded p-3">
+					<div class="article-body">
+						{{ content }}
+					</div>
                 </div>
-
-                <!-- Back button -->
                 <div class="mt-5">
                     <a href="/articles/" class="btn btn-secondary">← Back to Articles</a>
                 </div>
             </div>
-
-            <!-- 2. SIDEBAR COLUMN (4/12 width on large screens) -->
-            <!-- d-none: Hides on all screen sizes by default -->
-            <!-- d-lg-block: Shows only on large (lg) screens and up -->
-            <div class="col-lg-4 d-none d-lg-block">
-                
-                <!-- The sticky-sidebar class ensures the content sticks as you scroll -->
+			<div class="col-lg-3 d-none d-lg-block">
                 <div class="sticky-top sticky-sidebar bg-white p-4 rounded-3 shadow-sm border border-quaternary">
                     <h5 class="fw-bold text-secondary mb-3">Read Next: Other Articles</h5>
                     
                     <ul class="list-unstyled">
-                        <!-- Loop through all posts in your _posts folder -->
                         {% for post in site.posts limit: 5 %}
-                            <!-- Do not show the current page in the list -->
                             {% unless post.url == page.url %}
                                 <li class="mb-3 border-bottom pb-2">
                                     <a href="{{ post.url | relative_url }}" class="text-decoration-none fw-medium">
