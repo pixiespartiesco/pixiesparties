@@ -20,6 +20,10 @@
   --bs-tertiary-rgb:rgb(230, 138, 182);
   --bs-quaternary: #c983c2;
   --bs-quaternary-rgb:rgb(201, 131, 194);
+  --bs-emphasis-color: #B560AC;
+  --bs-emphasis-color-rgb: rgb(181, 96, 172);
+  --bs-table-striped-bg: #f7eef6;
+  --bs-table-striped-bg-rgb: rgb(247, 238, 246);
   --success: #28a745;
   --bs-info: #c983c2;
   --bs-info-rgb:rgb(201, 131, 194);
