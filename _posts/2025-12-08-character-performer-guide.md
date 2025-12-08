@@ -39,32 +39,21 @@ A character performer's fee covers the performance time, but travel costs are a 
 
 ## Tipping: The Etiquette of Appreciation
 
-Tipping is one of the most common questions we receive, and it is always appreciated but never expected.
+Tipping is one of the most common questions we receive, and it is always *appreciated* but **never expected**.
 
-<table class="table table-striped">
-	<tbody>
-		<tr>
-			<th><p>When Tipping is Common</p></th>
-			<th><p>Why Parents Tip</p></th>
-			<th><p>Average Range</p></th>
-		</tr>
-		<tr>
-			<td><p><strong>Exceptional Service</strong></p></td>
-			<td><p>The performer went above and beyond (e.g., helped calm a nervous child, stayed longer for photos, handled an unexpected situation gracefully).</p></td>
-			<td><p><strong>$10 - $20 per performer</strong>, or 10-15% of the total package price.</p></td>
-		</tr>
-		<tr>
-			<td><p><strong>High Effort</strong></p></td>
-			<td><p>The performer was engaging for the entire duration, managed a large or difficult group, or performed a special request (like a complex song).</p></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td><p><strong>Cash or E-transfer</strong></p></td>
-			<td><p>Either is acceptable! If paying by cash, discretely give it to the handler or an adult family member at the end of the visit.</p></td>
-			<td></td>
-		</tr>
-	</tbody>
-</table>
+### When Tipping is Common
+
+**Exceptional Service:** The performer went above and beyond (e.g., helped calm a nervous child, stayed longer for photos, handled an unexpected situation gracefully).
+
+**High Effort:** The performer was engaging for the entire duration, managed a large or difficult group, or performed a special request (like a complex song)
+
+### Average Range
+
+**$10 - $20** per performer, or **10-15%** of the total package price.				
+
+### Cash or E-transfer
+
+**Either is acceptable!** If paying by cash, discretely give it to the handler or performer at the end of the visit.
 
 ![Tipping](/assets/img/articles/tipping.webp "Tipping")
 
