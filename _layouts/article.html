@@ -15,20 +15,17 @@
 	
 	<script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "NewsArticle",
-      "headline": {{ page.title }},
-      "image": [
-		{{ page.img1 }},{{ page.img2 }},{{ page.img3 }}
-       ],
-      "datePublished": {{ page.date | date: "%Y-%m-%dT%H:%M:%S%z" }},
-      "dateModified": {{ page.date | date: "%Y-%m-%dT%H:%M:%S%z" }},
-      "author": [{
-          "@type": "Person",
-          "name": "Erin Mackey"
-        }],
-		"publisher": {"name": "Pixies Parties", "url": "https://www.pixiesparties.ca"}
-    }
+	  "@context": "https://schema.org",
+	  "@type": "BlogPosting",
+	  "headline": "{{ page.title }}",
+	  "description": "{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}",
+	  "datePublished": "{{ page.date | date_to_xmlschema }}",
+	  "url": "{{ site.url }}{{ page.url }}",
+	  "author": {
+		"@type": "Organization",
+		"name": "Pixies Parties"
+	  }	
+	}
 	</script>
 </head>
 <body class="bg-primary">
