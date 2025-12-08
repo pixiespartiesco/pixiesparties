@@ -18,7 +18,7 @@
 	  "@context": "https://schema.org",
 	  "@type": "BlogPosting",
 	  "headline": "{{ page.title }}",
-	  "description": "{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}",
+	  "description": "{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | escape_json }}",
 	  "datePublished": "{{ page.date | date_to_xmlschema }}",
 	  "url": "{{ site.url }}{{ page.url }}",
 	  "author": {

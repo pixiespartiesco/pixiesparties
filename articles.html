@@ -17,12 +17,12 @@
     <link rel="icon" type="image/x-icon" href="/assets/img/logo.webp">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/ff9477f1ba.js" crossorigin="anonymous"></script>
-    <script type="application/ld+json">
+   <script type="application/ld+json">
 	{
 	  "@context": "https://schema.org",
 	  "@type": "Blog",
-	  "name": "{{ site.title | default: 'Pixies Parties Blog' }}",
-	  "description": "{{ site.description | default: 'Calgary\'s best resource for kids party planning, character entertainment tips, and event ideas.' }}",
+	  "name": "{{ site.title | default: 'Pixies Parties Blog' | escape_json }}",
+	  "description": "{{ site.description | default: 'Calgary\'s best resource for kids party planning, character entertainment tips, and event ideas.' | escape_json }}",
 	  "url": "{{ site.url }}/articles/",
 	  "publisher": {
 		"@type": "Organization",
@@ -36,8 +36,8 @@
 		{% for post in site.posts limit: 5 %}
 		{
 		  "@type": "BlogPosting",
-		  "headline": "{{ post.title }}",
-		  "description": "{{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}",
+		  "headline": "{{ post.title | escape_json }}",
+		  "description": "{{ post.excerpt | strip_html | strip_newlines | truncate: 160 | escape_json }}",
 		  "datePublished": "{{ post.date | date_to_xmlschema }}",
 		  "url": "{{ site.url }}{{ post.url }}",
 		  "author": {
