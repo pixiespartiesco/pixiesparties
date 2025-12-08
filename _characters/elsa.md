@@ -32,6 +32,6 @@ As the premiere children's entertainers in Calgary and surrounding areas, we ens
 * **Professional Performers:** Our dedicated performers are highly trained in character mannerisms, singing, and providing a cohesive, engaging experience for all ages.
 * **Customizable Packages:** We offer flexible party packages for 60-minutes, 90-minutes, or quick Character Visits to fit any budget and schedule.
 
-## Ready to Book Queen Elsa for Your Calgary Birthday?
-
-Don't freeze up! Queen Elsa is one of our most popular and most-requested characters year-round. Check our real-time availability and secure your date now using our easy online booking system.
+> ## Ready to Book Queen Elsa for Your Calgary Birthday?
+> 
+> Don't freeze up! Queen Elsa is one of our most popular and most-requested characters year-round. Check our [real-time availability](/#booking "real-time availability") and secure your date now using our easy online booking system.

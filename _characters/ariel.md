@@ -33,6 +33,6 @@ As the premiere children's entertainers in Calgary and surrounding areas, we ens
 * **Professional Performers:** Our dedicated performers are highly trained in character mannerisms, singing, and providing a cohesive, engaging experience for all ages.
 * **Customizable Packages:** We offer flexible party packages for 60-minutes, 90-minutes, or quick Character Visits to fit any budget and schedule.
 
-## Ready to Book Princess Ariel for Your Calgary Birthday?
-
-Go where the people are! Princess Ariel is a must-have for mermaid fans. Check our real-time availability and secure your date now using our easy online booking system for your Calgary party.
+> ## Ready to Book Princess Ariel for Your Calgary Birthday?
+> 
+> Go where the people are! Princess Ariel is a must-have for mermaid fans. Check our [real-time availability](/#booking "real-time availability") and secure your date now using our easy online booking system for your Calgary party.

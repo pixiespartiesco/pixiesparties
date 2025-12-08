@@ -37,4 +37,4 @@ As the premiere children's entertainers in Calgary and surrounding areas, we ens
 
 > ## Ready to Book Princess Snow White for Your Calgary Birthday?
 >
->Make your wish come true! Princess Snow White is a timeless choice for any event. Check our real-time availability and secure your date now using our easy online booking system for your Calgary party.
+>Heigh-ho, heigh-ho, it’s off to the party we go! Check our [real-time availability](/#booking "real-time availability") and secure your date now.

@@ -34,4 +34,4 @@ As the premiere children's entertainers in Calgary and surrounding areas, we ens
 
 > ## Ready to Book Princess Merida for Your Calgary Birthday?
 >
-> Be brave! Princess Merida is ready to bring adventure to your child’s celebration. Check our real-time availability and secure your date now using our easy online booking system.
+> Be brave! Princess Merida is ready to bring adventure to your child’s celebration. Check our [real-time availability](/#booking "real-time availability") and secure your date now using our easy online booking system.

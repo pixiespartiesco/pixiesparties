@@ -34,4 +34,4 @@ As the premiere children's entertainers in Calgary and surrounding areas, we ens
 
 > ## Ready to Book the Paper Bag Princess for Your Calgary Birthday?
 > 
-> Show off your courage! The Paper Bag Princess is ready for her next adventure—your party! Check our real-time availability and secure your date now using our easy online booking system.
+> Show off your courage! The Paper Bag Princess is ready for her next adventure—your party! Check our [real-time availability](/#booking "real-time availability") and secure your date now using our easy online booking system.

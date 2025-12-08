@@ -33,4 +33,4 @@ As the premiere children's entertainers in Calgary and surrounding areas, we ens
 
 > ## Ready to Book Pixie the Fairy for Your Calgary Birthday?
 >
-> Don't wait! Pixie is one of our most unique and fun characters. Check our real-time availability and secure your date now using our easy online booking system.
+> Don't wait! Pixie is one of our most unique and fun characters. Check our [real-time availability](/#booking "real-time availability") and secure your date now using our easy online booking system.

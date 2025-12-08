@@ -3,7 +3,7 @@ layout: character
 title: Ghost Spider
 permalink: /characters/ghostspider/
 name: Ghost Spider
-summary: Glamorous and stylish, Ghost Spider adds a touch of fashion and fun to every party.
+summary: Agile and awesome, Ghost Spider adds a web-slinging, high-energy adventure to your next party.
 img1: /assets/img/characters/spiderhero.webp
 keywords: spidey, spiderman, Gwen Stacy, Ghost Spider, Spiderverse
 rank: 2
@@ -37,4 +37,4 @@ As the premiere children's entertainers in Calgary and surrounding areas, we ens
 			
 > ## Ready to Book Ghost Spider for Your Calgary Birthday?
 >
->The city needs its heroes! Spider-Gwen is a popular hero choice. Check our real-time availability and secure your date now using our easy online booking system.
+>The city needs its heroes! Spider-Gwen is a popular hero choice. Check our [real-time availability](/#booking "real-time availability") and secure your date now using our easy online booking system.

@@ -37,4 +37,4 @@ As the premiere children's entertainers in Calgary and surrounding areas, we ens
 		
 > ## Ready to Book Princess Rapunzel for Your Calgary Birthday?
 > 
-> The floating lanterns are waiting! Princess Rapunzel is an energetic choice for your next event. Check our real-time availability and secure your date now using our easy online booking system.
+> The floating lanterns are waiting! Princess Rapunzel is an energetic choice for your next event. Check our [real-time availability](/#booking "real-time availability") and secure your date now using our easy online booking system.
