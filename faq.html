@@ -22,49 +22,42 @@ permalink: /faq
           </div>
           <div class="divider-custom-line"></div>
         </div><!-- About Section Content-->
+        
         <script>
-        function articlesSearch() {
-        // Declare variables
-        var input, filter, ul, li, a, i, txtValue;
-        input = document.getElementById('searchBox');
-        filter = input.value.toUpperCase();
-        console.log(filter);
-        ul = document.getElementById("searchList");
-        li = ul.getElementsByTagName('li');
+		function articlesSearch() {
+			// Declare variables
+			var input, filter, ul, li, a, i, txtValue;
+			input = document.getElementById('searchBox');
+			filter = input.value.toUpperCase();
+			console.log(filter);
+			ul = document.getElementById("searchList");
+			li = ul.getElementsByTagName('li');
 
-        // Loop through all list items, and hide those who don't match the search query
-        for (i = 0; i < li.length; i++) {
-        a = li[i];
-        console.log(a);
-        txtValue = a.textContent || a.innerText;
-        console.log(txtValue);
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        li[i].style.display = "";
-        } else {
-        li[i].style.display = "none";
-        }
-        }
-        }
-        </script>
-        <div class="container d-flex align-items-center flex-column text-left" style="padding-left: 4rem; padding-right: 4rem;">
-          <input type="text" id="searchBox" onkeyup="articlesSearch()" placeholder="Search..." class="searchBox">
-          <ul id="searchList" class="list-unstyled">
-			<li class="mb-2"><h3>How do I book a princess or character party in Calgary?</h3><p>We recommend booking your enchanting event at least 2 weeks in advance to secure your preferred character and date. A non-refundable $100 deposit is required at the time of booking to reserve your slot. You can view our available packages and contact us to start the process!</p></li>
-			<li class="mb-2"><h3>How much does a Pixies Parties package cost?</h3><p>Our pricing varies based on the package duration (60-minute, 90-minute) and location. Detailed pricing is available on our <a href="/#packages">Party Packages</a> page. Our classic party experiences start from $250 + GST.</p></li>
-			<li class="mb-2"><h3>What areas do you serve outside of Calgary, AB?</h3><p>Pixies Parties is proudly based in Calgary and happily travels to surrounding areas across Southern Alberta. A small Travel Fee may apply if your event location is outside the immediate Calgary city limits. Please contact us with your postal code for an accurate quote.</p></li>
-			<li class="mb-2"><h3>How long do your children's character parties typically last?</h3><p>We offer flexible package durations to suit your event, including our popular Classic Party (60 minutes) and our Deluxe Party (90 minutes). We also offer longer options for corporate or large public events.</p></li>
-			<li class="mb-2"><h3>What is your policy regarding adding a second character?</h3><p>As a dedicated solo performer, we currently focus on one magical character per event to ensure the highest quality of individual experience. Our performer brings an abundance of magic, activities, and excitement for all the children!</p></li>
-			<li class="mb-2"><h3>What types of children's party entertainment do you specialize in?</h3><p>We specialize in premium princess parties and enchanting fairytale themes, but our lineup also includes pirates, magical students (wizards), fairies, and fashion icons (Barbie). Check our <a href="/characters">Characters</a> page to see our full, enchanting cast!</p></li>
-			<li class="mb-2"><h3>What specific activities are included in your party packages?</h3><p>Our parties are highly interactive and feature: a grand character entrance, story time, sing-alongs (for appropriate characters), themed games, a craft activity (supplies included for 10 children), princess makeup or glitter tattoos, and a magical birthday song ceremony.</p></li>
-			<li class="mb-2"><h3>What age groups are your parties best suited for?</h3><p>Our parties are perfectly tailored for children aged 4 to 10, but our experienced entertainers can adapt activities to ensure fun and engagement for a wider range of ages, from toddlers to tweens.</p></li>
-			<li class="mb-2"><h3>Do you provide costumes or accessories for the children?</h3><p>While children are absolutely encouraged to dress up and join the fun, Pixies Parties provides the character costume and supplies for the craft/activity, but not costumes for the children to wear.</p></li>
-			<li class="mb-2"><h3>Do you create custom characters not listed on your website?</h3><p>We currently focus on perfecting our existing, unique character offerings to ensure a truly magical experience. However, we are happy to consider custom requests! Please fill out our <a href="/contact">Contact Form</a> with details about the character you are looking for. We will review your request and do our best to accommodate it for your event.</p></li>
-			<li class="mb-2"><h3>What is your cancellation and rescheduling policy?</h3><p>The $100 deposit is non-refundable. Please see our dedicated <a href="/cancellation">Cancellation Policy Page</a> for full details on changes, rescheduling fees, and how we handle emergencies.</p></li>
-			<li class="mb-2"><h3>What if the weather is bad for our outdoor party?</h3><p>We strongly recommend having an indoor backup venue ready for all outdoor events. We do not offer refunds for inclement weather. However, we will gladly work with you to find an alternative indoor solution or to reschedule the party (rescheduling fee applies).</p></li>
-			<li class="mb-2"><h3>What safety and hygiene measures are your performers taking?</h3><p>The safety of the children is our top priority. Our entertainers are fully vaccinated and adhere to all current safety and hygiene guidelines to ensure a safe, enchanting party experience for everyone.</p></li>
-			<li class="mb-2"><h3>Can you accommodate children with special needs or allergies?</h3><p>Yes, we strive to create inclusive experiences for all children. Please inform us of any special requirements or allergies when booking, and we will do our very best to adapt the activities to ensure a safe and magical experience for every child.</p></li>
-          </ul>
-        </div>
+			// Loop through all list items, and hide those who don't match the search query
+			for (i = 0; i < li.length; i++) {
+				a = li[i];
+				console.log(a);
+				txtValue = a.textContent || a.innerText;
+				console.log(txtValue);
+				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					li[i].style.display = "";
+				} else {
+					li[i].style.display = "none";
+				}
+			}
+		}
+		</script>
+		<div class="container d-flex align-items-center flex-column text-left" style="padding-left: 4rem; padding-right: 4rem;">
+		  <input type="text" id="searchBox" onkeyup="articlesSearch()" placeholder="Search..." class="searchBox">
+		  <ul id="searchList" class="list-unstyled">
+			{% for post in site.data.faq %}
+				<li class="mb-2">
+					<h3>{{ post.question }}</h3>
+					<p>{{ post.answer | markdownify }}</p>
+				</li>
+			{% endfor %}
+		  </ul>
+		</div>
       </div>
       <div class="row w-100 justify-content-center">
         <div class="col">
