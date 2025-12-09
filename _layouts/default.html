@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="canonical" href="{{site.url}}{{page.url}}">
+	
+	{% include scripts.html %} 
+	{% include schema.html %} 	
+  </head>
+  <body id="page-top" class="bg-primary text-white">
+	{% include navbar.html %} 	
+	{% include masthead.html %} 	
+    
+    <section>
+      {{ content }}
+    </section>
+	{% include footer.html %} 
+  </body>
+</html>
