@@ -46,7 +46,6 @@ collections:
   characters:
     output: true
     permalink: /characters/:name/
-    sort_by: rank
     order:
       - cinderella.md
       - snowhite.md

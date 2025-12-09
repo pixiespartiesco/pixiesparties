@@ -1,0 +1,127 @@
+---
+layout: default
+title: Party Packages & Pricing
+permalink: /packages/
+description: Choose the perfect princess or superhero party package for your Calgary event. From 60-minute birthday visits to corporate meet and greets.
+---
+<div class="container bg-primary text-white">
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold">Party Packages & Pricing</h1>
+        <p>Our party packages are crafted to make your little one's special day truly enchanting. Choose from a treasure trove of
+		  themes, including princess extravaganzas, wizardry wonders, and high-seas adventures. Dive into a world where imagination
+		  knows no bounds, and every party is a personalized masterpiece. We sprinkle our events with a pinch of pixie dust to
+		  ensure your child's joy is as boundless as the Alberta skies. From captivating characters to whimsical wonders, Pixies
+		  Parties is your ticket to unforgettable celebrations in Calgary. Let's turn moments into memories – book your party
+		  today and let the enchantment begin!</p>
+    </div>
+
+    <!-- MAIN PACKAGES ROW -->
+    <div class="row justify-content-md-center g-2">
+        {% for post in site.data.packages.packages %}
+			<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+				<div class="card p-1 h-100 bg-white text-secondary">
+					<img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
+					<div class="card-header bg-white">
+					<h3 class="card-title">{{ post.title }}</h3>
+						<h4 class="card-subtitle">{{ post.duration }}</h4>
+						<h5 class="card-subtitle">{{ post.price | markdownify }}</h5>
+					</div>
+					<div class="card-body">
+						<p class="card-subtitle">{{ post.description }}</p>		
+						<ul class="list-unstyled mt-3 mb-4 text-start mx-auto">
+							{% for f in post.features %}
+								<li class="mb-2">{{ f.icon }} {{ f.detail }}</li>
+							{% endfor %}
+						</ul>
+					</div>
+					<div class="card-footer bg-white">
+						<a class="btn btn-secondary c1 mt-4" aria-label="book now" target="_blank" href="{{ post.url }}">Book Now!</a>
+					</div>
+				  </div>
+			</div>
+		{% endfor %}        
+	</div>
+
+	<div class="card bg-white text-secondary my-3">
+		<h2 class="card-title">Which Package is Right for You?</h2>
+		<div class="card-body">
+			<div class="mb-4">
+				<h3 class="text-secondary fw-bold">The Classic Party (60 Minutes)</h3>
+				<p class="text-muted">
+					Our <strong>Classic Package</strong> is designed to be the "sweet spot" for children's attention spans, particularly for ages 3 to 6. 
+					It is a non-stop hour of entertainment where the character takes full charge of the party guests. 
+					We transition quickly from high-energy entrances to focused storytime and interactive songs, ensuring no child gets bored. 
+					This package is ideal if you have other activities planned (like a bouncy castle or opening presents) and want the character to be the highlight of the middle of your event.
+				</p>
+			</div>
+
+			<div class="mb-4">
+				<h3 class="text-secondary fw-bold">The Deluxe Party (90 Minutes)</h3>
+				<p class="text-muted">
+					The <strong>Deluxe Package</strong> is the ultimate immersive experience. 
+					The additional 30 minutes allows for <strong>Glitter Tattoos</strong> (a sparkly favourite for boys and girls) and the prestigious <strong>Coronation Ceremony</strong>. 
+					During the ceremony, the birthday child calls up their friends, makes a royal promise, and receives a keepsake tiara or hero cape to keep forever. 
+					We highly recommend this package for groups larger than 10 children, as it ensures the performer has enough time to give every single guest a moment of individual attention without rushing.
+				</p>
+			</div>
+
+			<div class="mb-4">
+				<h3 class="text-secondary fw-bold">Corporate & Public Meet and Greets</h3>
+				<p class="text-muted">
+					Planning a community festival, stampede breakfast, or grand opening? 
+					Our <strong>Meet & Greet</strong> service is structurally different from our birthday packages. 
+					Instead of a set timeline of activities, the character manages a queue or roams the crowd to maximize the number of photo interactions. 
+					This ensures hundreds of guests can meet their hero efficiently. 
+					<em>Please note: This option does not include games, crafts, or audio equipment.</em>
+				</p>
+			</div>
+			
+			<div class="p-4 bg-light rounded-3">
+				<h4 class="text-secondary text-dark">Need a Custom Timeline?</h4>
+				<p class="mb-0 text-muted">
+					We know every party is unique! 
+					If you have a specific activity in mind just let us know during booking. We are happy to swap out standard activities (like the craft) to accommodate your specific traditions.
+				</p>
+				
+				<a href="/contact/" class="btn btn-secondary c1 mt-4">Contact Pixies Parties</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="card bg-white text-secondary my-3">
+		<h2 class="card-title">Magical Add-Ons</h2>
+		<div class="card-body">
+			<table class="table table-hover align-middle">
+				<thead class="table-light">
+                        <tr>
+                            <th scope="col" class="w-25">Item</th>
+                            <th scope="col" class="w-50">Description</th>
+                            <th scope="col" class="text-end">Price</th>
+                        </tr>
+                    </thead>
+					<tbody>
+						{% for post in site.data.packages.addons %}
+							<tr>
+								<td class="fw-bold text-primary">{{post.title}}</td>
+								<td>{{ post.description | markdownify }}</td>
+								<td class="text-end fw-bold">{{ post.price | markdownify }}</td>
+							</tr>
+						{% endfor %}
+					</tbody>
+			</table>
+		</div>
+	</div>
+
+    <!-- BOOKING INFO -->
+    <div class="card bg-white text-secondary my-3">   
+		<div class="row mb-3">
+			<div class="col">
+				<h3 class="fw-bold text-secondary">Ready to make magic happen?</h3>
+				<p class="mb-0">We recommend booking 4-6 weeks in advance to secure your preferred character and time slot. A $100 deposit is required to hold your date.</p>
+			
+				<a href="/contact/" class="btn btn-secondary c1 mt-4">Contact Pixies Parties</a>
+			</div>
+		</div>
+    </div>
+</div>
+{% include packages-schema.html %}

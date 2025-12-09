@@ -1,0 +1,121 @@
+packages:
+  - id: deluxe_package
+    title: Deluxe Party Package
+    duration: 90 Minutes
+    description: Our most popular package! A fully immersive, extended experience perfect for large parties or those who want the full character experience.
+    price: $320 *+gst*
+    image: /assets/img/packages/deluxeparty.webp
+    booking_link: https://koalendar.com/e/pixies-parties-deluxe
+    features_header: Features
+    features:
+      - detail: Grand Royal Entrance
+        icon: 👑
+      - detail: Full Meet & Greet Session
+        icon: 👋
+      - detail: Interactive Story Time
+        icon: 📖
+      - detail: Sing-Along Performance (2-3 Songs)
+        icon: 🎶
+      - detail: Royal Coronation Ceremony for the Birthday Child (Includes Tiara/Gift)
+        icon: 🎁
+      - detail: Themed Craft
+        icon: 🎨
+      - detail: Princess Makeup or Temporary Tattoos
+        icon: 🪞
+      - detail: Glitter Tattoos
+        icon: ✨
+      - detail: Photo Opportunities for All Guests
+        icon: 📸
+      - detail: Individual Personalized Interaction for Every Child
+        icon: 🌟
+      - detail: Birthday Cake Ceremony & Photo
+        icon: 🎂
+
+  - id: classic_package
+    title: Classic Party Package
+    duration: 60 Minutes
+    description: A classic, hour-long visit packed with essential character activities and memories. Perfect for most birthday parties.
+    price: $250 *+gst*
+    image: /assets/img/packages/classicparty.webp
+    booking_link: https://koalendar.com/e/pixies-parties-classic
+    features_header: Features
+    features:
+      - detail: Grand Royal Entrance
+        icon: 👑
+      - detail: Full Meet & Greet Session
+        icon: 👋
+      - detail: Sing-Along Performance (2-3 Songs)
+        icon: 🎶
+      - detail: Themed Craft
+        icon: 🎨
+      - detail: Princess Makeup or Temporary Tattoos
+        icon: 🪞
+      - detail: Photo Opportunities for All Guests
+        icon: 📸
+      - detail: Individual Personalized Interaction for Every Child
+        icon: 🌟
+      - detail: Birthday Cake Ceremony & Photo
+        icon: 🎂
+
+  - id: meet_and_greet_package
+    title: Character Meet and Greet
+    duration: 45 minutes - 3 hours
+    description: A simple, seamless way to add live character magic to your event.
+    price: $200 *+gst* / hour
+    image: /assets/img/packages/meetgreet.webp
+    booking_link: https://koalendar.com/e/pixies-parties-meetgreet
+    features_header: Perfect For
+    features:
+      - detail: Daycares and preschools
+        icon: 🚸
+      - detail: School spirit days
+        icon: 🎒
+      - detail: Corporate events
+        icon: 🏢
+      - detail: Employee family days
+        icon: 👨‍👩‍👧‍👦
+      - detail: Community festivals
+        icon: 👯
+      - detail: Holiday markets
+        icon: 🎊
+      - detail: Library events
+        icon: 📖
+      - detail: Shopping centre promotions
+        icon: 🛍️
+      - detail: Seasonal celebrations
+        icon: ❄️
+      - detail: Stampede Events
+        icon: 🏇
+        
+addons:
+  - id: virtual_visit
+    title: Virtual Visit
+    duration: 30 Minutes
+    description: You can bring the joy and wonder of our beloved characters straight to your screen. Guests will enjoy a character meet & greet, interactive story time and sing-along!
+    price: $80 *+gst*
+    image: /assets/img/packages/virtualvisit.webp
+    linktext: Book Now
+    url: https://koalendar.com/e/virtual-visit
+
+  - id: addon_travel
+    title: Travel Fee
+    description: Our horse drawn carriages have a limited range. If your castle is outside of Calgary we have to give the horses extra carrots.
+    price: Price Varies
+    image: /assets/img/addons/castle.webp
+    linktext: More Info
+    url: /travelfees
+    
+  - id: addon_guest
+    title: Additional Guests
+    description: Our Party packages include supplies for 10 guests. Additional guests require additional magic!
+    price: $10 / child
+    image: /assets/img/addons/glitter.webp
+    url:     
+    
+  - id: addon_backdrop
+    title: Castle Photo Backdrop
+    description: Our pixies will come early before your party to setup the 8' x 10' backdrop.
+    price: $80 *+gst*
+    image: /assets/img/addons/castlebackdrop.webp
+    linktext: Book Now
+    url: https://koalendar.com/e/photo-backdrop

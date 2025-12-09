@@ -1,0 +1,17 @@
+<div class="row justify-content-md-center g-2">
+	{% for package in site.data.packages.packages %}
+		<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+			<div class="card p-1 h-100 bg-light text-secondary">
+				<img src="{{ package.image }}" class="card-img-top" alt="{{ package.title }}">
+				<div class="card-body">
+					<h3 class="card-title">{{ package.title }}</h3>
+					<h4 class="card-subtitle">{{ package.duration }}</h4>
+					<h5 class="card-subtitle">{{ package.price | markdownify }}</h5>					
+				</div>
+				<div class="card-footer">
+					<a class="btn btn-secondary c1 mt-4" aria-label="book now" target="_blank" href="{{ package.url }}">Book Now!</a>
+				</div>
+			  </div>
+		</div>
+	{% endfor %}        
+</div>

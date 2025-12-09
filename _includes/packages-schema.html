@@ -1,0 +1,62 @@
+<script type="application/ld+json">
+{% assign packages = site.data.packages.packages %}
+{% assign item_list_elements = "" %}
+{% for package in packages %}
+  {% capture offer_item %}
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "{{ package.title | escape }}",
+        "description": "{{ package.description | escape }} ({{ package.duration }} of entertainment). Features include: {{ package.features | map: 'detail' | join: ', ' | escape }}",
+        "offers": {
+          "@type": "Offer",
+          "name": "{{ package.title | escape }} Price",
+          "price": "{{ package.price_placeholder | remove: 'Starting at $' | remove: ' ' }}",
+          "priceCurrency": "CAD"
+        }
+      }
+    }
+  {% endcapture %}
+  {% assign item_list_elements = item_list_elements | append: offer_item %}
+  {% unless forloop.last %}
+    {% assign item_list_elements = item_list_elements | append: ", " %}
+  {% endunless %}
+{% endfor %}
+
+{
+  "@context": "https://schema.org/",
+  "@type": "Service",
+  "name": "Children's Party Entertainment Packages & Pricing",
+  "serviceType": "Children's Character Party Entertainment Service",
+  "description": "Book a princess, superhero, or character visit in Calgary. We offer 30, 60, and 90-minute immersive party packages.",
+  "provider": {
+    "@type": "EntertainmentBusiness",
+    "name": "Pixies Parties",
+    "image": "https://www.pixiesparties.ca/assets/img/logo.webp",
+    "priceRange": "$200 - $320 (Check individual packages for details)",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Calgary",
+      "addressRegion": "AB",
+      "addressCountry": "CA"
+    }
+  },
+  "areaServed": [
+    "@type": "GeoCircle",
+		"geoMidpoint": {
+			"@type": "GeoCoordinates",
+			"latitude": 50.9459945,
+			"longitude": -114.0041518
+		},
+		"geoRadius": 300
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Party Packages",
+    "itemListElement": [
+      {{ item_list_elements }}
+    ]
+  }
+}
+</script>
