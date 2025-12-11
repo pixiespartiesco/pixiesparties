@@ -26,6 +26,9 @@ While our other princesses bring grace and kindness, Fiona brings grit and humor
 - Bravery and Strength: Fiona is tough! She's ready to teach "princess safety" (a fun take on martial arts moves) and lead high-energy outdoor games.
 - Laughter is the Best Magic: Fiona's unique story is hilarious, and her visit is full of funny moments, quick wit, and playful banter, keeping even the shyest guests engaged.
 
+
+![Shrek](/assets/img/articles/shrekdecor.webp "Shrek")
+
 ## Perfect Party Activities for a Fiona Visit
 
 When you book Princess Fiona, you get a dynamic experience tailored to her personality:

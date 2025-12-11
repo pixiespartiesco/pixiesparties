@@ -11,3 +11,4 @@ _site/
 # Bundler/Ruby files to ignore
 .bundle/
 vendor/bundle/
+start_jekyll.bat
