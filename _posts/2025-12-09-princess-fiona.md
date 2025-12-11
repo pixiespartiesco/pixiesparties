@@ -20,6 +20,16 @@ Princess Fiona stands out in the world of fairytales. She's not just waiting in 
 
 While our other princesses bring grace and kindness, Fiona brings grit and humor. She offers a fantastic change of pace, appealing especially to children who love adventure, comedy, and characters who are a little less conventional.
 
+
+## 🏰 Swamp Meets Castle: Decorations
+
+Combine classic castle elements with rustic, mossy swamp vibes to capture Fiona’s dual nature.
+
+- **Shades of Green:** Use dark green, moss green, and brown streamers and balloons to mimic the swamp foliage. Add touches of regal gold or soft princess pink for the castle element.
+- **Fairy Tale Forest:** Drape brown butcher paper or netting from the ceiling and scatter faux leaves or vines on the party table.
+- **Wanted Posters:** Create "Wanted" posters of various fairytale characters (Pinocchio, Three Pigs) and tape them around the party area for a playful touch.
+- **Dragon's Keep:** Use red and yellow balloons or paper cutouts to suggest the presence of a dragon, perhaps guarding the cake or gift table.
+
 ## What Fiona Teaches Kids:
 
 - Self-Acceptance: The most important lesson from her story is that true love means loving yourself, flaws and all. Our performer emphasizes embracing what makes you unique!
@@ -37,6 +47,15 @@ When you book Princess Fiona, you get a dynamic experience tailored to her perso
 - Swamp Storytime: Gathering the kids to recount her adventurous journey from the tower to the swamp, complete with sound effects and dramatic flair.
 - True Love's Sing-Along: A high-energy performance of iconic songs from the Shrek movies that will get everyone singing along.
 
+## 🧅 Shrek's Swampy Feast: Themed Food
+
+Embrace the humor and the green color palette of the swamp for a truly unique menu.
+
+- **Swamp Juice:** Green Hawaiian Punch or lemonade colored with a touch of blue food dye, served with gummy worms ("mud worms") floating inside.
+- **Dragon's Breath Popcorn:** Popcorn mixed with red hots or cinnamon candies for a fiery kick.
+- **Fiona's Fight Club Sandwiches:** Cut finger sandwiches (ham and cheese, turkey) into fun shapes using cookie cutters (stars, shields).
+- **Ogre Ears:** Donut holes or mini bagels dusted with green sugar.
+    
 ## Booking Calgary's Most Adventurous Royal
 
 Choosing Princess Fiona means you’re opting for a celebration of individuality and confidence. Whether your party is indoors or needs a character ready for outdoor castle adventures, Fiona is prepared to make your event unforgettable.
