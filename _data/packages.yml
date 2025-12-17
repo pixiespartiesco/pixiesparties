@@ -5,7 +5,7 @@ packages:
     description: Our most popular package! A fully immersive, extended experience perfect for large parties or those who want the full character experience.
     price: $320 *+gst*
     image: /assets/img/packages/deluxeparty.webp
-    booking_link: https://koalendar.com/e/pixies-parties-deluxe
+    url: https://koalendar.com/e/pixies-parties-deluxe
     features_header: Features
     features:
       - detail: Grand Royal Entrance
@@ -37,7 +37,7 @@ packages:
     description: A classic, hour-long visit packed with essential character activities and memories. Perfect for most birthday parties.
     price: $250 *+gst*
     image: /assets/img/packages/classicparty.webp
-    booking_link: https://koalendar.com/e/pixies-parties-classic
+    url: https://koalendar.com/e/pixies-parties-classic
     features_header: Features
     features:
       - detail: Grand Royal Entrance
@@ -63,7 +63,7 @@ packages:
     description: A simple, seamless way to add live character magic to your event.
     price: $200 *+gst* / hour
     image: /assets/img/packages/meetgreet.webp
-    booking_link: https://koalendar.com/e/pixies-parties-meetgreet
+    url: https://koalendar.com/e/pixies-parties-meetgreet
     features_header: Perfect For
     features:
       - detail: Daycares and preschools
