@@ -12,7 +12,7 @@
         "offers": {
           "@type": "Offer",
           "name": "{{ package.title | escape }} Price",
-          "price": "{{ package.price_placeholder | remove: 'Starting at $' | remove: ' ' }}",
+          "price": "{{ package.price | escape }}",
           "priceCurrency": "CAD"
         }
       }
@@ -42,7 +42,7 @@
       "addressCountry": "CA"
     }
   },
-  "areaServed": [
+  "areaServed": {
     "@type": "GeoCircle",
 		"geoMidpoint": {
 			"@type": "GeoCoordinates",
@@ -50,7 +50,7 @@
 			"longitude": -114.0041518
 		},
 		"geoRadius": 300
-  ],
+  },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Party Packages",

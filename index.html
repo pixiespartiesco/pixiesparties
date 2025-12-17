@@ -3,205 +3,178 @@ layout: default
 title: Calgary's Top Character & Princess Party Service
 permalink: /
 ---
-<div class="container bg-primary text-white" id="about">
-	<h1>
-	  Calgary's Top Character & Princess Party Service
-	</h1>
-	<p>
-	  Whether you’re looking to hire an entertainer for a princess party, a magical adventure, or a fairy tale celebration, we bring the magic to life. Our enchanting characters and captivating performances are perfect for birthday parties, children's events, and more. Discover why we're the best children's entertainers in Calgary and book your unforgettable kids' party today. Let us make your child's special day a magical experience they'll never forget!
-	</p>
-	<div class="row gap-2 m-2">
-	  <a class="col btn btn-secondary" aria-label="characters" href="/characters" style="text-wrap-mode: nowrap;">Characters</a> 
-	  <a class="col btn btn-secondary" aria-label="party packages" href="/packages" style="text-wrap-mode: nowrap;">Party Packages</a> 
-	  <a class="col btn btn-secondary" aria-label="cancellation policy" href="/cancellation" target="_blank" style="text-wrap-mode: nowrap;">Cancellation Policy</a> 
-	  <a class="col btn btn-secondary" aria-label="frequently asked questions" href="/faq" target="_blank" style="text-wrap-mode: nowrap;">FAQ</a>
-	</div>
-	<div class="card w-80 bg-white text-secondary">	
-		<div class="row g-0 p-2">
-			<div class="col-12 col-md-8" style="align-content: center;padding: 2rem;">
-				<h2 class="card-title">2026 Ties and Tiaras Ball</h2>
-				<p>Step into a magical world of fun and fantasy at the <strong>Ties and Tiaras Ball!</strong> Join us on <strong>Saturday, April 18th, 2026</strong>, from <strong>3:00 PM to 5:00 PM</strong> at Riverbend Community Association, for an unforgettable afternoon filled with joy and family-friendly activities.</p>
-				<a class="btn btn-secondary c1 mt-4" aria-label="book now" target="_blank" href="events">Tickets Available Now!</a>
-			</div>
-			<div class="col-12 col-md-4">
-			  <div id="carouselExample" class="carousel slide rounded-start carousel-fade" data-bs-ride="carousel">
-				  <div class="carousel-inner">
-					<div class="carousel-item active">
-					  <img src="/assets/img/events/tiestiaras1.webp" class="d-block w-100" alt="Ties and Tiaras Ball 2026">
-					</div>
-					<div class="carousel-item">
-					  <img src="/assets/img/events/ttb3.webp" class="d-block w-100" alt="Ties and Tiaras Ball 2026">
-					</div>
-					<div class="carousel-item">
-					  <img src="/assets/img/events/ttb2.webp" class="d-block w-100" alt="Ties and Tiaras Ball 2026">
-					</div>
-					<div class="carousel-item">
-					  <img src="/assets/img/events/ttb1.webp" class="d-block w-100" alt="Ties and Tiaras Ball 2026">
-					</div>
-					<div class="carousel-item">
-					  <img src="/assets/img/events/ttb4.webp" class="d-block w-100" alt="Ties and Tiaras Ball 2026">
-					</div>
-				  </div>
-				  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				  </button>
-				  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				  </button>
-				</div>
-			</div>
-		</div>
-  </div>
-</div> 
-
-<hr class="section-divider">
-
-<div class="container bg-primary text-white" id="characters">
-	<div class="text-center">
-		<h1 class="page-section-heading d-inline-block">
-		 <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i> Characters <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i>
+<div  data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0">
+	<div class="container bg-primary text-white" id="about">
+		<h1>
+		  Calgary's Top Character & Princess Party Service
 		</h1>
-	</div>
-	<div class="container d-flex align-items-center flex-column">
-	<p>
-	  Meet our enchanting cast of characters, ready to make your child’s party a magical experience! From the timeless charm of princesses like Belle and Cinderella to the adventurous spirit of pirates, the mystical allure of witches, the whimsical wonder of fairies, and the glamour of Barbie, we have the perfect character for every celebration. Each performer brings their unique magic to life, creating unforgettable moments and captivating the imaginations of children across Calgary. Explore our lineup and find the perfect star for your next party!
-	</p>
-	<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-5 g-4 justify-content-md-center">
-	  {% for c in site.characters %}
-		  <div class="col">
-			  <div class=" card h-100 border-0  bg-white text-secondary">
-				<a  href="{{ c.url }}"><img src="{{ c.img1 }}" class="card-img-top" alt="{{ c.keywords }}"></a>
-				<div class="card-body">
-				  <h2 class="card-title">
-					{{ c.name }}
-				  </h2>
-				  <p>{{ c.summary }}</p>
-				</div>
-				<div class="card-footer text-end  bg-transparent border-0">
-				<a  href="{{ c.url }}">more...</a>
-				</div>
-			  </div>
-		  </div>
-	{% endfor %}
-	</div>
-
-	<!--        <div class="row w-100 justify-content-center col">
-	  <a class="btn btn-secondary c1" style="margin-top: 12px;" aria-label="book your party today" href="index#booking">Book Your Party Today!</a>
-	</div> -->
-	</div>
-</div>
-
-<hr class="section-divider">
-
-<div class="container bg-primary text-white" id="packages">
-	<div class="text-center" id="booking">
-		<h2 class="page-section-heading d-inline-block">
-		  <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i> Party Packages <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i>
-		</h2>
-	</div>
-	<div class="container d-flex align-items-center flex-column">
 		<p>
-		  Our party packages are crafted to make your little one's special day truly enchanting. Choose from a treasure trove of
-		  themes, including princess extravaganzas, wizardry wonders, and high-seas adventures. Dive into a world where imagination
-		  knows no bounds, and every party is a personalized masterpiece. We sprinkle our events with a pinch of pixie dust to
-		  ensure your child's joy is as boundless as the Alberta skies. From captivating characters to whimsical wonders, Pixies
-		  Parties is your ticket to unforgettable celebrations in Calgary. Let's turn moments into memories – book your party
-		  today and let the enchantment begin!
+		  Whether you’re looking to hire an entertainer for a princess party, a magical adventure, or a fairy tale celebration, we bring the magic to life. Our enchanting characters and captivating performances are perfect for birthday parties, children's events, and more. Discover why we're the best children's entertainers in Calgary and book your unforgettable kids' party today. Let us make your child's special day a magical experience they'll never forget!
 		</p>
-		<div class="row justify-content-md-center g-2" id="birthdayparty">
-			{% for post in site.data.packages.packages %}
-				<div class="col-12 col-md-6 col-lg-4 col-xl-3">
-					<div class="card p-1 h-100 bg-white text-secondary">
-						<img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
-						<div class="card-header bg-white">
-						<h3 class="card-title">{{ post.title }}</h3>
-							<h4 class="card-subtitle">{{ post.duration }}</h4>
-							<h5 class="card-subtitle">{{ post.price | markdownify }}</h5>
+		<div class="row gap-2 m-2">
+		  <a class="col btn btn-secondary" aria-label="characters" href="#characters" style="text-wrap-mode: nowrap;">Characters</a> 
+		  <a class="col btn btn-secondary" aria-label="party packages" href="#packages" style="text-wrap-mode: nowrap;">Party Packages</a> 
+		  <a class="col btn btn-secondary" aria-label="check availability" href="#booking" style="text-wrap-mode: nowrap;">Check Availability</a> 
+		  <a class="col btn btn-secondary" aria-label="cancellation policy" href="/cancellation" target="_blank" style="text-wrap-mode: nowrap;">Cancellation Policy</a> 
+		  <a class="col btn btn-secondary" aria-label="frequently asked questions" href="/faq" target="_blank" style="text-wrap-mode: nowrap;">FAQ</a>
+		</div>
+		<div class="card w-80 bg-white text-secondary">	
+			<div class="row g-0 p-2">
+				<div class="col-12 col-md-8" style="align-content: center;padding: 2rem;">
+					<h2 class="card-title">2026 Ties and Tiaras Ball</h2>
+					<p>Step into a magical world of fun and fantasy at the <strong>Ties and Tiaras Ball!</strong> Join us on <strong>Saturday, April 18th, 2026</strong>, from <strong>3:00 PM to 5:00 PM</strong> at Riverbend Community Association, for an unforgettable afternoon filled with joy and family-friendly activities.</p>
+					<a class="btn btn-secondary c1 mt-4" aria-label="book now" target="_blank" href="events">Tickets Available Now!</a>
+				</div>
+				<div class="col-12 col-md-4">
+				  <div id="carouselExample" class="carousel slide rounded-start carousel-fade" data-bs-ride="carousel">
+					  <div class="carousel-inner">
+						<div class="carousel-item active">
+						  <img src="/assets/img/events/tiestiaras1.webp" class="d-block w-100" alt="Ties and Tiaras Ball 2026">
 						</div>
-						<div class="card-body">
-							<p class="card-subtitle">{{ post.description }}</p>		
-							<ul class="list-unstyled mt-3 mb-4 text-start mx-auto">
-								{% for f in post.features %}
-									<li class="mb-2">{{ f.icon }} {{ f.detail }}</li>
-								{% endfor %}
-							</ul>
+						<div class="carousel-item">
+						  <img src="/assets/img/events/ttb3.webp" class="d-block w-100" alt="Ties and Tiaras Ball 2026">
 						</div>
-						<div class="card-footer bg-white">
-							<a class="btn btn-secondary c1 mt-4" aria-label="book now" target="_blank" href="{{ post.url }}">Book Now!</a>
+						<div class="carousel-item">
+						  <img src="/assets/img/events/ttb2.webp" class="d-block w-100" alt="Ties and Tiaras Ball 2026">
+						</div>
+						<div class="carousel-item">
+						  <img src="/assets/img/events/ttb1.webp" class="d-block w-100" alt="Ties and Tiaras Ball 2026">
+						</div>
+						<div class="carousel-item">
+						  <img src="/assets/img/events/ttb4.webp" class="d-block w-100" alt="Ties and Tiaras Ball 2026">
 						</div>
 					  </div>
-				</div>
-			{% endfor %}		
-		</div>			      
-	</div>
-</div>
-
-<hr class="section-divider">
-
-<div class="container" id="addons">
-	<div class="text-center">
-		<h2 class="page-section-heading d-inline-block">
-		  <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i> Add-Ons <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i>
-		</h2>
-	</div>
-	<div class="row justify-content-md-center g-2">
-		{% for post in site.data.packages.addons %}
-			<div class="col-12 col-md-6 col-lg-4 col-xl-3">
-				<div class="card p-1 h-100 bg-white text-secondary">
-				  <img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
-				  <div class="card-body">
-					<h3 class="card-title">{{ post.title }}</h3>
-					<p class="card-text">{{ post.description | markdownify }}</p>
-					<h5 class="card-title">{{ post.price | markdownify }}</h5>
-				  </div>
-				  <div class="card-footer  bg-white text-secondary border-0">
-					{% if post.url %}
-						<a class="btn btn-secondary w-100" aria-label="more info" href="{{ post.url }}" >{{ post.linktext }}</a>
-					{% endif %}
-				  </div>
+					  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					  </button>
+					</div>
 				</div>
 			</div>
-		
-		{% endfor %}		       
+	  </div>
+	</div> 
+
+	<hr class="section-divider">
+
+	<div class="container bg-primary text-white" id="characters">
+		<div class="text-center">
+			<h1 class="page-section-heading d-inline-block">
+			 <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i> Characters <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i>
+			</h1>
+		</div>
+		<div class="container d-flex align-items-center flex-column">
+		<p>
+		  Meet our enchanting cast of characters, ready to make your child’s party a magical experience! From the timeless charm of princesses like Belle and Cinderella to the adventurous spirit of pirates, the mystical allure of witches, the whimsical wonder of fairies, and the glamour of Barbie, we have the perfect character for every celebration. Each performer brings their unique magic to life, creating unforgettable moments and captivating the imaginations of children across Calgary. Explore our lineup and find the perfect star for your next party!
+		</p>
+		<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-5 g-4 justify-content-md-center">
+		  {% for c in site.characters %}
+			  <div class="col">
+				  <div class=" card h-100 border-0  bg-white text-secondary">
+					<a  href="{{ c.url }}"><img src="{{ c.img1 }}" class="card-img-top" alt="{{ c.keywords }}"></a>
+					<div class="card-body">
+					  <h2 class="card-title">
+						{{ c.name }}
+					  </h2>
+					  <p>{{ c.summary }}</p>
+					</div>
+					<div class="card-footer text-end  bg-transparent border-0">
+					<a  href="{{ c.url }}">more...</a>
+					</div>
+				  </div>
+			  </div>
+		{% endfor %}
+		</div>
+
+		<!--        <div class="row w-100 justify-content-center col">
+		  <a class="btn btn-secondary c1" style="margin-top: 12px;" aria-label="book your party today" href="index#booking">Book Your Party Today!</a>
+		</div> -->
+		</div>
 	</div>
-</div>
 
-<hr class="section-divider">
+	<hr class="section-divider">
 
-<!-- <div class="container bg-primary text-white" id="booking">
-<div class="text-center">
-<h2 class="page-section-heading d-inline-block">
-  <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i> Book Your Party <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i>
-</h2>
-</div>
-<div class="container d-flex align-items-center flex-column">
-<p>
-  Booking a Pixies Party is as easy as waving your magic wand! 
-  We offer a simple and hassle-free process to bring magic to your child’s special day. 
-  Start by exploring our variety of party packages and selecting the one that best fits your needs. 
-  You can easily see our availability in the booking form, no need to send an email!
-  Once you've chosen your package, fill out our easy online booking form with your details and character selection. 
-  Our team will confirm your reservation and take care of the rest, ensuring a seamless and stress-free experience. 
-  Let us handle the details so you can focus on enjoying the celebration!
-</p>
-<div class="row gap-2 m-2">
-  <a class="col btn btn-secondary" aria-label="characters" href="#characters" style="text-wrap-mode: nowrap;">Characters</a> 
-  <a class="col btn btn-secondary" aria-label="party packages" href="#packages" style="text-wrap-mode: nowrap;">Party Packages</a> 
-  <a class="col btn btn-secondary" aria-label="cancellation policy" href="cancellation" target="_blank" style="text-wrap-mode: nowrap;">Cancellation Policy</a> 
-  <a class="col btn btn-secondary" aria-label="frequently asked questions" href="faq" target="_blank" style="text-wrap-mode: nowrap;">FAQ</a>
-  <a class="col btn btn-secondary" aria-label="contact" href="/contact" target="_blank" style="text-wrap-mode: nowrap;">Contact</a>
-</div>
-</div>
-<div class="container">
-<div class="text-center">
-	<iframe src="https://koalendar.com/e/pixies-parties-booking?embed=true" width="100%" height="800px" frameborder="0"></iframe>
-</div>
-</div>
-</div>
+	<div class="container bg-primary text-white" id="packages">
+		<div class="text-center">
+			<h2 class="page-section-heading d-inline-block">
+			  <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i> Party Packages <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i>
+			</h2>
+		</div>
+		<div class="container d-flex align-items-center flex-column">
+			<p>
+			  Our party packages are crafted to make your little one's special day truly enchanting. Choose from a treasure trove of
+			  themes, including princess extravaganzas, wizardry wonders, and high-seas adventures. Dive into a world where imagination
+			  knows no bounds, and every party is a personalized masterpiece. We sprinkle our events with a pinch of pixie dust to
+			  ensure your child's joy is as boundless as the Alberta skies. From captivating characters to whimsical wonders, Pixies
+			  Parties is your ticket to unforgettable celebrations in Calgary. Let's turn moments into memories – book your party
+			  today and let the enchantment begin!
+			</p>
+			<div class="row justify-content-md-center g-2" id="birthdayparty">
+				{% for post in site.data.packages.packages %}
+					<div class="col-12 col-lg-4 col-xl-3">
+						<div class="card p-1 h-100 bg-white text-secondary">
+							<img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
+							<div class="card-header bg-white">
+							<h3 class="card-title">{{ post.title }}</h3>
+								<h4 class="card-subtitle">{{ post.duration }}</h4>
+								<h5 class="card-subtitle">{{ post.price | markdownify }}</h5>
+							</div>
+							<div class="card-body">
+								<p class="card-subtitle">{{ post.description }}</p>		
+								<ul class="list-unstyled mt-3 mb-4 text-start mx-auto">
+									{% for f in post.features %}
+										<li class="mb-2">{{ f.icon }} {{ f.detail }}</li>
+									{% endfor %}
+								</ul>
+							</div>
+							<!-- <div class="card-footer bg-white">
+								<a class="btn btn-secondary c1 mt-4" aria-label="book now" target="_blank" href="{{ post.url }}">Book Now!</a>
+							</div> -->
+						  </div>
+					</div>
+				{% endfor %}		
+			</div>			      
+		</div>
+	</div>
 
-<hr class="section-divider">
--->
+	<hr class="section-divider">
 
-{% include reviews.html %}
+	<div class="container" id="addons">
+		<div class="text-center">
+			<h2 class="page-section-heading d-inline-block">
+			  <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i> Add-Ons <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i>
+			</h2>
+		</div>
+		<div class="row justify-content-md-center g-2">
+			{% for post in site.data.packages.addons %}
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+					<div class="card p-1 h-100 bg-white text-secondary">
+					  <img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
+					  <div class="card-body">
+						<h3 class="card-title">{{ post.title }}</h3>
+						<p class="card-text">{{ post.description | markdownify }}</p>
+						<h5 class="card-title">{{ post.price | markdownify }}</h5>
+					  </div>
+					  <div class="card-footer  bg-white text-secondary border-0">
+						{% if post.url %}
+							<a class="btn btn-secondary w-100" aria-label="more info" href="{{ post.url }}" >{{ post.linktext }}</a>
+						{% endif %}
+					  </div>
+					</div>
+				</div>
+			
+			{% endfor %}		       
+		</div>
+	</div>
+
+	<hr class="section-divider">
+
+	{% include bookingsection.html %}
+
+	<hr class="section-divider">
+
+	{% include reviews.html %}
+</div>

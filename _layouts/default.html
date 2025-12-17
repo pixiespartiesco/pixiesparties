@@ -8,13 +8,11 @@
 	{% include scripts.html %} 
 	{% include schema.html %} 	
   </head>
-  <body id="page-top" class="bg-primary text-white">
+  <body id="page-top" class="bg-primary text-white d-flex flex-column min-vh-100">
 	{% include navbar.html %} 	
 	{% include masthead.html %} 	
     
-    <section>
-      {{ content }}
-    </section>
+	{{ content }}
 	{% include footer.html %} 
   </body>
 </html>

@@ -3,7 +3,11 @@ packages:
     title: Deluxe Party Package
     duration: 90 Minutes
     description: Our most popular package! A fully immersive, extended experience perfect for large parties or those who want the full character experience.
-    price: $320 *+gst*
+    details: | 
+      The **Deluxe Package** is the ultimate immersive experience. \
+      The additional 30 minutes allows for *Glitter Tattoos* (a sparkly favourite for boys and girls) and the prestigious *Coronation Ceremony*. During the ceremony, the birthday child calls up their friends, makes a royal promise, and receives a keepsake tiara or hero cape to keep forever. \
+      We highly recommend this package for groups larger than 10 children, as it ensures the performer has enough time to give every single guest a moment of individual attention without rushing.
+    price: $320
     image: /assets/img/packages/deluxeparty.webp
     url: https://koalendar.com/e/pixies-parties-deluxe
     features_header: Features
@@ -34,8 +38,12 @@ packages:
   - id: classic_package
     title: Classic Party Package
     duration: 60 Minutes
-    description: A classic, hour-long visit packed with essential character activities and memories. Perfect for most birthday parties.
-    price: $250 *+gst*
+    description: A classic, hour-long visit packed with essential character activities and memories. Perfect for most birthday parties.    
+    details: | 
+      Our **Classic Package** is designed to be the *sweet spot* for children's attention spans, particularly for ages 3 to 6. \
+      It is a non-stop hour of entertainment where the character takes full charge of the party guests. We transition quickly from high-energy entrances to focused storytime and interactive songs, ensuring no child gets bored. \
+      This package is ideal if you have other activities planned (like a bouncy castle or opening presents) and want the character to be the highlight of the middle of your event.
+    price: $250
     image: /assets/img/packages/classicparty.webp
     url: https://koalendar.com/e/pixies-parties-classic
     features_header: Features
@@ -61,7 +69,11 @@ packages:
     title: Character Meet and Greet
     duration: 45 minutes - 3 hours
     description: A simple, seamless way to add live character magic to your event.
-    price: $200 *+gst* / hour
+    details: | 
+      Planning a community festival, stampede breakfast, or grand opening? Our **Meet & Greet** service is structurally different from our birthday packages. \
+      Instead of a set timeline of activities, the character manages a queue or roams the crowd to maximize the number of guest interactions. This ensures hundreds of guests can have a chance to meet the character. \
+      *Please note: This option does not include games, crafts, or audio equipment.*
+    price: $200 / hour
     image: /assets/img/packages/meetgreet.webp
     url: https://koalendar.com/e/pixies-parties-meetgreet
     features_header: Perfect For
@@ -92,7 +104,7 @@ addons:
     title: Virtual Visit
     duration: 30 Minutes
     description: You can bring the joy and wonder of our beloved characters straight to your screen. Guests will enjoy a character meet & greet, interactive story time and sing-along!
-    price: $80 *+gst*
+    price: $80
     image: /assets/img/packages/virtualvisit.webp
     linktext: Book Now
     url: https://koalendar.com/e/virtual-visit
@@ -115,7 +127,7 @@ addons:
   - id: addon_backdrop
     title: Castle Photo Backdrop
     description: Our pixies will come early before your party to setup the 8' x 10' backdrop.
-    price: $80 *+gst*
+    price: $80
     image: /assets/img/addons/castlebackdrop.webp
     linktext: Book Now
     url: https://koalendar.com/e/photo-backdrop

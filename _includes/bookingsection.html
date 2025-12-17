@@ -1,0 +1,117 @@
+<div class="container bg-primary text-white" id="booking">
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold">Book Your Party Entertainment</h1>
+        <p></p>
+    </div>
+
+	<div>
+		<h2>Step 1: Choose Your Party Package</h2>
+		<p>
+			Select the perfect package for your magical event below. Once selected, our calendar will load for you to choose a date!
+		</p>
+		<!-- MAIN PACKAGES ROW -->
+		<div class="row justify-content-md-center g-2" id="package-selector">
+			{% for package in site.data.packages.packages %}
+				<div class="col-4" >
+					<div id="{{ package.id }}" class="card package-card p-1 h-100 bg-white text-secondary" data-koalendar-url="{{ package.url }}">
+						<div class="card-header bg-white">
+							<h3 class="card-title">{{ package.title }}</h3>
+							<h4 class="card-subtitle">{{ package.duration }}</h4>
+							<h5 class="card-subtitle">{{ package.price | markdownify }}</h5>
+						</div>
+						<div class="card-body">
+							<p class="card-subtitle">{{ package.description }}</p>						
+						</div>
+						<div class="card-footer bg-white">
+							<a class="btn btn-secondary c1 mt-4" aria-label="book now" href="#calendar-section">Book {{ package.name }}</a>
+						</div>
+					  </div>
+				</div>
+			{% endfor %}        
+		</div>
+	<!-- Calendar Section -->
+        <div id="calendar-section">
+            <h2 id="calendar-header">
+                Step 2: Check Availability
+            </h2>
+            
+            <!-- Koalendar Iframe Container -->
+            <div id="calendar-container" class="hidden" class="mx-auto rounded-xl shadow-2xl overflow-hidden bg-white">
+                <iframe 
+                    id="koalendar-iframe" 
+                    src="" 
+                    frameborder="0" 
+                    width="100%" 
+                    height="100%" style="min-height: 800px;"
+                    title="Koalendar Booking Calendar"
+                ></iframe>
+            </div>
+			<div id="calendar-msg" class="mx-auto rounded-xl shadow-2xl text-secondary overflow-hidden bg-white">
+                <h3> Choose a package to see availability</h3>
+            </div>
+
+            <p class="text-center">
+                *The calendar above displays real-time availability for the selected package.
+            </p>
+        </div>
+
+	</div>
+</div>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const packageSelector = document.getElementById('package-selector');
+		const calendarSection = document.getElementById('calendar-container');
+		const calendarMessage = document.getElementById('calendar-msg');
+		const koalendarIframe = document.getElementById('koalendar-iframe');
+		const messageBox = document.getElementById('message-box');
+		
+		// Function to display a temporary message
+		function showMessage(text) {
+			messageBox.textContent = text;
+			messageBox.style.opacity = '1';
+			messageBox.style.pointerEvents = 'auto';
+			setTimeout(() => {
+				messageBox.style.opacity = '0';
+				messageBox.style.pointerEvents = 'none';
+			}, 3000);
+		}
+
+		packageSelector.addEventListener('click', (event) => {
+			let targetCard = event.target.closest('.package-card');
+			
+			// If the click wasn't on a package card, or was on the general grid area, ignore.
+			if (!targetCard) {
+				return; 
+			}
+
+			// 1. Remove 'selected' class from all cards
+			document.querySelectorAll('.package-card').forEach(card => {
+				card.classList.remove('selected-card');
+			});
+
+			// 2. Add 'selected' class to the clicked card
+			targetCard.classList.add('selected-card');
+
+			// 3. Get the Koalendar URL
+			const koalendarUrl = targetCard.getAttribute('data-koalendar-url');
+			
+			if (koalendarUrl) {
+				// 4. Update the iframe source
+				koalendarIframe.src = koalendarUrl;
+
+				// 5. Show the calendar section if hidden
+				calendarSection.classList.remove('hidden');
+				calendarMessage.classList.add('hidden');
+
+				// 6. Scroll smoothly to the calendar header for visibility
+				const calendarHeader = document.getElementById('calendar-header');
+				if (calendarHeader) {
+					calendarHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
+				}
+			} else {
+				showMessage("Error: Booking link not found for this package.");
+				console.error("Koalendar URL not found for selected package.");
+			}
+		});
+	});
+</script>
