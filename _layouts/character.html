@@ -9,33 +9,88 @@
 	
 	{% include scripts.html %} 
 	<script type="application/ld+json">
-	{
-	  "@context": "https://schema.org/",
-	  "@type": "Product",
-	  "name": "Hire {{ page.name }} Character in Calgary",
-	  "image": [
-		"{{ site.url }}{{ page.img1 }}"
-	   ],
-	  "description": "{{ page.summary }}",
-	  "sku": "CHAR-{{ page.name | slugify | upcase }}",
-	  "brand": {
-		"@type": "EntertainmentBusiness",
-		"name": "{{ site.title | default: 'Pixies Parties' }}"
-	  },
-	  "offers": {
-		"@type": "Offer",
-		"url": "{{ site.url }}{{ page.url }}",
-		"priceCurrency": "CAD",
-		"price": "250.00",
-		"priceValidUntil": "2026-12-31",
-		"itemCondition": "https://schema.org/NewCondition",
-		"availability": "https://schema.org/InStock",
-		"seller": {
-		  "@type": "Organization",
-		  "name": "Pixies Parties"
+		{% assign packages = site.data.packages.packages %}
+		{% assign item_list_elements = "" %}
+		{% for package in packages %}
+		  {% capture offer_item %}
+			{
+			  "@type": "Offer",
+			  "itemOffered": {
+				"@type": "Service",
+				"name": "{{ package.title | escape }}",
+				"description": "{{ package.description | escape }} ({{ package.duration }} of entertainment). Features include: {{ package.features | map: 'detail' | join: ', ' | escape }}",
+				"offers": {
+				  "@type": "Offer",
+				  "name": "{{ package.title | escape }} Price",
+				  "price": "{{ package.price | escape }}",
+				  "priceCurrency": "CAD"
+				}
+			  }
+			}
+		  {% endcapture %}
+		  {% assign item_list_elements = item_list_elements | append: offer_item %}
+		  {% unless forloop.last %}
+			{% assign item_list_elements = item_list_elements | append: ", " %}
+		  {% endunless %}
+		{% endfor %}
+		
+		{% assign reviews = site.data.reviews %}
+		{% assign total_rating = 0.0 %}
+		{% assign review_count = reviews.size %}
+
+		{% for review in reviews %}
+		  {% assign total_rating = total_rating | plus: review.rating %}
+		{% endfor %}
+
+		{% if review_count > 0 %}
+		  {% assign average_rating = total_rating | divided_by: review_count | round: 1 %}
+		{% else %}
+		  {% assign average_rating = 0 %}
+		{% endif %}
+	  {
+		  "@context": "https://schema.org/",
+		  "@type": "Service",
+		  "serviceType": "Character Appearance",
+		  "name": "{{ page.title }} Party Appearance",
+		  "description": "{{ page.subtitle }}",
+		  "image": "{{ site.url }}{{ page.img1 }}",
+		  "provider": {
+			"@type": "LocalBusiness",
+			"name": "Pixie Parties"
+		  },
+		  "areaServed": "Calgary",
+		  "hasOfferCatalog": {
+			"@type": "OfferCatalog",
+			"name": "Party Packages",
+			"itemListElement": [
+			  {{ item_list_elements }}
+			]
+		  },
+		  "aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingValue": "{{ average_rating }}",
+			"bestRating": "5",
+			"worstRating": "1",
+			"ratingCount": "{{ review_count }}"
+		  },
+		  "review": [
+			{% for review in reviews limit: 15 %}
+			{
+			  "@type": "Review",
+			  "author": {
+				"@type": "Person",
+				"name": "{{ review.name }}"
+			  },
+			  "datePublished": "{{ review.date }}",
+			  "reviewBody": "{{ review.text | strip_newlines | escape }}",
+			  "reviewRating": {
+				"@type": "Rating",
+				"ratingValue": "{{ review.rating }}"
+			  }
+			}{% unless forloop.last %},{% endunless %}
+			{% endfor %}
+		  ]
 		}
-	  }
-	}
 	</script>
 </head>
 <body class="bg-primary">
