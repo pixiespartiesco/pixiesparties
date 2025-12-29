@@ -32,21 +32,7 @@
 		  {% unless forloop.last %}
 			{% assign item_list_elements = item_list_elements | append: ", " %}
 		  {% endunless %}
-		{% endfor %}
-		
-		{% assign reviews = site.data.reviews %}
-		{% assign total_rating = 0.0 %}
-		{% assign review_count = reviews.size %}
-
-		{% for review in reviews %}
-		  {% assign total_rating = total_rating | plus: review.rating %}
-		{% endfor %}
-
-		{% if review_count > 0 %}
-		  {% assign average_rating = total_rating | divided_by: review_count | round: 1 %}
-		{% else %}
-		  {% assign average_rating = 0 %}
-		{% endif %}
+		{% endfor %}		
 	  {
 		  "@context": "https://schema.org/",
 		  "@type": "Service",
@@ -72,24 +58,7 @@
 			"bestRating": "5",
 			"worstRating": "1",
 			"ratingCount": "{{ review_count }}"
-		  },
-		  "review": [
-			{% for review in reviews limit: 15 %}
-			{
-			  "@type": "Review",
-			  "author": {
-				"@type": "Person",
-				"name": "{{ review.name }}"
-			  },
-			  "datePublished": "{{ review.date }}",
-			  "reviewBody": "{{ review.text | strip_newlines | escape }}",
-			  "reviewRating": {
-				"@type": "Rating",
-				"ratingValue": "{{ review.rating }}"
-			  }
-			}{% unless forloop.last %},{% endunless %}
-			{% endfor %}
-		  ]
+		  }		  
 		}
 	</script>
 </head>
