@@ -472,6 +472,12 @@ b, strong {
 	display: inline-block;
 	padding: 0;
 }
+.article-body ol {
+	padding-left: 1.5rem; /* Adjust this value to control the indent of the entire list item */
+	text-align: left;
+	display: inline-block;
+	padding: 0;
+}
 .aritcle-body li {
 	padding-left: 2em; /* Adjust this value to control the indent depth */
 	text-indent: -2em; /* This negative value should match the padding-left */
