@@ -4,11 +4,11 @@ title: "Swinging into Action"
 subtitle: "Hosting a Spider-Gwen Themed Birthday Party for Kids!"
 permalink: /articles/swinging-into-action/
 img1: "/assets/img/articles/gwen1.webp"
-date: 2024-03-07
+date: 2024-08-07
 ---
 <h1 class="m-1">Swinging into Action </h1>
 <h3 class="m-1">Hosting a Spider-Gwen Themed Birthday Party for Kids! </h3>
-<h5 class="m-1 text-muted">March 7, 2024 </h5>
+<h5 class="m-1 text-muted">August 7, 2024 </h5>
 <img src="/assets/img/articles/gwen1.webp" class="img-fluid rounded mx-auto d-block w-75">
 <p>Get ready to swing into action and join us for an epic Spider-Gwen themed birthday party that's sure to be a web-slinging sensation! Join forces with the fearless Spider-Gwen and embark on a heroic adventure filled with excitement, empowerment, and unforgettable moments that will have every young guest feeling like a superhero.<br/><br/>
 
