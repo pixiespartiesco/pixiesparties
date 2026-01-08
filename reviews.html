@@ -13,22 +13,30 @@ description: See why Calgary parents give us 5 stars! Read real reviews about ou
         <p>
           See why Calgary parents give us 5 stars! Read real reviews about our professional performers, beautiful costumes, and the magic we bring to every birthday.
         </p>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-5 g-4 justify-content-md-center">
+        <div class="row row-cols-1 g-4 justify-content-md-center">
 		
 			{% for post in site.data.reviews %}
 				  <div class="col">
 					  <div class=" card h-100 border-0  bg-white text-secondary">
-						<a  href="{{ c.url }}"><img src="{{ c.img1 }}" class="card-img-top" alt="{{ c.keywords }}"></a>
-						<div class="card-body">
-							<h4 class="card-title">{{ post.name }}</h4>
-							<h5 class="card-subtitle mb-2 text-body-white">{{ post.date | date: "%B %d" }}</h5>
-							{% for s in (1..post.rating) %}
-								<i class="fa-solid fa-star" style="vertical-align: baseline;color: gold;" ></i>
-							{% endfor %}
-							{{ s.rating}}
-							</h5>
-							<p class="card-text">{{ post.text | truncatewords: 30 }}</p>
-						</div>
+						  <div class="card mb-3">
+							  <div class="row gy-0">
+								<div class="col-md-4">
+									<h4 class="card-title">{{ post.name }}</h4>
+									<h5 class="card-subtitle mb-2 text-body-white">{{ post.date | date: "%B %d %Y" }}</h5>
+									{% for s in (1..post.rating) %}
+										<i class="fa-solid fa-star" style="vertical-align: baseline;color: gold;" ></i>
+									{% endfor %}
+									{{ s.rating}}
+									</h5>
+								</div>
+								<div class="col-md-6">
+								  <div class="card-body">
+									<p class="card-text">{{ post.text }}</p>
+								  </div>
+								</div>
+							  </div>
+							</div>
+						
 						<div class="card-footer text-end  bg-transparent border-0">
 						<a href="https://maps.app.goo.gl/SuBtJsi9FTQ4v3bPA" target="_blank" class="stretched-link">See more</a>
 						</div>
