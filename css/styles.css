@@ -524,3 +524,17 @@ b, strong {
     --tw-bg-opacity: 1;
     background-color: rgb(250 245 255 / var(--tw-bg-opacity, 1));
 }
+
+.contact-sidebar {
+    background: linear-gradient(135deg, #fce7f3 0%, var(--bs-quaternary-rgb) 150%);
+    color: var(--bs-dark);
+    padding: 3rem;
+}
+
+.contact-card {
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    color: var(--bs-dark);
+}
