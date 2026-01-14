@@ -1,60 +1,62 @@
 <div class="container bg-primary text-white" id="booking">
-    <div class="text-center mb-5">
-        <h2 class="display-4 fw-bold">Book Your Party Entertainment</h2>
-        <p></p>
-    </div>
+	<div class="text-center mb-5">
+		<h2 class="display-4 fw-bold">Book Your Party Entertainment</h2>
+		<p></p>
+	</div>
 
 	<div>
 		<h3>Step 1: Choose Your Party Package</h3>
 		<p>
-			Select the perfect package for your magical event below. Once selected, our calendar will load for you to choose a date!
+			Select the perfect package for your magical event below. Once selected, our calendar will load for you to
+			choose a date!
 		</p>
 		<!-- MAIN PACKAGES ROW -->
 		<div class="row justify-content-md-center g-2" id="package-selector">
 			{% for package in site.data.packages.packages %}
-				<div class="col-12 col-md-4" >
-					<div id="{{ package.id }}" class="card package-card p-1 h-100 bg-white text-secondary" data-koalendar-url="{{ package.url }}">
-						<div class="card-header bg-white">
-							<h3 class="card-title">{{ package.title }}</h3>
-							<h4 class="card-subtitle">{{ package.duration }}</h4>
-							<h5 class="card-subtitle">{{ package.price | markdownify }}</h5>
-						</div>
-						<div class="card-body">
-							<p class="card-subtitle">{{ package.description }}</p>						
-						</div>
-						<div class="card-footer bg-white">
-							<a class="btn btn-secondary c1 mt-4" aria-label="book now" href="#calendar-section">Book {{ package.name }}</a>
-						</div>
-					  </div>
+			<div class="col-12 col-md-4">
+				<div id="{{ package.id }}" class="card package-card p-1 h-100 bg-white text-secondary"
+					data-koalendar-url="{{ package.url }}">
+					<div class="card-header bg-white">
+						<h3 class="card-title">{{ package.title }}</h3>
+						<h4 class="card-subtitle">{{ package.duration }}</h4>
+						<h5 class="card-subtitle">{{ package.price | markdownify }}</h5>
+					</div>
+					<div class="card-body">
+						<p class="card-subtitle">{{ package.description }}</p>
+					</div>
+					<div class="card-footer bg-white">
+						<a class="btn btn-secondary c1 mt-4" aria-label="book now" href="#calendar-section">Book {{
+							package.name }}</a>
+					</div>
 				</div>
-			{% endfor %}        
+			</div>
+			{% endfor %}
 		</div>
-	<!-- Calendar Section -->
-        <div id="calendar-section">
-            <h3 id="calendar-header">
-                Step 2: Check Availability
-            </h3>
-            
-            <!-- Koalendar Iframe Container -->
-            <div id="calendar-container" class="hidden" class="mx-auto rounded-xl shadow-2xl overflow-hidden bg-white">
-                <iframe 
-                    id="koalendar-iframe" 
-                    src="" 
-                    frameborder="0" 
-                    width="100%" 
-                    height="100%" style="min-height: 800px;"
-                    title="Koalendar Booking Calendar"
-                ></iframe>
-            </div>
+		<!-- Calendar Section -->
+		<div id="calendar-section">
+			<h3 id="calendar-header">
+				Step 2: Check Availability
+			</h3>
+
+			<!-- Koalendar Iframe Container -->
+			<div id="calendar-container" class="hidden" class="mx-auto rounded-xl shadow-2xl overflow-hidden bg-white">
+				<iframe id="koalendar-iframe" src="" frameborder="0" width="100%" height="100%"
+					style="min-height: 800px;" title="Koalendar Booking Calendar"></iframe>
+			</div>
 			<div id="calendar-msg" class="mx-auto rounded-xl shadow-2xl text-secondary overflow-hidden bg-white">
-                <h3> Choose a package to see availability</h3>
-            </div>
+				<h3> Choose a package to see availability</h3>
+			</div>
 
-            <p class="text-center">
-                *The calendar above displays real-time availability for the selected package.
-            </p>
-        </div>
-
+			<p class="text-center">
+				*The calendar above displays real-time availability for the selected package.
+			</p>
+		</div>
+		<p class="mb-0 text-muted">
+			Not ready to book yet?
+			<a href="/contact">
+				Contact Pixies Parties for a general inquiry <i class="bi bi-arrow-right"></i>
+			</a>
+		</p>
 	</div>
 </div>
 <script>
@@ -64,7 +66,7 @@
 		const calendarMessage = document.getElementById('calendar-msg');
 		const koalendarIframe = document.getElementById('koalendar-iframe');
 		const messageBox = document.getElementById('message-box');
-		
+
 		// Function to display a temporary message
 		function showMessage(text) {
 			messageBox.textContent = text;
@@ -78,10 +80,10 @@
 
 		packageSelector.addEventListener('click', (event) => {
 			let targetCard = event.target.closest('.package-card');
-			
+
 			// If the click wasn't on a package card, or was on the general grid area, ignore.
 			if (!targetCard) {
-				return; 
+				return;
 			}
 
 			// 1. Remove 'selected' class from all cards
@@ -94,7 +96,7 @@
 
 			// 3. Get the Koalendar URL
 			const koalendarUrl = targetCard.getAttribute('data-koalendar-url');
-			
+
 			if (koalendarUrl) {
 				// 4. Update the iframe source
 				koalendarIframe.src = koalendarUrl;
