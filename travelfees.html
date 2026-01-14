@@ -4,57 +4,61 @@ title: Travel Fees | Pixies Parties
 permalink: /travelfees/
 description: If you're planning a party outside of Calgary, please note that there are travel fees to cover our journey from our starting location in South Calgary.
 ---
-	<section class="page-section bg-white text-secondary mb-0" id="travel">
-<div class="container d-flex align-items-center flex-column">
-<div class="text-center">
-      <h1 class="page-section-heading d-inline-block">
-        <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i> Travel Fees <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i>
-      </h1>
-    </div>
-    <div class="container d-flex align-items-center flex-column">
-		<p>At Pixies Parties, we love bringing magic and merriment to as many children as possible! </br>
-		If you're planning a party outside of Calgary, please note that there are travel fees to cover our journey from our starting location in South Calgary.</br>
-		Our horses need a few more carrots and oats to pull our magical carriage further, so these travel fees help keep our horses happy and well-fed!</p>
-	</div>
-<!-- 	<h2>Travel Fee Breakdown</h2>
+<section class="page-section bg-white text-secondary mb-0" id="travel">
+	<div class="container d-flex align-items-center flex-column">
+		<div class="text-center">
+			<h1 class="page-section-heading d-inline-block">
+				<i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i> Travel Fees <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i>
+			</h1>
+		</div>
+		<div class="container d-flex align-items-center flex-column">
+			<p>
+				At Pixies Parties, we love bringing magic and merriment to as many children as possible! </br>
+				If you're planning a party outside of Calgary, please note that there are travel fees to cover our journey from our starting location in South Calgary.</br>
+				Our horses need a few more carrots and oats to pull our magical carriage further, so these travel fees help keep our horses happy and well-fed!
+			</p>
+		</div>
+		<!-- 	<h2>Travel Fee Breakdown</h2>
     <ul>
         <li><strong>$0.55 per kilometre</strong> for the distance travelled.</li>
         <li><strong>$0 per hour</strong> for travel time.</li>
     </ul> -->
 
-    <h2>Nearby Cities Travel Fees</h2>
-    <table >
-	<style>
-		th, .th, td, .td {
-		 padding-right: 2rem;
-		 padding-left: 2rem;
-		}
-	</style>
-        <thead><tr><th scope="col">City</th><th scope="col">Distance</th><th scope="col">Travel Fee</th></tr></thead>
-		<tr><td>Airdrie, AB</td><td>48.9 km</td><td>$75</td></tr>
-		<tr><td>Banff, AB</td><td>136 km</td><td>$150</td></tr>
-		<tr><td>Calgary, AB</td><td>0 km</td><td>$0</td></tr>
-		<tr><td>Canmore, AB</td><td>113 km</td><td>$125</td></tr>
-		<tr><td>Claresholm, AB</td><td>118 km</td><td>$150</td></tr>
-		<tr><td>Cochrane, AB</td><td>48.7 km</td><td>$75</td></tr>
-		<tr><td>Drumheller, AB</td><td>147 km</td><td>$175</td></tr>
-		<tr><td>Edmonton, AB</td><td>312 km</td><td>$350</td></tr>
-		<tr><td>Fernie, BC</td><td>282 km</td><td>$325</td></tr>
-		<tr><td>Hanna, AB</td><td>230 km</td><td>$275</td></tr>
-		<tr><td>High River, AB</td><td>53 km</td><td>$75</td></tr>
-		<tr><td>Langdon, AB</td><td>70 km</td><td>$100</td></tr>
-		<tr><td>Lethbridge, AB</td><td>197 km</td><td>$225</td></tr>
-		<tr><td>Medicine Hat, AB</td><td>284 km</td><td>$325</td></tr>
-		<tr><td>Okotoks, AB</td><td>30.8 km</td><td>$50</td></tr>
-		<tr><td>Olds, AB</td><td>109 km</td><td>$125</td></tr>
-		<tr><td>Red Deer, AB</td><td>160 km</td><td>$200</td></tr>
-	</table>
+		<h2>Nearby Cities Travel Fees</h2>
+		<table>
+			<style>
+				th,
+				.th,
+				td,
+				.td {
+					padding-right: 2rem;
+					padding-left: 2rem;
+				}
+			</style>
+			<thead>
+				<tr>
+					<th scope="col">City</th>
+					<th scope="col">Distance</th>
+					<th scope="col">Travel Fee</th>
+				</tr>
+			</thead>
+			{% for location in site.data.travelfees.travel_fees %}
+			<tr>
+				<td>{{ location.city }}</td>
+				<td>{{ location.distance }}</td>
+				<td>{{ location.fee }}</td>
+			</tr>
+			{% endfor %}
+		</table>
 
-    <p><em>Please note that these are approximate distances. Actual fees may vary based on the exact party location.</em></p>
+		<p><em>Please note that these are approximate distances. Actual fees may vary based on the exact party
+				location.</em></p>
 
-    <p>For destinations not listed here, or if you have any questions, please feel free to reach out. We're excited to bring our enchanting entertainment to your event, no matter where you are!</p>
+		<p>For destinations not listed here, or if you have any questions, please feel free to reach out. We're excited
+			to bring our enchanting entertainment to your event, no matter where you are!</p>
 
-    <p>Contact us today to book your party with Pixies Parties, and let's create unforgettable memories together!</p>
-	<a class="col btn btn-secondary" aria-label="contact" href="/contact" target="_blank" style="text-wrap-mode: nowrap;">Contact Us</a>
+		<p>Contact us today to book your party with Pixies Parties, and let's create unforgettable memories together!
+		</p>
+		<a class="col btn btn-secondary" aria-label="contact" href="/contact" target="_blank" style="text-wrap-mode: nowrap;">Contact Us</a>
 
-    </section>
+</section>

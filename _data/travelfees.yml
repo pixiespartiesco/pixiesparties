@@ -1,0 +1,52 @@
+travel_fees:
+  - city: Airdrie, AB
+    distance: 48.9 km
+    fee: $75
+  - city: Banff, AB
+    distance: 136 km
+    fee: $150
+  - city: Calgary, AB
+    distance: 0 km
+    fee: $0
+  - city: Canmore, AB
+    distance: 113 km
+    fee: $125
+  - city: Claresholm, AB
+    distance: 118 km
+    fee: $150
+  - city: Cochrane, AB
+    distance: 48.7 km
+    fee: $75
+  - city: Drumheller, AB
+    distance: 147 km
+    fee: $175
+  - city: Edmonton, AB
+    distance: 312 km
+    fee: $350
+  - city: Fernie, BC
+    distance: 282 km
+    fee: $325
+  - city: Hanna, AB
+    distance: 230 km
+    fee: $275
+  - city: High River, AB
+    distance: 53 km
+    fee: $75
+  - city: Langdon, AB
+    distance: 70 km
+    fee: $100
+  - city: Lethbridge, AB
+    distance: 197 km
+    fee: $225
+  - city: Medicine Hat, AB
+    distance: 284 km
+    fee: $325
+  - city: Okotoks, AB
+    distance: 30.8 km
+    fee: $50
+  - city: Olds, AB
+    distance: 109 km
+    fee: $125
+  - city: Red Deer, AB
+    distance: 160 km
+    fee: $200
