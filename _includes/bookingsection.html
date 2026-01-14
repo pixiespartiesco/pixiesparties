@@ -14,8 +14,7 @@
 		<div class="row justify-content-md-center g-2" id="package-selector">
 			{% for package in site.data.packages.packages %}
 			<div class="col-12 col-md-4">
-				<div id="{{ package.id }}" class="card package-card p-1 h-100 bg-white text-secondary"
-					data-koalendar-url="{{ package.url }}">
+				<div id="{{ package.id }}" class="card package-card p-1 h-100 bg-white text-secondary" data-koalendar-url="{{ package.url }}">
 					<div class="card-header bg-white">
 						<h3 class="card-title">{{ package.title }}</h3>
 						<h4 class="card-subtitle">{{ package.duration }}</h4>
@@ -40,8 +39,7 @@
 
 			<!-- Koalendar Iframe Container -->
 			<div id="calendar-container" class="hidden" class="mx-auto rounded-xl shadow-2xl overflow-hidden bg-white">
-				<iframe id="koalendar-iframe" src="" frameborder="0" width="100%" height="100%"
-					style="min-height: 800px;" title="Koalendar Booking Calendar"></iframe>
+				<iframe id="koalendar-iframe" src="" frameborder="0" width="100%" height="100%" style="min-height: 800px;" title="Koalendar Booking Calendar"></iframe>
 			</div>
 			<div id="calendar-msg" class="mx-auto rounded-xl shadow-2xl text-secondary overflow-hidden bg-white">
 				<h3> Choose a package to see availability</h3>

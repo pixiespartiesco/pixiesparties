@@ -4,66 +4,65 @@ title: Frequently Asked Questions | Pixies Parties
 permalink: /faq/
 description: Have questions about booking a princess? Find answers regarding travel fees, outdoor parties, performer vocal abilities, and our cancellation policy here.
 ---
-    <section class="page-section bg-white text-secondary mb-0" id="about">
-      <div class="container">
-        <!-- About Section Heading-->
-        <div class="text-center">
-          <h1 class="page-section-heading d-inline-block">
-            Frequently Asked Questions
-          </h1>
-        </div><!-- Icon Divider-->
-        <div class="divider-custom">
-          <div class="divider-custom-line"></div>
-          <div class="divider-custom-icon">
-            <svg class="svg-inline--fa fa-star fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"
-            role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512" data-fa-i2svg="">
-            <path fill="currentColor" d=
-            "M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
-            </path></svg> <!-- <i class="fas fa-star"></i> -->
-          </div>
-          <div class="divider-custom-line"></div>
-        </div><!-- About Section Content-->
-        
-        <script>
-		function articlesSearch() {
-			// Declare variables
-			var input, filter, ul, li, a, i, txtValue;
-			input = document.getElementById('searchBox');
-			filter = input.value.toUpperCase();
-			console.log(filter);
-			ul = document.getElementById("searchList");
-			li = ul.getElementsByTagName('li');
+<section class="page-section bg-white text-secondary mb-0" id="about">
+	<div class="container">
+		<!-- About Section Heading-->
+		<div class="text-center">
+			<h1 class="page-section-heading d-inline-block">
+				Frequently Asked Questions
+			</h1>
+		</div><!-- Icon Divider-->
+		<div class="divider-custom">
+			<div class="divider-custom-line"></div>
+			<div class="divider-custom-icon">
+				<svg class="svg-inline--fa fa-star fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512" data-fa-i2svg="">
+					<path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+					</path>
+				</svg> <!-- <i class="fas fa-star"></i> -->
+			</div>
+			<div class="divider-custom-line"></div>
+		</div><!-- About Section Content-->
 
-			// Loop through all list items, and hide those who don't match the search query
-			for (i = 0; i < li.length; i++) {
-				a = li[i];
-				console.log(a);
-				txtValue = a.textContent || a.innerText;
-				console.log(txtValue);
-				if (txtValue.toUpperCase().indexOf(filter) > -1) {
-					li[i].style.display = "";
-				} else {
-					li[i].style.display = "none";
+		<script>
+			function articlesSearch() {
+				// Declare variables
+				var input, filter, ul, li, a, i, txtValue;
+				input = document.getElementById('searchBox');
+				filter = input.value.toUpperCase();
+				console.log(filter);
+				ul = document.getElementById("searchList");
+				li = ul.getElementsByTagName('li');
+
+				// Loop through all list items, and hide those who don't match the search query
+				for (i = 0; i < li.length; i++) {
+					a = li[i];
+					console.log(a);
+					txtValue = a.textContent || a.innerText;
+					console.log(txtValue);
+					if (txtValue.toUpperCase().indexOf(filter) > -1) {
+						li[i].style.display = "";
+					} else {
+						li[i].style.display = "none";
+					}
 				}
 			}
-		}
 		</script>
 		<div class="container d-flex align-items-center flex-column text-left" style="padding-left: 4rem; padding-right: 4rem;">
-		  <input type="text" id="searchBox" onkeyup="articlesSearch()" placeholder="Search..." class="searchBox">
-		  <ul id="searchList" class="list-unstyled">
-			{% for post in site.data.faq %}
+			<input type="text" id="searchBox" onkeyup="articlesSearch()" placeholder="Search..." class="searchBox">
+			<ul id="searchList" class="list-unstyled">
+				{% for post in site.data.faq %}
 				<li class="mb-2">
 					<h3>{{ post.question }}</h3>
 					<p>{{ post.answer | markdownify }}</p>
 				</li>
-			{% endfor %}
-		  </ul>
+				{% endfor %}
+			</ul>
 		</div>
-      </div>
-      <div class="row w-100 justify-content-center">
-        <div class="col">
-          <a class="btn btn-secondary" style="width:70%;" aria-label="book your party today" href="/">Book Your
-          Party Today!</a>
-        </div>
-      </div>
-    </section>
+	</div>
+	<div class="row w-100 justify-content-center">
+		<div class="col">
+			<a class="btn btn-secondary" style="width:70%;" aria-label="book your party today" href="/">Book Your
+				Party Today!</a>
+		</div>
+	</div>
+</section>

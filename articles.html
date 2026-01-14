@@ -2,19 +2,19 @@
 ---
 <!DOCTYPE html>
 <html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Erin Mackey">
-    <meta name="description" content=
-    "Hire the best children's party entertainers in Calgary! Pixies Parties offers princess, superhero, and character visits for unforgettable kids' birthday parties. Book your date today!">
-    <meta name="keywords" content="children's party entertainer, princess party, Calgary, kids party ideas">
-    <title>
-      Calgary Princess Parties and Children's Entertainment
-    </title>
-    <link rel="canonical" href="https://www.pixiesparties.ca/articles">
-	{% include scripts.html %} 
-   <script type="application/ld+json">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Erin Mackey">
+	<meta name="description" content="Hire the best children's party entertainers in Calgary! Pixies Parties offers princess, superhero, and character visits for unforgettable kids' birthday parties. Book your date today!">
+	<meta name="keywords" content="children's party entertainer, princess party, Calgary, kids party ideas">
+	<title>
+		Calgary Princess Parties and Children's Entertainment
+	</title>
+	<link rel="canonical" href="https://www.pixiesparties.ca/articles">
+	{% include scripts.html %}
+	<script type="application/ld+json">
 	{
 	  "@context": "https://schema.org",
 	  "@type": "Blog",
@@ -45,67 +45,68 @@
 		{% endfor %}
 	  ]
 	}
-	</script>    
-  </head>
-  <body id="page-top" class="bg-primary text-white">
-    {% include navbar.html %}
+	</script>
+</head>
+
+<body id="page-top" class="bg-primary text-white">
+	{% include navbar.html %}
 	{% include masthead.html %}
-	
-      <div class="container bg-primary text-white" style="width:100%; max-width: 100%;">
-        <h1 class="portfolio-modal-title mb-0">
-          Pixies Parties' Ultimate Guide to Enchanting Events
-        </h1>
-        <h2>
-          Explore a Wonderland of Birthday Magic, From Princess Tea Parties to Pirate Adventures!
-        </h2>
-        <div class="divider-custom">
-          <div class="divider-custom-line bg-white"></div>
-          <div class="divider-custom-icon">
-            <svg class="svg-inline--fa fa-star fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"
-            role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512" data-fa-i2svg="">
-            <path fill="currentcolor" d=
-            "M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
-            </path></svg>
-          </div>
-          <div class="divider-custom-line bg-white"></div>
-        </div>
-        <p>
-          Discover magical party ideas! Dive into princess, wizard, mermaid, and fairytale celebrations. Pixies Parties guides you
-          through enchanting decor, activities, and more.
-        </p><!-- About Section Content-->
-        <div class="container d-flex align-items-center flex-column">
-          <div id="searchbar" class="w-75">{% include articlessearchbar.html %}</div>
-          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
-			{% for post in site.posts %}
-			  <div class="col">
-				  <div class="card h-100 bg-white text-secondary border-1">
-					<img src="{{ post.img1 }}" class="card-img-top">
-					<div class="card-title">
-						<a class="h3 card-title stretched-link" href="{{ post.url }}">{{ post.title }}</a>
+
+	<div class="container bg-primary text-white" style="width:100%; max-width: 100%;">
+		<h1 class="portfolio-modal-title mb-0">
+			Pixies Parties' Ultimate Guide to Enchanting Events
+		</h1>
+		<h2>
+			Explore a Wonderland of Birthday Magic, From Princess Tea Parties to Pirate Adventures!
+		</h2>
+		<div class="divider-custom">
+			<div class="divider-custom-line bg-white"></div>
+			<div class="divider-custom-icon">
+				<svg class="svg-inline--fa fa-star fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512" data-fa-i2svg="">
+					<path fill="currentcolor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+					</path>
+				</svg>
+			</div>
+			<div class="divider-custom-line bg-white"></div>
+		</div>
+		<p>
+			Discover magical party ideas! Dive into princess, wizard, mermaid, and fairytale celebrations. Pixies Parties guides you
+			through enchanting decor, activities, and more.
+		</p><!-- About Section Content-->
+		<div class="container d-flex align-items-center flex-column">
+			<div id="searchbar" class="w-75">{% include articlessearchbar.html %}</div>
+			<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+				{% for post in site.posts %}
+				<div class="col">
+					<div class="card h-100 bg-white text-secondary border-1">
+						<img src="{{ post.img1 }}" class="card-img-top">
+						<div class="card-title">
+							<a class="h3 card-title stretched-link" href="{{ post.url }}">{{ post.title }}</a>
+						</div>
+						<div class="card-body">
+							<p class="card-text">
+								{{ post.subtitle }}
+							</p>
+						</div>
+						<div class="card-footer bg-transparent border-0">
+							<div class="card-footer text-body-secondary bg-transparent border-0">
+								{{ post.date | date: "%B %d, %Y" }}
+							</div>
+						</div>
 					</div>
-					<div class="card-body">
-					   <p class="card-text">
-						{{ post.subtitle }}
-					  </p>
-				  </div>
-				  <div class="card-footer bg-transparent border-0">
-					  <div class="card-footer text-body-secondary bg-transparent border-0">
-						{{ post.date | date: "%B %d, %Y" }}
-					  </div>
-					</div>
-				  </div>
 				</div>
-			{% endfor %}
-          </div>
-        </div>
-        <div class="row w-100 justify-content-center py-3">
-          <div class="col">
-            <a class="btn btn-secondary" style="width:70%;" aria-label="book your party today" href="/#booking">Book Your
-            Party Today!</a>
-          </div>
-        </div>
-      </div>
-    
-    {% include footer.html %}
-  </body>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="row w-100 justify-content-center py-3">
+			<div class="col">
+				<a class="btn btn-secondary" style="width:70%;" aria-label="book your party today" href="/#booking">Book Your
+					Party Today!</a>
+			</div>
+		</div>
+	</div>
+
+	{% include footer.html %}
+</body>
+
 </html>

@@ -4,37 +4,37 @@ title: Characters | Pixies Parties
 permalink: /characters/
 description: Meet our cast of royal characters! See high-quality costumes and photos of our Ice Queens, Adventurers, and Classic Princesses available for your Calgary event.
 ---
-      <div class="text-center">
-        <h1 class="page-section-heading d-inline-block">
-         <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i> Characters <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i>
-        </h1>
-      </div>
-      <div class="container d-flex align-items-center flex-column">
-        <p>
-          Meet our enchanting cast of characters, ready to make your child’s party a magical experience! From the timeless charm of princesses like Belle and Cinderella to the adventurous spirit of pirates, the mystical allure of witches, the whimsical wonder of fairies, and the glamour of Barbie, we have the perfect character for every celebration. Each performer brings their unique magic to life, creating unforgettable moments and captivating the imaginations of children across Calgary. Explore our lineup and find the perfect star for your next party!
-        </p>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-5 g-4 justify-content-md-center">
-		
+<div class="text-center">
+	<h1 class="page-section-heading d-inline-block">
+		<i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i> Characters <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i>
+	</h1>
+</div>
+<div class="container d-flex align-items-center flex-column">
+	<p>
+		Meet our enchanting cast of characters, ready to make your child’s party a magical experience! From the timeless charm of princesses like Belle and Cinderella to the adventurous spirit of pirates, the mystical allure of witches, the whimsical wonder of fairies, and the glamour of Barbie, we have the perfect character for every celebration. Each performer brings their unique magic to life, creating unforgettable moments and captivating the imaginations of children across Calgary. Explore our lineup and find the perfect star for your next party!
+	</p>
+	<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-5 g-4 justify-content-md-center">
+
 		{% for c in site.characters %}
-			  <div class="col">
-				  <div class=" card h-100 border-0  bg-white text-secondary">
-					<a  href="{{ c.url }}"><img src="{{ c.img1 }}" class="card-img-top" alt="{{ c.keywords }}"></a>
-					<div class="card-body">
-					  <h2 class="card-title">
+		<div class="col">
+			<div class=" card h-100 border-0  bg-white text-secondary">
+				<a href="{{ c.url }}"><img src="{{ c.img1 }}" class="card-img-top" alt="{{ c.keywords }}"></a>
+				<div class="card-body">
+					<h2 class="card-title">
 						{{ c.name }}
-					  </h2>
-					  <p>{{ c.summary }}</p>
-					</div>
-					<div class="card-footer text-end  bg-transparent border-0">
-					<a  href="{{ c.url }}">more...</a>
-					</div>
-				  </div>
-			  </div>
-		{% endfor %}
-		  
+					</h2>
+					<p>{{ c.summary }}</p>
+				</div>
+				<div class="card-footer text-end  bg-transparent border-0">
+					<a href="{{ c.url }}">more...</a>
+				</div>
+			</div>
 		</div>
-		
-		<div class="row w-100 justify-content-center col">
-          <a class="btn btn-secondary c1" style="margin-top: 12px;" aria-label="book your party today" href="/#booking">Book Your Party Today!</a>
-        </div>
-      </div>
+		{% endfor %}
+
+	</div>
+
+	<div class="row w-100 justify-content-center col">
+		<a class="btn btn-secondary c1" style="margin-top: 12px;" aria-label="book your party today" href="/#booking">Book Your Party Today!</a>
+	</div>
+</div>

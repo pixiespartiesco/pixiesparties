@@ -53,18 +53,7 @@ collections:
       - rapunzel.md
       - ariel.md
       - elsa.md
-
-permalink: /about/
-permalink: /cancellation/
-permalink: /company-promise/
-permalink: /contact/
-permalink: /events/
-permalink: /faq/
-permalink: /privacypolicy/
-permalink: /travelfees/
-permalink: /virtualvisit/
-permalink: /characters/
-permalink: /articles/
+      - anna.md
 
 plugins:
   - jekyll-feed

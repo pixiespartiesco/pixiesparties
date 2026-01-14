@@ -1,20 +1,23 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="canonical" href="{{site.url}}{{page.url}}">
-	<meta name="description" content="{{page.description}}">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
-	{% include scripts.html %} 
-	{% include schema.html %} 	
-  </head>
-  <body id="page-top" class="bg-primary text-white d-flex flex-column min-vh-100">
-	{% include navbar.html %} 	
-	{% include masthead.html %} 	
-    
-	{{ content }}
-	{% include footer.html %} 
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <link rel="canonical" href="{{site.url}}{{page.url}}">
+  <meta name="description" content="{{page.description}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  {% include scripts.html %}
+  {% include schema.html %}
+</head>
+
+<body id="page-top" class="bg-primary text-white d-flex flex-column min-vh-100">
+  {% include navbar.html %}
+  {% include masthead.html %}
+
+  {{ content }}
+  {% include footer.html %}
+</body>
+
 </html>

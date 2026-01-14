@@ -7,7 +7,7 @@
                     <div class="col-md-4 contact-sidebar d-flex flex-column justify-content-center">
                         <h2 class="mb-4">Let's Create Magic</h2>
                         <p class="mb-5 opacity-75">Send us your event details and we'll help you plan a royal celebration they'll never forget.</p>
-                        
+
                         <div class="d-flex align-items-center">
                             <i class="bi bi-geo-alt fs-4 me-3"></i>
                             <span>Calgary & Area</span>
@@ -32,26 +32,26 @@
                                 <div class="col-md-6">
                                     <label class="form-label">Event Date</label>
                                     <input type="date" name="event_date" class="form-control" required>
-                                    
+
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label">Event Time</label>
-                                    <input type="time" name="event_time" class="form-control"  step="1800" min="10:00" max="22:00">
+                                    <input type="time" name="event_time" class="form-control" step="1800" min="10:00" max="22:00">
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label">Character Choice</label>
                                     <select name="character" class="form-select">
                                         <option value="" selected disabled>Select a character...</option>
-										{% for c in site.characters %}
-											{% assign value = c.name | replace: " ", "-" | downcase | strip  %}
-											<option value="{{ value }}">{{ c.name }}</option>
-										{% endfor %}
+                                        {% for c in site.characters %}
+                                        {% assign value = c.name | replace: " ", "-" | downcase | strip %}
+                                        <option value="{{ value }}">{{ c.name }}</option>
+                                        {% endfor %}
                                         <option value="other">Other</option>
                                     </select>
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label">Other...</label>
-                                    <input type="text" name="character" class="form-control" placeholder="other" >
+                                    <input type="text" name="character" class="form-control" placeholder="other">
                                 </div>
                             </div>
 
@@ -62,14 +62,14 @@
 
                             <!-- Anti-spam -->
                             <input type="text" name="_gotcha" style="display:none">
-							<input type="hidden" name="_next" value="/thank-you" />
+                            <input type="hidden" name="_next" value="/thank-you" />
 
                             <div class="d-grid">
                                 <button type="submit" class="btn btn-secondary shadow-sm">
                                     Send Inquiry
                                 </button>
                             </div>
-                            
+
                             <p class="text-center text-muted mt-3 small">
                                 We'll reply within 24 hours to confirm availability.
                             </p>
