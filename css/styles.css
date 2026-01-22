@@ -27,6 +27,8 @@
   --success: #28a745;
   --bs-info: #c983c2;
   --bs-info-rgb:rgb(201, 131, 194);
+  --formfieldbg: #ece6ee;
+  --formfieldbg-rgb: rgb(236, 230, 238);
   --warning: #ffc107;
   --danger: #dc3545;
   --bs-light: #efdced;
@@ -537,4 +539,14 @@ b, strong {
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     color: var(--bs-dark);
+}
+
+.form-control {
+    background-color: var(--formfieldbg)!important;
+}
+.form-select {
+    background-color: var(--formfieldbg)!important;
+}
+.form-check-input{
+    background-color: var(--formfieldbg)!important;
 }

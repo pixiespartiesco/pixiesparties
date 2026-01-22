@@ -4,9 +4,10 @@
 			<ul class="nav justify-content-center pb-1 mb-2">
 				<li class="nav-item"><a aria-label="privacy policy" href="/privacypolicy" class="nav-link px-2 text-white">Privacy Policy</a></li>
 				<li class="nav-item"><a aria-label="company promise" href="/company-promise" class="nav-link px-2 text-white">Company Promise</a></li>
-				<li class="nav-item"><a aria-label="cancellation policy" href="/cancellation" class="nav-link px-2 text-white">Cancellation Policy</a></li>
 				<li class="nav-item"><a aria-label="travel fees" href="/travelfees" class="nav-link px-2 text-white">Travel Fees</a></li>
 				<li class="nav-item"><a aria-label="blog" href="/articles" class="nav-link px-2 text-white">Blog</a></li>
+				<li class="nav-item"><a aria-label="audition" href="/audition" class="nav-link px-2 text-white">Audition</a></li>
+				<li class="nav-item"><a aria-label="cancellation policy" href="/cancellation" class="nav-link px-2 text-white">Cancellation Policy</a></li>
 				<li class="nav-item"><a aria-label="FAQ" href="/faq" class="nav-link px-2 text-white">FAQ</a></li>
 			</ul>
 		</div>
@@ -41,7 +42,7 @@
 	<div class="container copyright py-4 text-center text-white" style="font-size: smaller;">
 		<p class="text-center mb-0 text-white">Based in Calgary, bringing magic to events across Southern Alberta.</p>
 		<p class="text-center mb-0 text-white">Pixie's Parties is not affiliated with any copyrighted entities; all characters are generic derivatives of fairytale stories.</p>
-		<p class="text-center mb-0 text-white">Copyright © 2025 Pixie's Parties Co. - All Rights Reserved </p>
+		<p class="text-center mb-0 text-white">Copyright &copy; {{ "now" | date: "%Y" }} Pixie's Parties - All Rights Reserved </p>
 	</div>
 	<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
 	<div class="scroll-to-top d-lg-none position-fixed" style="display: block;">
@@ -80,7 +81,7 @@
 	!function (f, b, e, v, n, t, s) {
 		if (f.fbq) return; n = f.fbq = function () {
 			n.callMethod ?
-			n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+				n.callMethod.apply(n, arguments) : n.queue.push(arguments)
 		};
 		if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
 		n.queue = []; t = b.createElement(e); t.async = !0;
