@@ -11,7 +11,7 @@
 				<div class="card h-100  bg-white text-secondary" style="width: 18rem;">
 					<div class="card-body">
 						<h4 class="card-title">{{ post.name }}</h4>
-						<h5 class="card-subtitle mb-2 text-body-white">{{ post.date | date: "%B %d" }}</h5>
+						<h5 class="card-subtitle mb-2 text-body-white">{{ post.date | date: "%B %Y" }}</h5>
 						<h5>
 							{% for s in (1..post.rating) %}
 							<i class="fa-solid fa-star" style="vertical-align: baseline;color: gold;"></i>

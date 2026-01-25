@@ -1,135 +1,131 @@
 ---
-layout: default
+layout: page
 title: Audition | Pixies Parties
 permalink: /audition/
 description: Apply to join the Pixies Parties performer team! Fill out our audition form to be considered for upcoming events and parties.
 ---
 
-<div class="container m-3">
-    <div class="bg-white text-secondary rounded p-5">
-        <div class="header-section">
-            <h2>Performer Application</h2>
-            <p class="text-muted">Apply for the <strong>Ties and Tiaras Ball (April 18, 2026)</strong> or join our general character roster.</p>
-        </div>
-
-        <form action="https://formspree.io/f/mzddqndr" method="POST" enctype="multipart/form-data">
-
-            <h3>Personal Information</h3>
-            <div class="row g-3">
-                <div class="col-md-6">
-                    <label class="form-label">Full Name</label>
-                    <input type="text" name="name" class="form-control" placeholder="First & Last Name" required>
-                </div>
-                <div class="col-md-6">
-                    <label class="form-label">Email Address</label>
-                    <input type="email" name="_replyto" class="form-control" required>
-                </div>
-                <div class="col-md-6">
-                    <label class="form-label">Phone Number</label>
-                    <input type="tel" name="phone" class="form-control" required>
-                </div>
-                <div class="col-md-6">
-                    <label class="form-label">Location (City, Province)</label>
-                    <input type="text" name="location" class="form-control" required>
-                </div>
-                <div class="col-md-6">
-                    <label class="form-label">Social Media Profiles (Optional)</label>
-                    <input type="text" name="social_media" class="form-control" placeholder="Instagram, TikTok, etc.">
-                </div>
-            </div>
-
-            <h3>Availability & Interest</h3>
-
-            <div class="mb-3">
-                <label class="form-label">Application Type</label>
-                <select class="form-select" name="application_type" required>
-                    <option value="" selected disabled>Select an option...</option>
-                    <option value="Event Only">I am only interested in the April 18th event</option>
-                    <option value="Long Term">I am interested in joining the team for long-term work</option>
-                    <option value="Both">Both</option>
-                </select>
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label d-block">Are you typically available on weekends?</label>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="weekend_availability" id="wkdavail_yes" value="Yes">
-                    <label class="form-check-label" for="wkdavail_yes">Yes, I am available.</label>
-                </div>
-            </div>
-            <div class="mb-3">
-                <label class="form-label d-block">Are you available for the Ties and Tiaras Ball on April 18th, 2026 from 2:00 pm to 6:00 pm?</label>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="event_availability" id="eventavail_yes" value="Yes">
-                    <label class="form-check-label" for="eventavail_yes">Yes, I am available.</label>
-                </div>
-            </div>
-
-            <h3>Performer Details</h3>
-            <div class="row g-3">
-                <div class="col-md-12">
-                    <label class="form-label">Which character are you most excited to portray, and why?</label>
-                    <textarea name="character" class="form-control" rows="4" placeholder="Cinderella, Elsa, Belle, etc." required></textarea>
-                </div>
-                <div class="col-md-12">
-                    <label class="form-label">Measurements (in)</label>
-                    <div class="row g-3">
-                        <div class="col-md-3">
-                            <input type="number" name="measurements-chest" class="form-control" placeholder=" Chest e.g. 36" required>
-                        </div>
-                        <div class="col-md-3">
-                            <input type="number" name="measurements-waist" class="form-control" placeholder="Waist e.g. 30" required>
-                        </div>
-                        <div class="col-md-3">
-                            <input type="number" name="measurements-hips" class="form-control" placeholder="Hips e.g. 36" required>
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" name="measurements-height" class="form-control" placeholder="Height e.g. 5'2" required>
-                        </div>
-                    </div>
-                    <div class="form-text">Applicants will not be disqualified based on measurements. This information is used for costume fitting purposes only.</div>
-                </div>
-                <div class="col-6">
-                    <label class="form-label">Vocal Ability</label>
-                    <select class="form-select" name="vocal_ability" required>
-                        <option value="" selected disabled>Vocal Ability...</option>
-                        <option value="Professional">Professional Singer (Musical Theatre/Classical)</option>
-                        <option value="Strong">Strong Singer</option>
-                        <option value="Character Voice">Character Voice / Non-Singer</option>
-                    </select>
-                </div>
-                <div class="col-6">
-                    <label class="form-label">Vocal Range</label>
-                    <select class="form-select" name="vocal_range" required>
-                        <option value="" selected disabled>Vocal Range...</option>
-                        <option value="Soprano">Soprano</option>
-                        <option value="Mezzo-Soprano">Mezzo-Soprano</option>
-                        <option value="Alto">Alto</option>
-                    </select>
-                </div>
-            </div>
-
-            <h3>Materials</h3>
-            <div class="mb-3">
-                <label class="form-label">Headshot / Photo (Link to Google Drive or Dropbox)</label>
-                <input type="url" name="photo_link" class="form-control" placeholder="https://..." required>
-                <div class="form-text">Please ensure permissions are set to "Anyone with the link can view."</div>
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label">Performance Reel or Resume Link</label>
-                <input type="url" name="resume_link" class="form-control" placeholder="https://..." required>
-                <div class="form-text">Please ensure permissions are set to "Anyone with the link can view."</div>
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label">Tell us why you'd be a great fit!</label>
-                <textarea name="message" class="form-control" rows="4" required></textarea>
-            </div>
-
-            <div class="d-grid gap-2 my-4">
-                <button type="submit" class="btn btn-secondary c1 mt-4">Submit Application</button>
-            </div>
-        </form>
-    </div>
+<div class="header-section">
+    <h2>Performer Application</h2>
+    <p class="text-muted">Apply for the <strong>Ties and Tiaras Ball (April 18, 2026)</strong> or join our general character roster.</p>
 </div>
+
+<form action="https://formspree.io/f/mzddqndr" method="POST" enctype="multipart/form-data">
+
+    <h3>Personal Information</h3>
+    <div class="row g-3">
+        <div class="col-md-6">
+            <label class="form-label">Full Name</label>
+            <input type="text" name="name" class="form-control" placeholder="First & Last Name" required>
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Email Address</label>
+            <input type="email" name="_replyto" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Phone Number</label>
+            <input type="tel" name="phone" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Location (City, Province)</label>
+            <input type="text" name="location" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Social Media Profiles (Optional)</label>
+            <input type="text" name="social_media" class="form-control" placeholder="Instagram, TikTok, etc.">
+        </div>
+    </div>
+
+    <h3>Availability & Interest</h3>
+
+    <div class="mb-3">
+        <label class="form-label">Application Type</label>
+        <select class="form-select" name="application_type" required>
+            <option value="" selected disabled>Select an option...</option>
+            <option value="Event Only">I am only interested in the April 18th event</option>
+            <option value="Long Term">I am interested in joining the team for long-term work</option>
+            <option value="Both">Both</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label d-block">Are you typically available on weekends?</label>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="weekend_availability" id="wkdavail_yes" value="Yes">
+            <label class="form-check-label" for="wkdavail_yes">Yes, I am available.</label>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label d-block">Are you available for the Ties and Tiaras Ball on April 18th, 2026 from 2:00 pm to 6:00 pm?</label>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="event_availability" id="eventavail_yes" value="Yes">
+            <label class="form-check-label" for="eventavail_yes">Yes, I am available.</label>
+        </div>
+    </div>
+
+    <h3>Performer Details</h3>
+    <div class="row g-3">
+        <div class="col-md-12">
+            <label class="form-label">Which character are you most excited to portray, and why?</label>
+            <textarea name="character" class="form-control" rows="4" placeholder="Cinderella, Elsa, Belle, etc." required></textarea>
+        </div>
+        <div class="col-md-12">
+            <label class="form-label">Measurements (in)</label>
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <input type="number" name="measurements-chest" class="form-control" placeholder=" Chest e.g. 36" required>
+                </div>
+                <div class="col-md-3">
+                    <input type="number" name="measurements-waist" class="form-control" placeholder="Waist e.g. 30" required>
+                </div>
+                <div class="col-md-3">
+                    <input type="number" name="measurements-hips" class="form-control" placeholder="Hips e.g. 36" required>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" name="measurements-height" class="form-control" placeholder="Height e.g. 5'2" required>
+                </div>
+            </div>
+            <div class="form-text">Applicants will not be disqualified based on measurements. This information is used for costume fitting purposes only.</div>
+        </div>
+        <div class="col-6">
+            <label class="form-label">Vocal Ability</label>
+            <select class="form-select" name="vocal_ability" required>
+                <option value="" selected disabled>Vocal Ability...</option>
+                <option value="Professional">Professional Singer (Musical Theatre/Classical)</option>
+                <option value="Strong">Strong Singer</option>
+                <option value="Character Voice">Character Voice / Non-Singer</option>
+            </select>
+        </div>
+        <div class="col-6">
+            <label class="form-label">Vocal Range</label>
+            <select class="form-select" name="vocal_range" required>
+                <option value="" selected disabled>Vocal Range...</option>
+                <option value="Soprano">Soprano</option>
+                <option value="Mezzo-Soprano">Mezzo-Soprano</option>
+                <option value="Alto">Alto</option>
+            </select>
+        </div>
+    </div>
+
+    <h3>Materials</h3>
+    <div class="mb-3">
+        <label class="form-label">Headshot / Photo (Link to Google Drive or Dropbox)</label>
+        <input type="url" name="photo_link" class="form-control" placeholder="https://..." required>
+        <div class="form-text">Please ensure permissions are set to "Anyone with the link can view."</div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Performance Reel or Resume Link</label>
+        <input type="url" name="resume_link" class="form-control" placeholder="https://..." required>
+        <div class="form-text">Please ensure permissions are set to "Anyone with the link can view."</div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Tell us why you'd be a great fit!</label>
+        <textarea name="message" class="form-control" rows="4" required></textarea>
+    </div>
+
+    <div class="d-grid gap-2 my-4">
+        <button type="submit" class="btn btn-secondary c1 mt-4">Submit Application</button>
+    </div>
+</form>

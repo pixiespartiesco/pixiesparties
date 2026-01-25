@@ -398,9 +398,7 @@ b, strong {
   border-radius: 20px;
   border: 3px solid #E390B9;
 }
-.jotform-feedback-link{
-	color: #FFFFFF!important;
-}
+
 /* Tooltip container */
 .tooltip {
   position: relative;
@@ -484,7 +482,7 @@ b, strong {
 	padding-left: 2em; /* Adjust this value to control the indent depth */
 	text-indent: -2em; /* This negative value should match the padding-left */
 }
-.article-body blockquote {
+blockquote {
 	background: var(--bs-light);
     border: var(--bs-dark);
     border-width: 1px;
@@ -549,4 +547,7 @@ b, strong {
 }
 .form-check-input{
     background-color: var(--formfieldbg)!important;
+}
+table {
+    margin: auto;
 }
