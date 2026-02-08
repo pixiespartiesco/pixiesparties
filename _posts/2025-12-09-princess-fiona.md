@@ -6,6 +6,7 @@ permalink: /articles/fiona-shrek/
 summary: Discover why Princess Fiona, the brave and unconventional royal from Shrek, is the perfect, high-energy character to hire for your next kids' birthday party in Calgary!
 img1: /assets/img/characters/fiona.webp
 date: 2025-12-09
+published: false
 ---
 
 # Fiona, The Princess Who Fights

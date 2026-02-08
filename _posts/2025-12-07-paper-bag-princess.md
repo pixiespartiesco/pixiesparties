@@ -39,7 +39,7 @@ Keep the food easy and hearty, fit for a princess who just walked through a fore
 
 > ## 👸 Show Your Kids That Heroes Come in All Forms!
 > 
-> Show your kids that heroes come in all forms! Learn how to [Invite the Paper Bag Princess](/characters/paperbagprincess "Invite the Paper Bag Princess") to your next royal rescue party. Our performer is ready to share empowering stories about bravery, kindness, and cleverness—the perfect inspiration for a birthday celebration.
+> Show your kids that heroes come in all forms! Learn how to [Invite the Paper Bag Princess](/characters/paper-bag-princess "Invite the Paper Bag Princess") to your next royal rescue party. Our performer is ready to share empowering stories about bravery, kindness, and cleverness—the perfect inspiration for a birthday celebration.
 
 Until our next adventure,  
 Erin Mackey  

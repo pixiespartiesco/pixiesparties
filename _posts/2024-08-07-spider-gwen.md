@@ -37,7 +37,7 @@ Organize a scavenger hunt where young heroes must use their "Spidey sense" to lo
 <img src="/assets/img/characters/spiderhero.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Superhero Surprise: A Visit from the Friendly Neighborhood Hero</h4>
 Spider-Gwen Guest Appearance:<br/>
-Surprise party guests with a visit from <a href="/characters/spidergwen">Spider-Gwen</a> herself! Watch as the young heroes' faces light up with excitement as they interact with their favorite superheroine, who will share tales of heroism and pose for photos with her loyal fans.<br/>
+Surprise party guests with a visit from <a href="/characters/ghostspider">Spider-Gwen</a> herself! Watch as the young heroes' faces light up with excitement as they interact with their favorite superheroine, who will share tales of heroism and pose for photos with her loyal fans.<br/>
 </div>
 <h4>The Grand Finale: Saving the Day and Celebrating Heroism</h4>
 As the adventure comes to a close, take a moment to celebrate the bravery and heroism of every young guest. With memories made and friendships forged, you've created a Spider-Gwen themed birthday party that's truly spectacular and unforgettable.<br/>
