@@ -3,7 +3,7 @@ layout: article
 title: Luck of the Pixie
 subtitle: Hosting a Magical St. Patrick’s Day Party for Kids
 permalink: /articles/luck-of-the-pixie/
-summary: 
+summary:  
 img1: /assets/img/articles/pot-of-gold.webp
 date: 2026-03-12
 ---
