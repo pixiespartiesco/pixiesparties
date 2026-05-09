@@ -72,7 +72,12 @@ description: We believe every child deserves a moment of wonder. We are proud to
 	<h2>Ready to add some magic to your event?</h2>
 	<p>To claim your 30% discount, please contact us with your organization's name and event details. We'll provide a custom booking link tailored to your needs.</p>
 
-	{% include contactnonprofit.html %}
+	<!-- Koalendar Inline Embed Start -->
+	<div id="inline-widget-pixies-parties-nonprofit"></div>
+	<script>window.Koalendar = window.Koalendar || function () { (Koalendar.props = Koalendar.props || []).push(arguments) };</script>
+	<script async src="https://koalendar.com/assets/widget.js"></script>
+	<script>Koalendar('inline', { "url": "https://koalendar.com/e/pixies-parties-nonprofit", "selector": "#inline-widget-pixies-parties-nonprofit" });</script>
+	<!-- Koalendar Inline Embed End -->
 
 
 </div>
