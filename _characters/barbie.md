@@ -8,6 +8,7 @@ summary: Glamorous and stylish, Barbie adds a touch of fashion and fun to every 
 img1: /assets/img/characters/barbie.webp
 keywords: Barbie, Fashion Doll, Glam
 rank: 2
+published: false
 ---
 # Barbie
 ## Dream Big and Sparkle in Calgary!

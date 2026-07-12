@@ -7,6 +7,7 @@ summary: Agile and awesome, Ghost Spider adds a web-slinging, high-energy advent
 img1: /assets/img/characters/spiderhero.webp
 keywords: spidey, spiderman, Gwen Stacy, Ghost Spider, Spiderverse
 rank: 2
+published: false
 ---
 # Ghost Spider
 ## Web-Slinging Hero in Calgary!
