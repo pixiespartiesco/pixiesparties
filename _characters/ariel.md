@@ -5,7 +5,7 @@ subtitle: Dive into Adventure in Calgary!
 permalink: /characters/ariel/
 name: Ariel
 summary: Curious and adventurous, Ariel brings the excitement of the deep blue sea to your event.
-img1: /assets/img/characters/arielballoons.webp
+img1: /assets/img/characters/ariel.webp
 keywords: Ariel, Mermaid, Under the Sea, Little Mermaid
 rank: 1
 ---

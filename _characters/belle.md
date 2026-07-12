@@ -5,7 +5,7 @@ subtitle: A Royal Visit from Princess Belle
 permalink: /characters/belle/
 name: Belle
 summary: Intelligent and kind, Belle enchants with her love for books and tales of the Beast.
-img1: /assets/img/characters/belleballoons.webp
+img1: /assets/img/characters/bellegazebo.webp
 keywords: Belle, Beauty and the Beast, Princess
 rank: 1
 ---
