@@ -3,7 +3,7 @@ layout: character
 title: Snow White
 permalink: /characters/snowwhite/
 name: Snow White
-summary: Glamorous and stylish, Snow White adds a touch of fashion and fun to every party.
+summary: Gentle and kind, Snow White adds a touch of magic to every party.
 img1: /assets/img/characters/snowwhite.webp
 keywords: Snow White, apple, prince, witch, seven dwarves
 rank: 1
