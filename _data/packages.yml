@@ -1,4 +1,34 @@
 packages:
+  - id: classic_package
+    title: Classic Party Package
+    duration: 60 Minutes
+    description: A classic, hour-long visit packed with essential character activities and memories. Perfect for most birthday parties.    
+    details: | 
+      Our **Classic Package** is designed to be the *sweet spot* for children's attention spans, particularly for ages 3 to 6. \
+      It is a non-stop hour of entertainment where the character takes full charge of the party guests. We transition quickly from high-energy entrances to focused storytime and interactive songs, ensuring no child gets bored. \
+      This package is ideal if you have other activities planned (like a bouncy castle or opening presents) and want the character to be the highlight of the middle of your event.
+    price: $250
+    image: /assets/img/packages/classicparty.webp
+    url: https://koalendar.com/e/pixies-parties-classic
+    features_header: Features
+    features:
+      - detail: Grand Royal Entrance
+        icon: 👑
+      - detail: Full Meet & Greet Session
+        icon: 👋
+      - detail: Sing-Along Performance (2-3 Songs)
+        icon: 🎶
+      - detail: Themed Craft
+        icon: 🎨
+      - detail: Princess Makeup or Temporary Tattoos
+        icon: 🪞
+      - detail: Photo Opportunities for All Guests
+        icon: 📸
+      - detail: Individual Personalized Interaction for Every Child
+        icon: 🌟
+      - detail: Birthday Cake Ceremony & Photo
+        icon: 🎂
+        
   - id: deluxe_package
     title: Deluxe Party Package
     duration: 90 Minutes
@@ -35,35 +65,6 @@ packages:
       - detail: Birthday Cake Ceremony & Photo
         icon: 🎂
 
-  - id: classic_package
-    title: Classic Party Package
-    duration: 60 Minutes
-    description: A classic, hour-long visit packed with essential character activities and memories. Perfect for most birthday parties.    
-    details: | 
-      Our **Classic Package** is designed to be the *sweet spot* for children's attention spans, particularly for ages 3 to 6. \
-      It is a non-stop hour of entertainment where the character takes full charge of the party guests. We transition quickly from high-energy entrances to focused storytime and interactive songs, ensuring no child gets bored. \
-      This package is ideal if you have other activities planned (like a bouncy castle or opening presents) and want the character to be the highlight of the middle of your event.
-    price: $250
-    image: /assets/img/packages/classicparty.webp
-    url: https://koalendar.com/e/pixies-parties-classic
-    features_header: Features
-    features:
-      - detail: Grand Royal Entrance
-        icon: 👑
-      - detail: Full Meet & Greet Session
-        icon: 👋
-      - detail: Sing-Along Performance (2-3 Songs)
-        icon: 🎶
-      - detail: Themed Craft
-        icon: 🎨
-      - detail: Princess Makeup or Temporary Tattoos
-        icon: 🪞
-      - detail: Photo Opportunities for All Guests
-        icon: 📸
-      - detail: Individual Personalized Interaction for Every Child
-        icon: 🌟
-      - detail: Birthday Cake Ceremony & Photo
-        icon: 🎂
 
   - id: meet_and_greet_package
     title: Character Meet and Greet
