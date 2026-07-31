@@ -68,13 +68,13 @@ packages:
 
   - id: meet_and_greet_package
     title: Character Meet and Greet
-    duration: 1 hour - 4 hours
+    duration: 1 Hour - 4 Hours
     description: A simple, seamless way to add live character magic to your event.
     details: | 
       Planning a community festival, stampede breakfast, or grand opening? Our **Meet & Greet** service is structurally different from our birthday packages. \
       Instead of a set timeline of activities, the character manages a queue or roams the crowd to maximize the number of guest interactions. This ensures hundreds of guests can have a chance to meet the character. \
       *Please note: This option does not include games, crafts, or audio equipment.*
-    price: From $200 / hour
+    price: From $200 / Hour
     image: /assets/img/packages/meetgreet.webp
     url: https://koalendar.com/e/pixies-parties-meetgreet
     features_header: Perfect For
@@ -100,15 +100,24 @@ packages:
       - detail: Stampede Events
         icon: 🏇
         
-addons:
   - id: virtual_visit
     title: Virtual Visit
     duration: 30 Minutes
     description: You can bring the joy and wonder of our beloved characters straight to your screen. Guests will enjoy a character meet & greet, interactive story time and sing-along!
+    details: You can bring the joy and wonder of our beloved characters straight to your screen. Guests will enjoy a character meet & greet, interactive story time and sing-along!
     price: $80
     image: /assets/img/packages/virtualvisit.webp
-    linktext: 
-    url: 
+    url: https://koalendar.com/e/pixies-parties-virtual-visit
+    features_header: Features
+    features:
+      - detail: Full Meet & Greet Session
+        icon: 👋
+      - detail: Interactive Story Time
+        icon: 📖
+      - detail: Sing-Along Performance (2-3 Songs)
+        icon: 🎶
+        
+addons:
 
   - id: addon_travel
     title: Travel Fee
