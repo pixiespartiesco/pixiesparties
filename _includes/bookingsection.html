@@ -1,117 +1,96 @@
 <div class="container bg-primary text-white" id="booking">
-	<div class="text-center mb-5">
-		<h2 class="display-4 fw-bold">Book Your Party Entertainment</h2>
-		<p></p>
+	<div class="text-center">
+		<h2 class="page-section-heading d-inline-block">
+			<i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i> Book Your Party Entertainment <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i>
+		</h2>
+		<p>Choose from our variety of party packages and book your perfect celebration!</p>
 	</div>
 
-	<div>
-		<h3>Step 1: Choose Your Party Package</h3>
-		<p>
-			Select the perfect package for your magical event below. Once selected, our calendar will load for you to
-			choose a date!
+	<!-- Tab links -->
+	<div class="tab">
+		<button class="tablinks" onclick="openPackage(event, 'Birthday Parties')">Birthday Parties</button>
+		<button class="tablinks" onclick="openPackage(event, 'Meet & Greet')">Meet & Greet</button>
+		<button class="tablinks" onclick="openPackage(event, 'Virtual Visit')">Virtual Visit</button>
+		<button class="tablinks" onclick="openPackage(event, 'Castle Backdrop')">Castle Backdrop</button>
+	</div>
+
+	<script>
+		function openPackage(evt, pkgName) {
+			// Declare all variables
+			var i, tabcontent, tablinks;
+
+			// Get all elements with class="tabcontent" and hide them
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+
+			// Get all elements with class="tablinks" and remove the class "active"
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+
+			// Show the current tab, and add an "active" class to the button that opened the tab
+			document.getElementById(pkgName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+		document.addEventListener('DOMContentLoaded', function () {
+			var defaultOpen = document.querySelector('.tablinks');
+			if (defaultOpen) {
+				defaultOpen.click();
+			}
+		});
+
+
+	</script>
+
+	<!-- Tab content -->
+	<div id="Birthday Parties" class="tabcontent">
+		<!-- Koalendar Inline Embed Start -->
+		<div id="inline-widget-pixies-parties-party-package"></div>
+		<script>window.Koalendar = window.Koalendar || function () { (Koalendar.props = Koalendar.props || []).push(arguments) };</script>
+		<script async src="https://koalendar.com/assets/widget.js"></script>
+		<script>Koalendar('inline', { "url": "https://koalendar.com/e/pixies-parties-party-package", "selector": "#inline-widget-pixies-parties-party-package" });</script>
+		<!-- Koalendar Inline Embed End -->
+		<p class="text-center text-dark">
+			*The calendar above displays real-time availability for the selected package.
 		</p>
-		<!-- MAIN PACKAGES ROW -->
-		<div class="row justify-content-md-center g-2" id="package-selector">
-			{% for package in site.data.packages.packages %}
-			<div class="col-12 col-md-4">
-				<div id="{{ package.id }}" class="card package-card p-1 h-100 bg-white text-secondary" data-koalendar-url="{{ package.url }}">
-					<div class="card-header bg-white">
-						<h3 class="card-title">{{ package.title }}</h3>
-						<h4 class="card-subtitle">{{ package.duration }}</h4>
-						<h5 class="card-subtitle">{{ package.price | markdownify }}</h5>
-					</div>
-					<div class="card-body">
-						<p class="card-subtitle">{{ package.description }}</p>
-					</div>
-					<div class="card-footer bg-white">
-						<a class="btn btn-secondary c1 mt-4" aria-label="book now" href="#calendar-section">Book {{
-							package.name }}</a>
-					</div>
-				</div>
-			</div>
-			{% endfor %}
-		</div>
-		<!-- Calendar Section -->
-		<div id="calendar-section">
-			<h3 id="calendar-header">
-				Step 2: Check Availability
-			</h3>
+	</div>
 
-			<!-- Koalendar Iframe Container -->
-			<div id="calendar-container" class="hidden" class="mx-auto rounded-xl shadow-2xl overflow-hidden bg-white">
-				<iframe id="koalendar-iframe" src="" frameborder="0" width="100%" height="100%" style="min-height: 800px;" title="Koalendar Booking Calendar"></iframe>
-			</div>
-			<div id="calendar-msg" class="mx-auto rounded-xl shadow-2xl text-secondary overflow-hidden bg-white">
-				<h3> Choose a package to see availability</h3>
-			</div>
+	<div id="Meet & Greet" class="tabcontent">
+		<!-- Koalendar Inline Embed Start -->
+		<div id="inline-widget-pixies-parties-meetgreet"></div>
+		<script>window.Koalendar = window.Koalendar || function () { (Koalendar.props = Koalendar.props || []).push(arguments) };</script>
+		<script async src="https://koalendar.com/assets/widget.js"></script>
+		<script>Koalendar('inline', { "url": "https://koalendar.com/e/pixies-parties-meetgreet", "selector": "#inline-widget-pixies-parties-meetgreet" });</script>
+		<!-- Koalendar Inline Embed End -->
+		<p class="text-center text-dark">
+			*The calendar above displays real-time availability for the selected package.
+		</p>
+	</div>
 
-			<p class="text-center">
-				*The calendar above displays real-time availability for the selected package.
-			</p>
-		</div>
-		<p class="mb-0 text-muted">
-			Not ready to book yet?
-			<a href="/contact">
-				Contact Pixies Parties for a general inquiry <i class="bi bi-arrow-right"></i>
-			</a>
+	<div id="Virtual Visit" class="tabcontent">
+		<!-- Koalendar Inline Embed Start -->
+		<div id="inline-widget-pixies-parties-virtualvisit"></div>
+		<script>window.Koalendar = window.Koalendar || function () { (Koalendar.props = Koalendar.props || []).push(arguments) };</script>
+		<script async src="https://koalendar.com/assets/widget.js"></script>
+		<script>Koalendar('inline', { "url": "https://koalendar.com/e/pixies-parties-virtual-visit", "selector": "#inline-widget-pixies-parties-virtualvisit" });</script>
+		<!-- Koalendar Inline Embed End -->
+		<p class="text-center text-dark">
+			*The calendar above displays real-time availability for the selected package.
+		</p>
+	</div>
+
+	<div id="Castle Backdrop" class="tabcontent">
+		<!-- Koalendar Inline Embed Start -->
+		<div id="inline-widget-pixies-parties-castlebackdrop"></div>
+		<script>window.Koalendar = window.Koalendar || function () { (Koalendar.props = Koalendar.props || []).push(arguments) };</script>
+		<script async src="https://koalendar.com/assets/widget.js"></script>
+		<script>Koalendar('inline', { "url": "https://koalendar.com/e/pixies-parties-photo-backdrop", "selector": "#inline-widget-pixies-parties-castlebackdrop" });</script>
+		<!-- Koalendar Inline Embed End -->
+		<p class="text-center text-dark">
+			*The calendar above displays real-time availability for the selected package.
 		</p>
 	</div>
 </div>
-<script>
-	document.addEventListener('DOMContentLoaded', () => {
-		const packageSelector = document.getElementById('package-selector');
-		const calendarSection = document.getElementById('calendar-container');
-		const calendarMessage = document.getElementById('calendar-msg');
-		const koalendarIframe = document.getElementById('koalendar-iframe');
-		const messageBox = document.getElementById('message-box');
-
-		// Function to display a temporary message
-		function showMessage(text) {
-			messageBox.textContent = text;
-			messageBox.style.opacity = '1';
-			messageBox.style.pointerEvents = 'auto';
-			setTimeout(() => {
-				messageBox.style.opacity = '0';
-				messageBox.style.pointerEvents = 'none';
-			}, 3000);
-		}
-
-		packageSelector.addEventListener('click', (event) => {
-			let targetCard = event.target.closest('.package-card');
-
-			// If the click wasn't on a package card, or was on the general grid area, ignore.
-			if (!targetCard) {
-				return;
-			}
-
-			// 1. Remove 'selected' class from all cards
-			document.querySelectorAll('.package-card').forEach(card => {
-				card.classList.remove('selected-card');
-			});
-
-			// 2. Add 'selected' class to the clicked card
-			targetCard.classList.add('selected-card');
-
-			// 3. Get the Koalendar URL
-			const koalendarUrl = targetCard.getAttribute('data-koalendar-url');
-
-			if (koalendarUrl) {
-				// 4. Update the iframe source
-				koalendarIframe.src = koalendarUrl;
-
-				// 5. Show the calendar section if hidden
-				calendarSection.classList.remove('hidden');
-				calendarMessage.classList.add('hidden');
-
-				// 6. Scroll smoothly to the calendar header for visibility
-				const calendarHeader = document.getElementById('calendar-header');
-				if (calendarHeader) {
-					calendarHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
-				}
-			} else {
-				showMessage("Error: Booking link not found for this package.");
-				console.error("Koalendar URL not found for selected package.");
-			}
-		});
-	});
-</script>

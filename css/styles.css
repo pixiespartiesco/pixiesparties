@@ -25,8 +25,8 @@
   --bs-table-striped-bg: #f7eef6;
   --bs-table-striped-bg-rgb: rgb(247, 238, 246);
   --success: #28a745;
-  --bs-info: #c983c2;
-  --bs-info-rgb:rgb(201, 131, 194);
+  --bs-info: #e3a3dd;
+  --bs-info-rgb:rgb(227, 163, 221);
   --formfieldbg: #ece6ee;
   --formfieldbg-rgb: rgb(236, 230, 238);
   --warning: #ffc107;
@@ -398,7 +398,15 @@ b, strong {
   border-radius: 20px;
   border: 3px solid #E390B9;
 }
+/* Apply to all elements with an ID that might be targeted */
+[id] {
+  scroll-margin-top: 140px; /* Set this to your header's height */
+}
 
+/* Optional: Smooth out the scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
 /* Tooltip container */
 .tooltip {
   position: relative;
@@ -550,4 +558,37 @@ blockquote {
 }
 table {
     margin: auto;
+}
+.tab {
+    overflow: hidden;
+    border: 0px;
+    background-color: var(--bs-quaternary);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 55px;
+    transition: 0.3s;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.tab button:hover {
+    background-color: var(--bs-emphasis-color);
+}
+.tab button.active {
+    background-color: var(--bs-info);
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid var(--bs-info);
+    background: var(--bs-info);
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }

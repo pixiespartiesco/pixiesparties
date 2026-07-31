@@ -107,8 +107,8 @@ addons:
     description: You can bring the joy and wonder of our beloved characters straight to your screen. Guests will enjoy a character meet & greet, interactive story time and sing-along!
     price: $80
     image: /assets/img/packages/virtualvisit.webp
-    linktext: Book Now
-    url: https://koalendar.com/e/virtual-visit
+    linktext: 
+    url: 
 
   - id: addon_travel
     title: Travel Fee
@@ -130,5 +130,5 @@ addons:
     description: Our pixies will come early before your party to setup the 8' x 10' backdrop.
     price: $80
     image: /assets/img/addons/castlebackdrop.webp
-    linktext: Book Now
-    url: https://koalendar.com/e/photo-backdrop
+    linktext: 
+    url: 
