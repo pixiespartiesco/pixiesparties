@@ -92,10 +92,10 @@ description: Discover Calgary's most magical princess parties! From live singing
 								<li class="mb-2">{{ f.icon }} {{ f.detail }}</li>
 								{% endfor %}
 							</ul>
+							<p class="card-text" data-bs-toggle="tooltip" data-bs-title="{{ post.note-hover }}" style="font-style: italic;">
+								{{ post.note }}
+							</p>
 						</div>
-						<!-- <div class="card-footer bg-white">
-								<a class="btn btn-secondary c1 mt-4" aria-label="book now" target="_blank" href="{{ post.url }}">Book Now!</a>
-							</div> -->
 					</div>
 				</div>
 				{% endfor %}

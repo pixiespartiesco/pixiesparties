@@ -10,13 +10,15 @@ packages:
     price: $250
     image: /assets/img/packages/classicparty.webp
     url: https://koalendar.com/e/pixies-parties-classic
+    note: Supplies included for up to 10 Guests
+    note-hover: Additional guests require additional magic! $10 per child.
     features_header: Features
     features:
       - detail: Grand Royal Entrance
         icon: 👑
       - detail: Full Meet & Greet Session
         icon: 👋
-      - detail: Sing-Along Performance (2-3 Songs)
+      - detail: Sing-Along Dance Party (2-3 Songs)
         icon: 🎶
       - detail: Themed Craft
         icon: 🎨
@@ -40,6 +42,8 @@ packages:
     price: $350
     image: /assets/img/packages/deluxeparty.webp
     url: https://koalendar.com/e/pixies-parties-deluxe
+    note: Supplies included for up to 10 Guests
+    note-hover: Additional guests require additional magic! $10 per child.
     features_header: Features
     features:
       - detail: Grand Royal Entrance
@@ -48,7 +52,7 @@ packages:
         icon: 👋
       - detail: Interactive Story Time
         icon: 📖
-      - detail: Sing-Along Performance (2-3 Songs)
+      - detail: Sing-Along Dance Party (2-3 Songs)
         icon: 🎶
       - detail: Royal Coronation Ceremony for the Birthday Child (Includes Tiara/Gift)
         icon: 🎁
@@ -77,6 +81,7 @@ packages:
     price: From $200 / Hour
     image: /assets/img/packages/meetgreet.webp
     url: https://koalendar.com/e/pixies-parties-meetgreet
+    note: 
     features_header: Perfect For
     features:
       - detail: Daycares and preschools
@@ -108,6 +113,7 @@ packages:
     price: $80
     image: /assets/img/packages/virtualvisit.webp
     url: https://koalendar.com/e/pixies-parties-virtual-visit
+    note: 
     features_header: Features
     features:
       - detail: Full Meet & Greet Session
