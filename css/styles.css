@@ -199,8 +199,8 @@ a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-se
     line-height: 2.5rem;
 }
 .masthead {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 0rem;
 }
 .h-100 {
     height: 100%!important;
