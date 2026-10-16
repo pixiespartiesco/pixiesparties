@@ -48,6 +48,9 @@ description: Choose the perfect princess or superhero party package for your Cal
 			<div class="mb-4">
 				<h3 class="text-secondary fw-bold">{{ post.title }} ({{ post.duration }})</h3>
 				<p class="text-muted">{{ post.details | markdownify }}</p>
+				{% if post.price_note %}
+				<p class="card-text text-muted">{{ post.price_note | markdownify }}</p>
+				{% endif %}
 			</div>
 			{% endfor %}
 

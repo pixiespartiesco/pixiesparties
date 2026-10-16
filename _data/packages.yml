@@ -72,13 +72,14 @@ packages:
 
   - id: meet_and_greet_package
     title: Character Meet and Greet
-    duration: 1 Hour - 4 Hours
+    duration: 1 Hour - 7 Hours
     description: A simple, seamless way to add live character magic to your event.
     details: | 
       Planning a community festival, stampede breakfast, or grand opening? Our **Meet & Greet** service is structurally different from our birthday packages. \
       Instead of a set timeline of activities, the character manages a queue or roams the crowd to maximize the number of guest interactions. This ensures hundreds of guests can have a chance to meet the character. \
       *Please note: This option does not include games, crafts, or audio equipment.*
-    price: From $200 / Hour
+    price: From $200
+    price_note: $200 for the first hour, $100 for each additional hour. Minimum 2 hours for events with 50+ guests.
     image: /assets/img/packages/meetgreet.webp
     url: https://koalendar.com/e/pixies-parties-meetgreet
     note: 
