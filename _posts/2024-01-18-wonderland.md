@@ -10,7 +10,7 @@ date: 2024-01-18
 <h1 class="m-1">Wonderland Whimsy </h1>
 <h3 class="m-1">A Guide to Hosting an Enchanting Alice in Wonderland Birthday Extravaganza! </h3>
 <h5 class="m-1 text-muted">January 18, 2024 </h5>
-<img src="assets/img/characters/alice.webp" class="img-fluid rounded mx-auto d-block w-75">
+<img src="/assets/img/characters/alice.webp" class="img-fluid rounded mx-auto d-block w-75">
 <p>
   Embark on a fantastical journey down the rabbit hole as we unravel the secrets to crafting a whimsical Alice in
   Wonderland-themed birthday party for your little ones! Join me for a tea party of tales, charming characters, and
@@ -26,7 +26,7 @@ world of Wonderland.<br>
 Mad Hatter's Chair:<br>
 Craft a peculiar throne fit for the birthday VIP! An eccentric chair adorned with mismatched teacups, playing
 cards, and a whimsical hat will be the perfect seat for the day's honoree.<br>
-<img src="assets/img/articles/alice1.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img src="/assets/img/articles/alice1.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>
   Curious Costumes: Embracing Wonderland Whimsy
 </h4>Wonderland Attire:<br>
@@ -48,8 +48,8 @@ Wonderland Buffet:<br>
 Create a buffet table adorned with teapots, top hats, and Wonderland trinkets! Colourful snacks, themed treats, and
 a variety of iced teas will satisfy even the most curious appetites.<br>
 <div class="row">
-  <img src="assets/img/articles/alice2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4"> <img src=
-  "assets/img/articles/alice3.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+  <img src="/assets/img/articles/alice2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4"> <img src=
+  "/assets/img/articles/alice3.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 </div>
 <h4>
   Wonderland Whimsies: Activities and Games Fit for Little Dreamers
