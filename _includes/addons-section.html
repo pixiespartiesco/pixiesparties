@@ -1,0 +1,27 @@
+<div class="container" id="addons">
+    <div class="text-center">
+        <h2 class="page-section-heading d-inline-block">
+            <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i> Add-Ons <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i>
+        </h2>
+    </div>
+    <div class="row justify-content-md-center g-2">
+        {% for post in site.data.packages.addons %}
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card p-1 h-100 bg-white text-secondary">
+                <img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
+                <div class="card-body">
+                    <h3 class="card-title">{{ post.title }}</h3>
+                    <p class="card-text">{{ post.description | markdownify }}</p>
+                    <h5 class="card-title">{{ post.price | markdownify }}</h5>
+                </div>
+                <div class="card-footer  bg-white text-secondary border-0">
+                    {% if post.url %}
+                    <a class="btn btn-secondary w-100" aria-label="more info" href="{{ post.url }}">{{ post.linktext }}</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        {% endfor %}
+    </div>
+</div>

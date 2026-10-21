@@ -1,0 +1,42 @@
+<div class="container bg-primary text-white" id="packages">
+    <div class="text-center">
+        <h2 class="page-section-heading d-inline-block">
+            <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i> Party Packages <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i>
+        </h2>
+    </div>
+    <div class="container d-flex align-items-center flex-column">
+        <p>
+            Our party packages are crafted to make your little one's special day truly enchanting. Choose from a treasure trove of
+            themes, including princess extravaganzas, wizardry wonders, and high-seas adventures. Dive into a world where imagination
+            knows no bounds, and every party is a personalized masterpiece. We sprinkle our events with a pinch of pixie dust to
+            ensure your child's joy is as boundless as the Alberta skies. From captivating characters to whimsical wonders, Pixies
+            Parties is your ticket to unforgettable celebrations in Calgary. Let's turn moments into memories, book your party
+            today and let the enchantment begin!
+        </p>
+        <div class="row justify-content-md-center g-2" id="birthdayparty">
+            {% for post in site.data.packages.packages %}
+            <div class="col-12 col-lg-4 col-xl-3">
+                <div class="card p-1 h-100 bg-white text-secondary">
+                    <img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
+                    <div class="card-header bg-white">
+                        <h3 class="card-title">{{ post.title }}</h3>
+                        <h4 class="card-subtitle">{{ post.duration }}</h4>
+                        <h5 class="card-subtitle">{{ post.price | markdownify }}</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-subtitle">{{ post.description }}</p>
+                        <ul class="list-unstyled mt-3 mb-4 text-start mx-auto">
+                            {% for f in post.features %}
+                            <li class="mb-2">{{ f.icon }} {{ f.detail }}</li>
+                            {% endfor %}
+                        </ul>
+                        <p class="card-text" data-bs-toggle="tooltip" data-bs-title="{{ post.note-hover }}" style="font-style: italic;">
+                            {{ post.note }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

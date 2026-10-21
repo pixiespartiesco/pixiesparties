@@ -1,0 +1,82 @@
+---
+layout: default
+---
+
+<!-- Local SEO Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EntertainmentBusiness",
+  "name": "Pixie's Parties - {{ page.city }}",
+  "url": "{{ page.url | absolute_url }}",
+  "areaServed": "{{ page.city }}, {{ page.province }}",
+  "description": "{{ page.description }}"
+}
+</script>
+<main class="container my-5">
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="bg-white text-secondary rounded p-3">
+                <div class="article-body">
+                    <h1>{{ page.title }}</h1>
+                    <p>{{ page.subtitle }}</p>
+
+                    <p>{{page.description}}</p>
+
+                    {% if page.travel_fee_description %}
+                    <h2>Travel Fee Information</h2>
+                    <p><strong>Travel Fee:</strong> ${{ page.travel_fee }}</p>
+                    <p>{{ page.travel_fee_description }}</p>
+                    {% endif %}
+
+                    {% if page.venues %}
+                    <h2>Venue Recommendations in {{ page.city }}</h2>
+                    <ul>
+                        {% for venue in page.venues %}
+                        <li>{{ venue.name }}
+                            {{ venue.note}}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+
+                    {% if page.testimonial %}
+
+                    <div class="card bg-light text-secondary mb-3">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>{{ page.testimonial }}</p>
+                                {% if page.testimonial_author %}
+                                <footer class="blockquote-footer">{{ page.testimonial_author }}</footer>
+                                {% endif %}
+                            </blockquote>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% include packages-mini.html %}
+
+                </div>
+                {% include bookingsection.html %}
+            </div>
+            <div class="mt-5">
+                <a href="/travelfees/" class="btn btn-secondary">← Back to Locations</a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 d-none d-lg-block">
+            <div class="sticky-top sticky-sidebar bg-white text-secondary p-4 rounded-3 shadow-sm border border-quaternary">
+                <h3 class="fw-bold text-secondary mb-3">Cities</h3>
+
+                {% for c in site.cities %}
+
+                <a href="{{ c.url | relative_url }}" class="text-decoration-none fw-medium">
+                    {{ c.city | truncatewords: 8 }}
+                </a>
+                {% endfor %}
+
+                <a href="/travelfees/" class="btn btn-sm btn-secondary w-100 mt-2">View All Locations</a>
+            </div>
+        </div>
+    </div>
+</main>

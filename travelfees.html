@@ -41,11 +41,11 @@ description: If you're planning a party outside of Calgary, please note that the
 			<th scope="col">Travel Fee</th>
 		</tr>
 	</thead>
-	{% for location in site.data.travelfees.travel_fees %}
+	{% for location in site.cities %}
 	<tr>
-		<td>{{ location.city }}</td>
-		<td>{{ location.distance }}</td>
-		<td>{{ location.fee }}</td>
+		<td><a href="/{{ location.slug }}/">{{ location.city }}</a></td>
+		<td>{{ location.distance_from_calgary }}</td>
+		<td>${{ location.travel_fee }}</td>
 	</tr>
 	{% endfor %}
 </table>

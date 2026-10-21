@@ -7,6 +7,18 @@ description: >- # This means to ignore newlines until "baseurl:"
   Book your party today!
 #baseurl: "/your-project-name" # the subpath of your site, e.g. /blog
 url: "https://www.pixiesparties.ca" # the base hostname & protocol for your site
+logo: /assets/img/logo.webp
+
+social:
+  - name: Facebook
+    url: https://www.facebook.com/pixiespartiesyyc
+  - name: Instagram
+    url: https://www.instagram.com/pixiesparties/
+  - name: TikTok
+    url: https://www.tiktok.com/@pixiesparties
+
+lang: en_CA
+og_locale: en_CA
 
 # Theme settings
 #theme: minima # Or your chosen theme, e.g., jekyll-theme-minimal
@@ -54,7 +66,11 @@ collections:
       - ariel.md
       - elsa.md
       - anna.md
+  cities:
+    output: true
+    permalink: /:slug/
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag

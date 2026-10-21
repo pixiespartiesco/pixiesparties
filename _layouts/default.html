@@ -8,6 +8,14 @@
   <meta name="description" content="{{page.description}}">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  {% seo %}
+
+  <!-- Custom Location Meta Tags (Supplementary to jekyll-seo-tag) -->
+  {% if page.city %}
+  <meta name="geo.placename" content="{{ page.city }}, {{page.province}}, Canada">
+  <meta name="geo.region" content="CA-AB">
+  {% endif %}
+
   {% include scripts.html %}
   {% include schema.html %}
 </head>
