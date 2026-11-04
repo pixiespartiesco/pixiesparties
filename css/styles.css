@@ -24,6 +24,10 @@
   --bs-emphasis-color-rgb: rgb(181, 96, 172);
   --bs-table-striped-bg: #f7eef6;
   --bs-table-striped-bg-rgb: rgb(247, 238, 246);
+  --button-color: #a93dae;
+  --button-color-rgb: rgb(169, 61, 174);
+  --button-hover-color: #923597;
+  --button-hover-color-rgb: rgb(146, 53, 151);
   --success: #28a745;
   --bs-info: #e3a3dd;
   --bs-info-rgb:rgb(227, 163, 221);
@@ -244,13 +248,13 @@ a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-se
 }
 .btn-secondary {
     color: #fff !important;
-    background-color: #a93dae;
-    border-color: #a93dae;
+    background-color: var(--button-color);
+    border-color: var(--button-color);
 }
 .btn-secondary:hover {
     color: #fff !important;
-    background-color: #923597;
-    border-color: #923597;
+    background-color: var(--button-hover-color);
+    border-color: var(--button-hover-color);
 }
 .btn, .btn-link, .dropdown-item, .form-control, .small, small {
     font-weight: 400;
@@ -591,4 +595,35 @@ table {
     border-top: none;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+/* Hidden on desktop screens */
+.mobile-sticky-btn {
+    display: none;
+}
+
+/* Fixed bar at bottom on mobile screens */
+@media screen and (max-width: 768px) {
+    .mobile-sticky-btn {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--button-color) !important; 
+        color: #ffffff !important;
+        text-align: center;
+        padding: 16px 0;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+        z-index: 9999;
+        letter-spacing: 0.5px;
+        transition: background-color 0.2s ease;
+    }
+
+    .mobile-sticky-btn:hover,
+    .mobile-sticky-btn:active {
+        background-color: var(--button-hover-color);
+    }
 }
