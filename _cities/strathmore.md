@@ -1,4 +1,5 @@
 ---
+layout: city_page
 province: "Alberta"
 city: "Strathmore"
 slug: "strathmore-character-visits"
