@@ -6,89 +6,53 @@
 		<p>Choose from our variety of party packages and book your perfect celebration!</p>
 	</div>
 
-	<!-- Tab links -->
-	<div class="tab">
-		<button class="tablinks" onclick="openPackage(event, 'Birthday Parties')">Birthday Parties</button>
-		<button class="tablinks" onclick="openPackage(event, 'Meet & Greet')">Meet & Greet</button>
-		<button class="tablinks" onclick="openPackage(event, 'Virtual Visit')">Virtual Visit</button>
-		<button class="tablinks" onclick="openPackage(event, 'Castle Backdrop')">Castle Backdrop</button>
-	</div>
-
-	<script>
-		function openPackage(evt, pkgName) {
-			// Declare all variables
-			var i, tabcontent, tablinks;
-
-			// Get all elements with class="tabcontent" and hide them
-			tabcontent = document.getElementsByClassName("tabcontent");
-			for (i = 0; i < tabcontent.length; i++) {
-				tabcontent[i].style.display = "none";
-			}
-
-			// Get all elements with class="tablinks" and remove the class "active"
-			tablinks = document.getElementsByClassName("tablinks");
-			for (i = 0; i < tablinks.length; i++) {
-				tablinks[i].className = tablinks[i].className.replace(" active", "");
-			}
-
-			// Show the current tab, and add an "active" class to the button that opened the tab
-			document.getElementById(pkgName).style.display = "block";
-			evt.currentTarget.className += " active";
-		}
-		document.addEventListener('DOMContentLoaded', function () {
-			var defaultOpen = document.querySelector('.tablinks');
-			if (defaultOpen) {
-				defaultOpen.click();
-			}
-		});
-
-
-	</script>
-
-	<!-- Tab content -->
-	<div id="Birthday Parties" class="tabcontent">
-		<!-- Koalendar Inline Embed Start -->
-		<div id="inline-widget-pixies-parties-party-package"></div>
-		<script>window.Koalendar = window.Koalendar || function () { (Koalendar.props = Koalendar.props || []).push(arguments) };</script>
-		<script async src="https://koalendar.com/assets/widget.js"></script>
-		<script>Koalendar('inline', { "url": "https://koalendar.com/e/pixies-parties-party-package", "selector": "#inline-widget-pixies-parties-party-package" });</script>
-		<!-- Koalendar Inline Embed End -->
-		<p class="text-center text-dark">
-			*The calendar above displays real-time availability for the selected package.
-		</p>
-	</div>
-
-	<div id="Meet & Greet" class="tabcontent">
-		<!-- Koalendar Inline Embed Start -->
-		<div id="inline-widget-pixies-parties-meetgreet"></div>
-		<script>window.Koalendar = window.Koalendar || function () { (Koalendar.props = Koalendar.props || []).push(arguments) };</script>
-		<script async src="https://koalendar.com/assets/widget.js"></script>
-		<script>Koalendar('inline', { "url": "https://koalendar.com/e/pixies-parties-meetgreet", "selector": "#inline-widget-pixies-parties-meetgreet" });</script>
-		<!-- Koalendar Inline Embed End -->
-		<p class="text-center text-dark">
-			*The calendar above displays real-time availability for the selected package.
-		</p>
-	</div>
-
-	<div id="Virtual Visit" class="tabcontent">
-		<!-- Koalendar Inline Embed Start -->
-		<div id="inline-widget-pixies-parties-virtualvisit"></div>
-		<script>window.Koalendar = window.Koalendar || function () { (Koalendar.props = Koalendar.props || []).push(arguments) };</script>
-		<script async src="https://koalendar.com/assets/widget.js"></script>
-		<script>Koalendar('inline', { "url": "https://koalendar.com/e/pixies-parties-virtual-visit", "selector": "#inline-widget-pixies-parties-virtualvisit" });</script>
-		<!-- Koalendar Inline Embed End -->
-		<p class="text-center text-dark">
-			*The calendar above displays real-time availability for the selected package.
-		</p>
-	</div>
-
-	<div id="Castle Backdrop" class="tabcontent">
-		<!-- Koalendar Inline Embed Start -->
-		<div id="inline-widget-pixies-parties-castlebackdrop"></div>
-		<script>window.Koalendar = window.Koalendar || function () { (Koalendar.props = Koalendar.props || []).push(arguments) };</script>
-		<script async src="https://koalendar.com/assets/widget.js"></script>
-		<script>Koalendar('inline', { "url": "https://koalendar.com/e/pixies-parties-photo-backdrop", "selector": "#inline-widget-pixies-parties-castlebackdrop" });</script>
-		<!-- Koalendar Inline Embed End -->
+	<ul class="nav nav-tabs" id="myTab" role="tablist">
+		<li class="nav-item" role="presentation">
+			<button class="nav-link active" id="birthday-tab" data-bs-toggle="tab" data-bs-target="#birthday-tab-pane" type="button" role="tab" aria-controls="birthday-tab-pane" aria-selected="true">Birthday Parties</button>
+		</li>
+		<li class="nav-item" role="presentation">
+			<button class="nav-link" id="meetgreet-tab" data-bs-toggle="tab" data-bs-target="#meetgreet-tab-pane" type="button" role="tab" aria-controls="meetgreet-tab-pane" aria-selected="false">Meet & Greet</button>
+		</li>
+		<li class="nav-item" role="presentation">
+			<button class="nav-link" id="virtual-tab" data-bs-toggle="tab" data-bs-target="#virtual-tab-pane" type="button" role="tab" aria-controls="virtual-tab-pane" aria-selected="false">Virtual Visit</button>
+		</li>
+		<li class="nav-item" role="presentation">
+			<button class="nav-link" id="backdrop-tab" data-bs-toggle="tab" data-bs-target="#backdrop-tab-pane" type="button" role="tab" aria-controls="backdrop-tab-pane" aria-selected="false">Castle Backdrop</button>
+		</li>
+	</ul>
+	<div class="tab-content" id="myTabContent">
+		<div class="tab-pane show active" id="birthday-tab-pane" role="tabpanel" aria-labelledby="birthday-tab" tabindex="0">
+			<!-- Koalendar Inline Embed Start -->
+			<div id="inline-widget-pixies-parties-party-package"></div>
+			<script>window.Koalendar = window.Koalendar || function () { (Koalendar.props = Koalendar.props || []).push(arguments) };</script>
+			<script async src="https://koalendar.com/assets/widget.js"></script>
+			<script>Koalendar('inline', { "url": "https://koalendar.com/e/pixies-parties-party-package", "selector": "#inline-widget-pixies-parties-party-package" });</script>
+			<!-- Koalendar Inline Embed End -->
+		</div>
+		<div class="tab-pane" id="meetgreet-tab-pane" role="tabpanel" aria-labelledby="meetgreet-tab" tabindex="0">
+			<!-- Koalendar Inline Embed Start -->
+			<div id="inline-widget-pixies-parties-meet-greet"></div>
+			<script>window.Koalendar = window.Koalendar || function () { (Koalendar.props = Koalendar.props || []).push(arguments) };</script>
+			<script async src="https://koalendar.com/assets/widget.js"></script>
+			<script>Koalendar('inline', { "url": "https://koalendar.com/e/pixies-parties-meetgreet", "selector": "#inline-widget-pixies-parties-meet-greet" });</script>
+			<!-- Koalendar Inline Embed End -->
+		</div>
+		<div class="tab-pane" id="virtual-tab-pane" role="tabpanel" aria-labelledby="virtual-tab" tabindex="0">
+			<!-- Koalendar Inline Embed Start -->
+			<div id="inline-widget-pixies-parties-virtual-visit"></div>
+			<script>window.Koalendar = window.Koalendar || function () { (Koalendar.props = Koalendar.props || []).push(arguments) };</script>
+			<script async src="https://koalendar.com/assets/widget.js"></script>
+			<script>Koalendar('inline', { "url": "https://koalendar.com/e/pixies-parties-virtual-visit", "selector": "#inline-widget-pixies-parties-virtual-visit" });</script>
+			<!-- Koalendar Inline Embed End -->
+		</div>
+		<div class="tab-pane" id="backdrop-tab-pane" role="tabpanel" aria-labelledby="backdrop-tab" tabindex="0">
+			<!-- Koalendar Inline Embed Start -->
+			<div id="inline-widget-pixies-parties-castle-backdrop"></div>
+			<script>window.Koalendar = window.Koalendar || function () { (Koalendar.props = Koalendar.props || []).push(arguments) };</script>
+			<script async src="https://koalendar.com/assets/widget.js"></script>
+			<script>Koalendar('inline', { "url": "https://koalendar.com/e/pixies-parties-photo-backdrop", "selector": "#inline-widget-pixies-parties-castle-backdrop" });</script>
+			<!-- Koalendar Inline Embed End -->
+		</div>
 		<p class="text-center text-dark">
 			*The calendar above displays real-time availability for the selected package.
 		</p>
