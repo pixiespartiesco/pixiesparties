@@ -9,8 +9,8 @@ packages:
       This package is ideal if you have other activities planned (like a bouncy castle or opening presents) and want the character to be the highlight of the middle of your event.
     price: $250
     image: /assets/img/packages/classicparty.webp
-    url: https://koalendar.com/e/pixies-parties-classic
-    note: Supplies included for up to 10 Guests
+    url: https://koalendar.com/e/pixies-parties-party-package
+    note: "* Supplies included for up to 10 Guests"
     note-hover: Additional guests require additional magic! $10 per child.
     features_header: Features
     features:
@@ -41,8 +41,8 @@ packages:
       We highly recommend this package for groups larger than 10 children, as it ensures the performer has enough time to give every single guest a moment of individual attention without rushing.
     price: $350
     image: /assets/img/packages/deluxeparty.webp
-    url: https://koalendar.com/e/pixies-parties-deluxe
-    note: Supplies included for up to 10 Guests
+    url: https://koalendar.com/e/pixies-parties-party-package
+    note: "* Supplies included for up to 10 Guests"
     note-hover: Additional guests require additional magic! $10 per child.
     features_header: Features
     features:

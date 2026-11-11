@@ -22,6 +22,7 @@
                         <h3 class="card-title">{{ post.title }}</h3>
                         <h4 class="card-subtitle">{{ post.duration }}</h4>
                         <h5 class="card-subtitle">{{ post.price | markdownify }}</h5>
+                        <p class="card-text" data-bs-toggle="tooltip" data-bs-title="{{ post.note-hover }}" style="font-style: italic;">{{ post.note }}</p>
                     </div>
                     <div class="card-body">
                         <p class="card-subtitle">{{ post.description }}</p>
@@ -30,9 +31,6 @@
                             <li class="mb-2">{{ f.icon }} {{ f.detail }}</li>
                             {% endfor %}
                         </ul>
-                        <p class="card-text" data-bs-toggle="tooltip" data-bs-title="{{ post.note-hover }}" style="font-style: italic;">
-                            {{ post.note }}
-                        </p>
                     </div>
                 </div>
             </div>
