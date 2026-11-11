@@ -47,9 +47,7 @@
                         <h2>Venue Recommendations in {{ page.city }}</h2>
                         <ul>
                             {% for venue in page.venues %}
-                            <li>{{ venue.name }}
-                                {{ venue.note}}
-                            </li>
+                            <li>{{ venue.name }} - {{ venue.note}}</li>
                             {% endfor %}
                         </ul>
                         {% endif %}
