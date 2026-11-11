@@ -7,6 +7,7 @@ name: The Paper Bag Princess
 summary: She's fierce, clever, and ready to bring her adventurous spirit to your next party!
 img1: /assets/img/characters/paperbagprincess.webp
 keywords: Paper Bag Princess, Clever, Feminist, Dragon
+category: Princess
 rank: 12
 ---
 # The Paper Bag Princess: Cleverness and Courage in Calgary

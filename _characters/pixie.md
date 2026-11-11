@@ -7,6 +7,7 @@ name: Pixie
 summary: Sparkling and playful, Pixie brings a touch of enchantment and wonder to any event.
 img1: /assets/img/characters/pixie.webp
 keywords: Fairy, rainbow, unicorn, magic, Tinkerbell
+category: Magical
 rank: 2
 ---
 # A Sparkling Visit from Pixie the Rainbow Fairy

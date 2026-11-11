@@ -7,6 +7,7 @@ name: Merida
 summary: Brave and bold, Merida will bring the adventure to your party.
 img1: /assets/img/characters/merida.webp
 keywords: Merida, Brave, Highland Princess, Archery
+category: Princess
 rank: 2
 ---
 # Princess Merida: Brave and Bold Adventures in Calgary

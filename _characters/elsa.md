@@ -7,6 +7,7 @@ name: Elsa
 summary: Queen of ice and snow, Elsa enchants with her powerful presence and Frozen-themed fun.
 img1: /assets/img/characters/snowqueen.webp
 keywords: Elsa, Frozen, Ice Queen, Snow Queen
+category: Princess
 rank: 1
 ---
 # Queen Elsa: Frozen Magic for Your Calgary Birthday

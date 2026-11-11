@@ -7,6 +7,7 @@ name: Cinderella
 summary: Classic and elegant, Cinderella charms with her timeless story and graceful demeanour.
 img1: /assets/img/characters/cindy.webp
 keywords: Cinderella, Classic Princess, Fairy Godmother
+category: Princess
 rank: 1
 ---
 # A Royal Visit from Princess Cinderella

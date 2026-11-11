@@ -7,6 +7,7 @@ name: Glinda the Good Witch
 summary: This popular witch will bring her bubbly charm to your party!
 img1: /assets/img/characters/glinda.webp
 keywords: Glinda, Good Witch, Wizard of Oz, Wicked
+category: [Pop-Culture, Magical]
 rank: 1
 ---
 # Glinda the Good Witch

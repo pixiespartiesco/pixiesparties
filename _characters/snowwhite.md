@@ -6,6 +6,7 @@ name: Snow White
 summary: Gentle and kind, Snow White adds a touch of magic to every party.
 img1: /assets/img/characters/snowwhite.webp
 keywords: Snow White, apple, prince, witch, seven dwarves
+category: Princess
 rank: 1
 ---
 # Princess Snow White

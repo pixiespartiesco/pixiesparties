@@ -7,6 +7,7 @@ name: Fiona
 summary: Fiona brings high-energy fun and lessons in true love to your party.
 img1: /assets/img/characters/fionacomingsoon.webp
 keywords: shrek, princess, ogre
+category: Princess
 rank: 3
 published: false
 ---

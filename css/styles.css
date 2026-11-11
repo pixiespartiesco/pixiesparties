@@ -28,6 +28,10 @@
   --button-color-rgb: rgb(169, 61, 174);
   --button-hover-color: #923597;
   --button-hover-color-rgb: rgb(146, 53, 151);
+  --filter-color: #c15bc7;
+  --filter-color-rgb: rgb(193, 91, 199);
+  --filter-active-color: #a54caa;
+  --filter-active-color-rgb: rgb(165, 76, 170);
   --success: #28a745;
   --bs-info: #e3a3dd;
   --bs-info-rgb:rgb(227, 163, 221);
@@ -251,11 +255,27 @@ a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-se
     background-color: var(--button-color);
     border-color: var(--button-color);
 }
+.btn-secondary.active {
+    color: #fff !important;
+    background-color: var(--button-hover-color);
+    border-color: var(--button-hover-color);
+}
 .btn-secondary:hover {
     color: #fff !important;
     background-color: var(--button-hover-color);
     border-color: var(--button-hover-color);
 }
+.filter-btn {
+    color: #fff !important;
+    background-color: var(--filter-color);
+    border-color: var(--filter-color);
+}
+.filter-btn.active, .filter-btn:hover {
+    color: #fff !important;
+    background-color: var(--filter-active-color);
+    border-color: var(--filter-active-color);
+}
+
 .btn, .btn-link, .dropdown-item, .form-control, .small, small {
     font-weight: 400;
 }

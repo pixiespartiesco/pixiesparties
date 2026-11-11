@@ -7,6 +7,7 @@ name: Hermione
 summary: Smart and brave, Hermione brings her magical adventures and knowledge of spells to your party.
 img1: /assets/img/characters/witch.webp
 keywords: Hermione, Wizard, Witch, Hogwarts, Harry Potter
+category: Magical
 rank: 1
 ---
 # Hermione: Charms and Potions for Your Calgary Party

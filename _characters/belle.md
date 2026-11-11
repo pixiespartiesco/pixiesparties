@@ -7,6 +7,7 @@ name: Belle
 summary: Intelligent and kind, Belle enchants with her love for books and tales of the Beast.
 img1: /assets/img/characters/bellegazebo.webp
 keywords: Belle, Beauty and the Beast, Princess
+category: Princess
 rank: 1
 ---
 # A Royal Visit from Princess Belle

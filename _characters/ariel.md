@@ -7,6 +7,7 @@ name: Ariel
 summary: Curious and adventurous, Ariel brings the excitement of the deep blue sea to your event.
 img1: /assets/img/characters/ariel.webp
 keywords: Ariel, Mermaid, Under the Sea, Little Mermaid
+category: Princess
 rank: 1
 ---
 # Princess Ariel

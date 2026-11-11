@@ -7,6 +7,7 @@ name: Rapunzel
 summary: Spirited and adventurous, Rapunzel captivates with her long hair and tales of freedom.
 img1: /assets/img/characters/punz.webp
 keywords: Rapunzel, Tangled, tower, princess, hair, braid, Flynn, Corona
+category: Princess
 rank: 1
 ---
 # Princess Rapunzel

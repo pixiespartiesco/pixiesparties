@@ -7,6 +7,7 @@ name: Anna
 summary: Do you wanna build a snowman?
 img1: /assets/img/characters/snowsister.webp
 keywords: Anna, Frozen, Snow Sister
+category: Princess
 rank: 1
 ---
 

@@ -6,6 +6,7 @@ name: Ghost Spider
 summary: Agile and awesome, Ghost Spider adds a web-slinging, high-energy adventure to your next party.
 img1: /assets/img/characters/spiderhero.webp
 keywords: spidey, spiderman, Gwen Stacy, Ghost Spider, Spiderverse
+category: Superhero
 rank: 2
 published: false
 ---

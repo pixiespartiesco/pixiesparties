@@ -7,6 +7,7 @@ name: Barbie
 summary: Glamorous and stylish, Barbie adds a touch of fashion and fun to every party.
 img1: /assets/img/characters/barbie.webp
 keywords: Barbie, Fashion Doll, Glam
+category: Pop-Culture
 rank: 2
 published: true
 ---
