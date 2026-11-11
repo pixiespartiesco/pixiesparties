@@ -118,6 +118,9 @@ a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-se
 	font-family: Caveat;
 	font-size: x-large;
 }
+.navbar-nav{
+    --bs-nav-link-padding-y: 1.5rem;
+}
 .navbar-nav .dropdown-menu{
 	background-color: var(--bs-secondary);
 	color: white;
