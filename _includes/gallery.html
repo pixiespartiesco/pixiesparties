@@ -1,0 +1,48 @@
+<section class="gallery-section" id="gallery">
+    <h2>Our Magical Moments</h2>
+
+    {% assign gallery_files = site.static_files | where_exp: "file", "file.path contains '/assets/img/gallery/'" %}
+
+    {% if gallery_files.size > 0 %}
+    <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            {% for file in gallery_files %}
+            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="{{ forloop.index0 }}" class="{% if forloop.first %}active{% endif %}" aria-current="{% if forloop.first %}true{% endif %}" aria-label="Slide {{ forloop.index }}">
+            </button>
+            {% endfor %}
+        </div>
+
+        <!-- Carousel Slides -->
+        <div class="carousel-inner">
+            {% for file in gallery_files %}
+
+            {% assign file_name_without_ext = file.name | split: '.' | first %}
+            {% assign formatted_caption = file_name_without_ext | replace: '_', ' ' | replace: '-', ' ' | capitalize %}
+
+            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                <div class="d-flex justify-content-center align-items-center w-100" style="height: 500px;">
+                    <img src="{{ file.path | relative_url }}" class="d-block mh-100 mw-100 object-fit-contain" alt="{{ formatted_caption }}" loading="lazy">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>{{ formatted_caption }}</h5>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Carousel Navigation Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+    {% endif %}
+
+</section>
