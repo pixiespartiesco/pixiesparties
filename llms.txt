@@ -34,3 +34,4 @@ Calgary, Airdrie, Cochrane, Okotoks, and surrounding Alberta communities.
 - [Home]({{ "/" | absolute_url }})
 - [Characters]({{ "/characters" | absolute_url }})
 - [Packages]({{ "/packages" | absolute_url }})
+- [FAQ]({{ "/faq" | absolute_url }})

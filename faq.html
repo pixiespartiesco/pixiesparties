@@ -12,44 +12,4 @@ description: Have questions about booking a princess? Find answers regarding tra
 </div>
 
 
-<script>
-	function articlesSearch() {
-		// Declare variables
-		var input, filter, ul, li, a, i, txtValue;
-		input = document.getElementById('searchBox');
-		filter = input.value.toUpperCase();
-		console.log(filter);
-		ul = document.getElementById("searchList");
-		li = ul.getElementsByTagName('li');
-
-		// Loop through all list items, and hide those who don't match the search query
-		for (i = 0; i < li.length; i++) {
-			a = li[i];
-			console.log(a);
-			txtValue = a.textContent || a.innerText;
-			console.log(txtValue);
-			if (txtValue.toUpperCase().indexOf(filter) > -1) {
-				li[i].style.display = "";
-			} else {
-				li[i].style.display = "none";
-			}
-		}
-	}
-</script>
-<div class="container d-flex align-items-center flex-column text-left" style="padding-left: 4rem; padding-right: 4rem;">
-	<input type="text" id="searchBox" onkeyup="articlesSearch()" placeholder="Search..." class="searchBox">
-	<ul id="searchList" class="list-unstyled">
-		{% for post in site.data.faq %}
-		<li class="mb-2">
-			<h3>{{ post.question }}</h3>
-			<p>{{ post.answer | markdownify }}</p>
-		</li>
-		{% endfor %}
-	</ul>
-	<div class="row w-100 justify-content-center m-0">
-		<div class="col">
-			<a class="btn btn-secondary" style="width:70%;" aria-label="book your party today" href="/">Book Your
-				Party Today!</a>
-		</div>
-	</div>
-</div>
+{% include faqsection.html %}

@@ -19,6 +19,9 @@
 		<li class="nav-item" role="presentation">
 			<button class="nav-link" id="backdrop-tab" data-bs-toggle="tab" data-bs-target="#backdrop-tab-pane" type="button" role="tab" aria-controls="backdrop-tab-pane" aria-selected="false">Castle Backdrop</button>
 		</li>
+		<li class="nav-item" role="presentation">
+			<button class="nav-link" id="faq-tab" data-bs-toggle="tab" data-bs-target="#faq-tab-pane" type="button" role="tab" aria-controls="faq-tab-pane" aria-selected="false">FAQ</button>
+		</li>
 	</ul>
 	<div class="tab-content" id="myTabContent">
 		<div class="tab-pane show active" id="birthday-tab-pane" role="tabpanel" aria-labelledby="birthday-tab" tabindex="0">
@@ -52,6 +55,10 @@
 			<script async src="https://koalendar.com/assets/widget.js"></script>
 			<script>Koalendar('inline', { "url": "https://koalendar.com/e/pixies-parties-photo-backdrop", "selector": "#inline-widget-pixies-parties-castle-backdrop" });</script>
 			<!-- Koalendar Inline Embed End -->
+		</div>
+		<div class="tab-pane text-dark" id="faq-tab-pane" role="tabpanel" aria-labelledby="faq-tab" tabindex="0">
+			<!-- FAQ Content -->
+			{% include faqsection.html %}
 		</div>
 		<p class="text-center text-dark">
 			*The calendar above displays real-time availability for the selected package.

@@ -1,0 +1,54 @@
+<script>
+    function articlesSearch() {
+        // Declare variables
+        var input, filter, questions, answers, a, i, txtValue;
+        input = document.getElementById('searchBox');
+        filter = input.value.toUpperCase();
+        console.log(filter);
+        questions = document.getElementsByClassName('faq-item');
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < questions.length; i++) {
+            a = questions[i];
+            console.log(a);
+            txtValue = a.textContent || a.innerText;
+            console.log(txtValue);
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                questions[i].style.display = "";
+            } else {
+                questions[i].style.display = "none";
+            }
+        }
+    }
+</script>
+<main class="faq-page container py-5">
+    <header class="faq-header text-center mb-5">
+        <h2>{{ page.title }}</h2>
+        <p class="lead">Everything you need to know about booking a magical character visit in Calgary and surrounding areas.</p>
+    </header>
+    <input type="text" id="searchBox" onkeyup="articlesSearch()" placeholder="Search..." class="searchBox">
+    {% for group in site.data.faq %}
+    <section class="faq-category mb-5" aria-labelledby="cat-{{ group.category | slugify }}">
+        <h3 id="cat-{{ group.category | slugify }}" class="h4 mb-3">{{ group.category }}</h3>
+
+        <div class="faq-list" id="searchList">
+            {% for item in group.items %}
+            <details class="faq-item border rounded p-3 mb-2" {% if forloop.parentloop.first and forloop.first %}open{% endif %}>
+                <summary class="faq-question fw-bold" style="cursor: pointer;">
+                    {{ item.question }}
+                </summary>
+                <div class="faq-answer pt-2 mt-2 border-top">
+                    <p class="mb-0">{{ item.answer | markdownify }}</p>
+                </div>
+            </details>
+            {% endfor %}
+        </div>
+    </section>
+    {% endfor %}
+
+    <section class="faq-cta text-center p-4 rounded bg-light mt-5">
+        <h2 class="h4">Still have questions?</h2>
+        <p>Reach out to check date availability or ask about custom character requests.</p>
+        <a href="/contact/" class="btn btn-primary">Contact Us</a>
+    </section>
+</main>
