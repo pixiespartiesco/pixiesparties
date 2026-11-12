@@ -1,6 +1,6 @@
 <script type="application/ld+json">
 {% assign reviews = site.data.reviews %}
-{% assign total_rating = 0.0 %}
+{% assign total_rating = 5.0 %}
 {% assign review_count = reviews.size %}
 
 {% for review in reviews %}
@@ -14,45 +14,94 @@
 {% endif %}
 
 {
-  "@context": "https://schema.org/",
+  "@context": "https://schema.org",
   "@type": "EntertainmentBusiness",
-  "name": "Pixies Parties",
+  "@id": {{ "/" | absolute_url | jsonify }},
+  "name": {{ site.title | default: "Pixies Parties" | jsonify }},
+  "description": {{ site.description | default: "Children's character party entertainment in Calgary, Airdrie, Cochrane, and Okotoks, Alberta." | jsonify }},
+  "url": {{ "/" | absolute_url | jsonify }},
+  "logo": {{ "/assets/img/logo.webp" | absolute_url | jsonify }},
   "image": [
-	"https://www.pixiesparties.ca/assets/img/characters/cindy.webp",
-	"https://www.pixiesparties.ca/assets/img/characters/bellereading.webp",
-	"https://www.pixiesparties.ca/assets/img/characters/arielballoons.webp"
-   ],
-   "founder": {
-	"@type": "Person",
-	"name": "Erin Mackey"},
-   "keywords": [
-	"princess party",
-	"kids party",
-	"birthday party",
-	"princess",
-	"childrens party",
-	"party entertainer",
-	"superhero",
-	"Harry Potter",
-	"yyc princess"
-   ],
-"email":"contact@pixiesparties.ca",
-"telephone": "5872164686",
-   "logo": "https://www.pixiesparties.ca/assets/img/logo.webp",
-   "priceRange": "$$",
-   "address": {
-	 "@type": "PostalAddress",
-	 "streetAddress": "1600 90 Ave SW",
-	 "addressLocality": "Calgary",
-	 "addressRegion": "AB",
-	 "postalCode": "T2V 5A8",
-	 "addressCountry": "CA"
-   },
-  "geo": {
-	"@type": "GeoCoordinates",
-	"latitude": 50.9735634,
-	"longitude": -114.0992811
+    {% assign char_images = site.characters | map: "img1" | compact %}
+    {% if char_images.size > 0 %}
+      {% for img in char_images limit: 6 %}
+        {{ img | absolute_url | jsonify }}{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    {% else %}
+      {{ "/assets/img/characters/cindy.webp" | absolute_url | jsonify }}
+    {% endif %}
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": {{ site.founder | default: "Erin Mackey" | jsonify }}
   },
+  "email": {{ site.email | default: "contact@pixiesparties.ca" | jsonify }},
+  "telephone": {{ site.phone | default: "+1-587-216-4686" | jsonify }},
+  "priceRange": "$$",
+  "keywords": [
+    "princess party",
+    "kids party",
+    "birthday party",
+    "princess",
+    "childrens party",
+    "party entertainer",
+    "superhero",
+    "Harry Potter",
+    "yyc princess"
+  ],
+  {% if site.social %}
+  "sameAs": {{ site.social | map: "url" | jsonify }},
+  {% endif %}
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": {{ site.address.street | default: "20 Douglas Woods Dr SE, Calgary, AB T2Z 1K2" | jsonify }},
+    "addressLocality": {{ site.address.city | default: "Calgary" | jsonify }},
+    "addressRegion": {{ site.address.region | default: "AB" | jsonify }},
+    "postalCode": {{ site.address.postal_code | default: "T2Z 1K2" | jsonify }},
+    "addressCountry": {{ site.address.country | default: "CA" | jsonify }}
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": {{ site.geo.latitude | default: 50.9430171 }},
+    "longitude": {{ site.geo.longitude | default: -114.0013998 }}
+  },
+  "areaServed": [
+    {% if site.cities and site.cities.size > 0 %}
+      {% for city in site.cities %}
+      {
+        "@type": "City",
+        "name": {{ city.city | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    {% else %}
+      { "@type": "City", "name": "Calgary" },
+      { "@type": "City", "name": "Airdrie" },
+      { "@type": "City", "name": "Cochrane" },
+      { "@type": "City", "name": "Okotoks" }
+    {% endif %}
+  ],
+  {% if site.data.packages.packages %}
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Children's Party Entertainment Packages",
+    "itemListElement": [
+      {% for pkg in site.data.packages.packages %}
+      {
+        "@type": "Offer",
+        "name": {{ pkg.title | jsonify }},
+        "description": {{ pkg.description | strip_html | strip_newlines | jsonify }},
+        {% assign clean_price = pkg.price | remove: "$" | remove: "CAD" | strip %}
+        {% if clean_price != "" %}
+        "price": {{ clean_price | jsonify }},
+        "priceCurrency": "CAD",
+        {% endif %}
+        "url": {{ "/packages/" | absolute_url | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  },
+  {% endif %}
+  {% if review_count > 0 %}
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "{{ average_rating }}",
@@ -61,37 +110,45 @@
     "ratingCount": "{{ review_count }}"
   },
   "review": [
-    {% for review in reviews limit: 15 %}
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "{{ review.name }}"
-      },
-      "datePublished": "{{ review.date }}",
-      "reviewBody": "{{ review.text | strip_newlines | escape }}",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "{{ review.rating }}"
-      }
-    }{% unless forloop.last %},{% endunless %}
+    {% assign printed_reviews = 0 %}
+    {% for review in reviews %}
+      {% if review.text and review.text != "" and printed_reviews < 15 %}
+        {% if printed_reviews > 0 %},{% endif %}
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": {{ review.name | jsonify }}
+          },
+          "datePublished": {{ review.date | jsonify }},
+          "reviewBody": {{ review.text | strip_newlines | jsonify }},
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "{{ review.rating }}",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        }
+        {% assign printed_reviews = printed_reviews | plus: 1 %}
+      {% endif %}
     {% endfor %}
   ],
-   "openingHoursSpecification": [
-		{
-		"@type": "OpeningHoursSpecification",
-		"dayOfWeek": [
-		  "Sunday",
-		  "Monday",
-		  "Tuesday",
-		  "Wednesday",
-		  "Thursday",
-		  "Friday",
-		  "Saturday"
-		  ],
-		"opens": "10:00",
-		"closes": "22:00"
-		}
-	]
+  {% endif %}
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "10:00",
+      "closes": "22:00"
+    }
+  ]
 }
 </script>

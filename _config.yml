@@ -1,6 +1,8 @@
 # Site settings
 title: Pixies Parties
 email: contact@pixiesparties.ca
+phone: "+1-587-216-4686"
+founder: "Erin Mackey"
 description: >- # This means to ignore newlines until "baseurl:"
   Hire the best children's party entertainers in Calgary! 
   Pixies Parties offers princess, superhero, and character visits for unforgettable kids' birthday parties. 
@@ -8,6 +10,15 @@ description: >- # This means to ignore newlines until "baseurl:"
 #baseurl: "/your-project-name" # the subpath of your site, e.g. /blog
 url: "https://www.pixiesparties.ca" # the base hostname & protocol for your site
 logo: /assets/img/logo.webp
+address:
+  street: 20 Douglas Woods Dr SE
+  city: Calgary
+  region: AB
+  postal_code: T2Z 1K2
+  country: CA
+geo:
+  latitude: 50.9430171
+  longitude: -114.0013998
 
 social:
   - name: Facebook
