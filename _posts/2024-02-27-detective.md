@@ -9,7 +9,7 @@ date: 2024-02-27
 <h1 class="m-1">Sleuthing Adventures </h1>
 <h3 class="m-1">Unraveling Clues at a Detective-Themed Birthday Party for Kids! </h3>
 <h5 class="m-1 text-muted">February 27, 2024 </h5>
-<img src="/assets/img/articles/detective1.webp" class="img-fluid rounded mx-auto d-block w-75">
+<img loading="lazy" src="/assets/img/articles/detective1.webp" class="img-fluid rounded mx-auto d-block w-75">
 <p>Gather your magnifying glasses and put on your detective hats as we embark on an exciting journey into the world of mystery and intrigue! Join us for a thrilling detective-themed birthday party where young sleuths will hone their investigative skills, crack codes, and solve puzzles to unravel the ultimate birthday mystery.<br/><br/>
 
 <h4>Case File: Setting the Scene for a Detective Extravaganza</h4>
@@ -18,7 +18,7 @@ Transform your party space into a mysterious mansion with dark curtains, "Cautio
 <br/>
 Secret Agent Snacks:<br/>
 Fuel your young sleuths with a spread of "top-secret" snacks and beverages. Serve up finger foods like mini sandwiches, cheese platters, and fruit skewers labeled with detective-themed names like "Fingerprint Cookies" and "Spy Juice."<br/>
-<img src="/assets/img/articles/detective2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/detective2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Disguises and Detectives: Dressing the Part</h4>
 Detective Dress Code:<br/>
 Encourage party guests to dress as detectives or undercover agents! Provide fedoras, trench coats, and sunglasses for a touch of detective flair. Set up a disguise station where kids can create their own detective badges and ID cards.<br/>
@@ -33,7 +33,7 @@ Set up a thrilling scavenger hunt where young detectives must follow clues, solv
 <br/>
 Pin the Mustache on the Suspect:<br/>
 Put a detective twist on the classic game of Pin the Tail on the Donkey by playing Pin the Mustache on the Suspect! Blindfolded players must place a mustache on a poster of the suspect while trying to avoid the red herrings.<br/>
-<img src="/assets/img/articles/detective3.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/detective3.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Detective Discovery: A Surprise Visit from a Real-Life Detective</h4>
 Detective Guest Appearance:<br/>
 Surprise party guests with a visit from a real-life detective! Watch as the young sleuths' eyes widen with excitement as they interact with their mystery-solving hero, who will share tales from the crime-solving world and teach them some detective tricks of the trade.<br/>

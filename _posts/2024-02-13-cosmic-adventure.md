@@ -10,7 +10,7 @@ date: 2024-02-13
 <h1 class="m-1">Blast Off to Fun </h1>
 <h3 class="m-1">Hosting an Out-of-This-World Space-Themed Birthday Adventure! </h3>
 <h5 class="m-1 text-muted">February 13, 2024 </h5>
-<img src="/assets/img/articles/space1.webp" class="img-fluid rounded mx-auto d-block w-75">
+<img loading="lazy" src="/assets/img/articles/space1.webp" class="img-fluid rounded mx-auto d-block w-75">
 <p>Embark on an intergalactic journey as we unveil the secrets to hosting the perfect space-themed birthday party for your little astronauts! Join us for a cosmic celebration filled with stars, planets, and thrilling activities that will transport every young guest to the far reaches of outer space.<br/><br/>
 
 <h4>Space Odyssey: Transforming Your Space into a Galactic Wonderland</h4>
@@ -19,7 +19,7 @@ Adorn your party galaxy with twinkling stars, glowing planets, and space-themed 
 <br/>
 Captain's Command Post:<br/>
 Craft a command post fit for the birthday astronaut! A decorated chair draped in silver fabrics, adorned with stars, and a futuristic helmet will be the perfect seat for the day's space explorer.<br/>
-<img src="/assets/img/articles/space2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/space2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Stellar Costumes: Embracing Space Exploration</h4>
 Space Dress Code:<br/>
 Encourage young astronauts to dress in space-inspired attire! From astronaut suits to alien costumes, let their imaginations soar as they embrace their role in the cosmic adventure.<br/>
@@ -30,7 +30,7 @@ Surprise the birthday star with a visit from a real-life astronaut! At Pixies Pa
 <h4>Galactic Grub: Satisfying Hungry Explorers with Cosmic Cuisine</h4>
 Space Menu:<br/>
 Craft a menu filled with cosmic treats! Rocket-shaped sandwiches, star-shaped cookies, and a space-themed cake will be the culinary delights of the space feast.<br/>
-<img src="/assets/img/articles/space3.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/space3.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 Alien Buffet:<br/>
 Create an otherworldly buffet with space-themed snacks! Moon rocks (cheese cubes), alien eyeballs (grapes), and cosmic punch will keep the young explorers fueled for their cosmic adventures.<br/>
 <br/>
@@ -47,7 +47,7 @@ Organize a moon rock hunt for the young astronauts! Hidden "moon rocks" (painted
 <br/>
 Alien Encounter:<br/>
 Create an alien encounter activity where young explorers can search for hidden "aliens" (small toys or figurines) and document their findings in their space exploration logbooks.<br/>
-<img src="/assets/img/articles/space4.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/space4.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Capturing Cosmic Memories: Moments in the Universe</h4>
 Space Photo Booth:<br/>
 Create a space-themed photo area with cosmic props and backdrops! Let young astronauts strike poses and capture their cosmic adventures amidst the stellar decor.<br/>

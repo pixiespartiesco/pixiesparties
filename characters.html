@@ -18,7 +18,7 @@ description: Meet our cast of royal characters! See high-quality costumes and ph
 		{% for c in site.characters %}
 		<div class="col">
 			<div class=" card h-100 border-0  bg-white text-secondary">
-				<a href="{{ c.url }}"><img src="{{ c.img1 }}" class="card-img-top" alt="{{ c.keywords }}"></a>
+				<a href="{{ c.url }}"> <img loading="lazy" src="{{ c.img1 }}" class="card-img-top" alt="{{ c.keywords }}"></a>
 				<div class="card-body">
 					<h2 class="card-title">
 						{{ c.name }}

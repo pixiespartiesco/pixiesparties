@@ -9,7 +9,7 @@ date: 2023-12-21
 <h1 class="m-1">A Magical Experience </h1>
 <h3 class="m-1">Hosting a Magical Birthday Bash for Young Witches and Wizards! </h3>
 <h5 class="m-1 text-muted">December 21, 2023 </h5>
-<img src="/assets/img/characters/witch.webp" class="img-fluid rounded mx-auto d-block w-75"> 
+<img loading="lazy" src="/assets/img/characters/witch.webp" class="img-fluid rounded mx-auto d-block w-75"> 
 <p>
 Greetings, fellow seekers of magical marvels and spellbinding celebrations! If you're ready to conjure up an enchanting affair that'll leave young wizards and witches in awe, you've landed at the right spellbook. Let this sorceress share her arcane secrets on creating a mystical and mesmerizing wizard-themed extravaganza!<br/>
 <br/>
@@ -19,7 +19,7 @@ Transform your party realm into a mystical haven! Deck the halls with twinkling 
 <br/>
 Wondrous Wardrobe:<br/>
 Encourage attendees to don their finest wizardry attire! Cloaks, pointy hats, and shimmering robes will add to the mystical allure of the event.<br/>
-<img src="/assets/img/articles/wizard4.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/wizard4.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Spellbinding Activities: Enchantments and Excitement</h4>
 Wand-Making Workshop:<br/>
 Channel their inner wizards with a DIY wand-making station! Twigs, glitter, and a sprinkle of imagination will craft the perfect tool for their magical adventures.<br/>
@@ -36,7 +36,7 @@ No mystical gathering is complete without a spellbinding spread. Think wizard-th
 <br/>
 Sorcerer's Snack Table:<br/>
 Create a bewitching table of treats! Jars filled with jellybeans labelled as magical ingredients or cookies shaped like mystical creatures will delight the young spellcasters.<br/>
-<img src="/assets/img/articles/wizard1.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/wizard1.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Marvellous Memories: Capturing the Magic</h4>
 Spellbound Snaps:<br/>
 Set up a photo booth adorned with wizarding props! Let them capture their magical transformations and create enchanting keepsakes.<br/>

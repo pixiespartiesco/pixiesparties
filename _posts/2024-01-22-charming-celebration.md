@@ -10,7 +10,7 @@ date: 2024-01-22
 <h1 class="m-1">A Charming Celebration </h1>
 <h3 class="m-1">A Royal Ball Fit for a Young Prince! </h3>
 <h5 class="m-1 text-muted">January 22, 2024 </h5>
-<img src="/assets/img/articles/charming.webp" class="img-fluid rounded mx-auto d-block w-75">
+<img loading="lazy" src="/assets/img/articles/charming.webp" class="img-fluid rounded mx-auto d-block w-75">
 <p>Embark on a majestic journey into the realm of kings, knights, and enchanting princesses as we unveil the secrets to hosting the perfect Prince Charming-themed birthday party for your little royal! Join me for a regal celebration filled with noble activities, charming decor, and a surprise visit from his favorite princess from Pixies Parties.<br/><br/>
 
 <h4>Majestic Decor Magic: Transforming Your Space into a Royal Kingdom</h4>
@@ -20,7 +20,7 @@ Adorn your party palace with regal colors, castle backdrops, and banners that ec
 Prince's Throne:<br/>
 Craft a princely throne fit for the birthday royalty! A regal chair draped in royal fabrics, adorned with crowns, and a princely cape will be the perfect seat for the day's royal honoree.<br/>
 <br/>
-<img src="/assets/img/articles/throne2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/throne2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Noble Costumes: Embracing Princely Elegance</h4>
 Prince Charming Attire:<br/>
 Encourage young nobles to dress in princely fashion! From velvet capes to crowns, let their imagination soar with outfits fit for a royal celebration.<br/>
@@ -42,8 +42,8 @@ Organize a knight's training camp with fun challenges! Young knights can partici
 Crown Crafting:<br/>
 Let creativity reign with a crown-making activity! Young lords and ladies can craft their own royal crowns to wear during the festivities.<br/>
 <div class="row">
-<img src="/assets/img/articles/swords.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
-<img src="/assets/img/articles/crown2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/swords.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/crown2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 </div>
 <h4>Royal Memories: Capturing Moments in the Kingdom</h4>
 Royal Photo Corner:<br/>

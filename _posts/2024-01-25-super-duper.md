@@ -10,7 +10,7 @@ date: 2024-01-25
 <h1 class="m-1">Calling All Superheroes </h1>
 <h3 class="m-1">Unleash Your Powers at the Ultimate Superhero-Themed Birthday Bash! </h3>
 <h5 class="m-1 text-muted">January 25, 2024 </h5>						
-<img src="/assets/img/articles/super1.webp" class="img-fluid rounded mx-auto d-block w-75">
+<img loading="lazy" src="/assets/img/articles/super1.webp" class="img-fluid rounded mx-auto d-block w-75">
 <p>Gear up for an action-packed adventure as we reveal the secrets to hosting the ultimate superhero-themed birthday party for your little crime-fighters! Join us as we explore a world of capes, masks, and heroic activities that will ignite the imaginations of every young superhero in attendance.<br/><br/>
 
 <h4>Superhero Headquarters: Transforming Your Space into a Heroic Hideout</h4>
@@ -20,7 +20,7 @@ Adorn your party lair with vibrant colors, comic book graphics, and superhero em
 Superhero Throne:<br/>
 Craft a heroic throne fit for the birthday champion! A decorated chair draped with a superhero cape, adorned with emblems, and a mask will be the perfect seat for the day's mighty honoree.<br/>
 
-<img src="/assets/img/articles/super2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/super2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Heroic Attire: Embracing Super Style</h4>
 Superhero Dress Code:<br/>
 Encourage young heroes to suit up in their favorite superhero costumes! From masks to capes, let their imaginations soar as they embrace their inner hero.<br/>
@@ -34,7 +34,7 @@ Craft a menu fit for superhero appetites! Power-packed sandwiches, superhero-sha
 <br/>
 Heroic Buffet:<br/>
 Create a buffet table adorned with superhero logos, action figures, and comic book graphics! Fruit skewers, veggie platters, and punch will keep the young heroes energized for their heroic feats.<br/>
-<img src="/assets/img/articles/super3.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/super3.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Heroic Challenges: Games and Activities Fit for Mighty Warriors</h4>
 Superhero Training Camp:<br/>
 Organize a superhero training camp with exciting challenges! Young heroes can test their strength, agility, and bravery through obstacle courses and relay races.<br/>

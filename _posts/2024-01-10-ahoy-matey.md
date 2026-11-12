@@ -9,7 +9,7 @@ date: 2024-01-10
 <h1 class="m-1">Hoist the Jolly Roger </h1>
 <h3 class="m-1">Hosting an Epic Pirate Adventure Party </h3>
 <h5 class="m-1 text-muted">January 10, 2024 </h5>
-<img src="/assets/img/characters/pirate.webp" class="img-fluid rounded mx-auto d-block w-75">
+<img loading="lazy" src="/assets/img/characters/pirate.webp" class="img-fluid rounded mx-auto d-block w-75">
 <p>Ahoy, me hearties! If ye be seekin' a swashbucklin' celebration fit for young buccaneers, set sail with me as we uncover the secrets to hosting a pirate-themed birthday party that'll shiver their timbers and make 'em say "Arrr!"<br/>
 <br/>
 <h4>Transforming Land into the Seven Seas: Decking Out Your Pirate Haven</h4>
@@ -19,7 +19,7 @@ Adorn yer party ship with black flags, treasure chests, and ropes 'cross the dec
 Captain's Quarters:<br/>
 Craft a worthy captain's seat for the birthday buccaneer! A weathered chair draped in pirate flags and a treasure chest for loot will make a fine seat for the day's captain.<br/>
 
-<img src="/assets/img/articles/pirate3.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/pirate3.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Buccaneer Attire: Embracing Pirate Panache</h4>
 Pirate's Dress Code:<br/>
 Encourage young scallywags to don their finest pirate garb! Eye patches, bandanas, and vests will transform them into hearty sailors ready for the high seas.<br/>
@@ -41,8 +41,8 @@ Craft a menu fit for the pirate crew! Cannonball cake pops, shark-bite sandwiche
 Bountiful Buffet:<br/>
 Create a feast table adorned with pirate trinkets and treasures! Gold chocolate coins, fruit skewers, and pirate punch will keep the crew energized for the adventure.<br/>
 <div class="row">
-<img src="/assets/img/articles/pirate1.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
-<img src="/assets/img/articles/pirate2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/pirate1.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/pirate2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 </div>
 <h4>Capturing Pirate Memories: Keepsakes from the High Seas</h4>
 Pirate Portrait Parlor:<br/>

@@ -10,7 +10,7 @@ date: 2024-02-01
 <h1 class="m-1">Under the Big Top </h1>
 <h3 class="m-1">Hosting a Circus-Themed Birthday Spectacle! </h3>
 <h5 class="m-1 text-muted">February 1, 2024 </h5>
-<img src="/assets/img/articles/circus3.webp" class="img-fluid rounded mx-auto d-block w-75">
+<img loading="lazy" src="/assets/img/articles/circus3.webp" class="img-fluid rounded mx-auto d-block w-75">
 <p>Roll up, roll up, as we unveil the secrets to hosting the most dazzling circus-themed birthday party for your little ringmasters and acrobats! Join us under the big top for a day filled with laughter, excitement, and whimsical activities that will transport every young guest to the magical world of the circus.<br/><br/>
 
 <h4>Circus Spectacle: Transforming Your Space into a Big Top Extravaganza</h4>
@@ -26,7 +26,7 @@ Encourage young performers to dress in circus-inspired attire! From clown wigs t
 <br/>
 Circus Performers' Visit:<br/>
 Surprise the birthday star with a visit from circus performers! At Pixies Parties, our delightful characters are ready to bring the magic of the circus to life, captivating young hearts with their charm.<br/>
-<img src="/assets/img/articles/circus1.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/circus1.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Circus Confections: Satisfying Sweet Tooths with Delightful Delicacies</h4>
 Circus Menu:<br/>
 Craft a menu filled with circus favorites! Popcorn, cotton candy, and a whimsical cake will be the culinary delights of the circus feast.<br/>
@@ -43,7 +43,7 @@ Embark on an acrobatic adventure under the big top! Young performers can test th
 <br/>
 Clown Nose Craft:<br/>
 Let young clowns create their own clown noses! Provide red foam balls, elastic bands, and markers so they can decorate and customize their own clown noses to wear during the circus festivities.<br/>
-<img src="/assets/img/articles/circus2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/circus2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Picture-Perfect Moments: Capturing the Circus Magic</h4>
 Circus Photo Booth:<br/>
 Create a whimsical photo area with circus props and backdrops! Let young performers capture their delightful transformations amidst the circus-themed decor.<br/>

@@ -9,7 +9,7 @@ date: 2023-12-17
 <h1 class="m-1">Dive into Adventure </h1>
 <h3 class="m-1">Creating the Ultimate Mermaid Birthday Party! </h3>
 <h5 class="m-1 text-muted">December 17, 2023 </h5>
-<img src="/assets/img/characters/arielfish.webp" class="img-fluid rounded mx-auto d-block w-75"> 
+<img loading="lazy" src="/assets/img/characters/arielfish.webp" class="img-fluid rounded mx-auto d-block w-75"> 
 <p>Ahoy, sea adventurers and aspiring merfolk! If you're dreaming of creating an oceanic oasis filled with shimmering scales and undersea wonders, you've surfaced in the right waters. Allow this mermaid aficionado to divulge the secrets to hosting a splashing good time for your little one's special day.<br/>
 <h4>Underwater Utopia: Transforming Your Space into a Seaside Splendor</h4>
 Oceanic Decor:<br/>
@@ -17,7 +17,7 @@ Immerse your party realm in shades of aquamarine and seafoam green! Adorn the sp
 <br/>
 Mermaid's Throne:<br/>
 Craft a throne fit for the birthday mermaid! A majestic chair draped in shimmering fabric, adorned with seashells, and a sparkling tiara will ensure a throne-worthy celebration.<br/>
-<img src="/assets/img/articles/ariel1.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/ariel1.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Costume Cove: Embracing Mermaid Majesty</h4>
 Seaside Attire:<br/>
 Encourage young guests to embrace their inner mermaid or merman! Seashell bras, iridescent fabrics, and seaworthy accessories will have them diving into the festivities with flair.<br/>
@@ -28,7 +28,7 @@ Summon a <a href="/characters/ariel">real-life mermaid</a> to enchant the young 
 <h4>Oceanic Adventures: Games and Aquatic Amusements</h4>
 Seashell Scavenger Hunt:<br/>
 Send little adventurers on a quest for hidden treasures! Conceal seashells around the party area for an engaging scavenger hunt.<br/>
-<img src="/assets/img/articles/ariel4.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/ariel4.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 Undersea Crafts:<br/>
 Channel creativity with aquatic-themed crafts! From decorating seashell crowns to crafting colourful sea creature puppets, let their imaginations swim freely.<br/>
 
@@ -39,8 +39,8 @@ Craft a menu fit for undersea royalty! Think starfish-shaped sandwiches, sea-the
 Bountiful Buffet:<br/>
 Create a picturesque buffet showcasing undersea delights! Blue punch in a "mermaid lagoon," fruit skewers resembling coral reefs, and cookies shaped like marine creatures will leave the little ones in awe.<br/>
 <div class="row">
-<img src="/assets/img/articles/ariel2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
-<img src="/assets/img/articles/ariel3.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/ariel2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/ariel3.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 </div>
 <h4>Capturing the Moments: Mer-Memories to Cherish</h4>
 Underwater Photo Booth:<br/>

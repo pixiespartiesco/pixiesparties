@@ -38,6 +38,8 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+sass:
+  style: compressed
 
 # Defaults for front matter
 defaults:

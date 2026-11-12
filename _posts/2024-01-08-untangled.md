@@ -10,7 +10,7 @@ date: 2024-01-08
 <h1 class="m-1">Untangling the Magic </h1>
 <h3 class="m-1">Hosting a Rapunzel-Inspired Birthday Extravaganza! </h3>
 <h5 class="m-1 text-muted">January 8, 2024 </h5>
-<img src="/assets/img/characters/punz.webp" class="img-fluid rounded mx-auto d-block w-75">
+<img loading="lazy" src="/assets/img/characters/punz.webp" class="img-fluid rounded mx-auto d-block w-75">
 <p>
 Embrace the enchantment of floating lanterns and golden locks as we embark on a whimsical journey into the world of Rapunzel! If you're yearning to craft a celebration that mirrors the charm of the tower and the adventurous spirit of this beloved princess, let's untangle the secrets to hosting a Rapunzel-themed birthday bash that'll make dreams soar higher than ever before.<br/>
 <br/>
@@ -21,7 +21,7 @@ Adorn your party realm with cascading ribbons, sunflower motifs, and hues of lav
 Rapunzel's Throne:<br/>
 Craft a regal throne fit for the birthday princess! A plush chair adorned with sunflowers and ribbons will ensure a seat worthy of Rapunzel's charm.<br/>
 
-<img src="/assets/img/articles/punz1.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/punz1.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Costume Quest: Embracing Rapunzel's Radiance</h4>
 Royal Attire:<br/>
 Invite young guests to don their most charming Rapunzel-inspired attire! Flowing dresses, braided hairdos, and touches of lavender and gold will transport them into Rapunzel's world.<br/>
@@ -45,7 +45,7 @@ Craft a menu straight out of the kingdom! Sunflower cupcakes, golden-hued treats
 <br/>
 Majestic Buffet:<br/>
 Create a banquet table adorned with sunflower accents and purple hues! Fruit skewers, tower-shaped sandwiches, and punch served in golden goblets will enchant the young partygoers.<br/>
-<img src="/assets/img/articles/punz2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/punz2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Capturing Cherished Moments: Memories Fit for a Princess</h4>
 Fairytale Photo Corner:<br/>
 Create a picturesque photo area reminiscent of Rapunzel's tower! Let young guests capture their magical transformations amidst Rapunzel-themed backdrops and props. Don't forget your trusty frying pan!<br/>

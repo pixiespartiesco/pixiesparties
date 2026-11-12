@@ -10,7 +10,7 @@ date: 2023-12-14
 <h1 class="m-1">Beauty and Brilliance </h1>
 <h3 class="m-1">Crafting a Belle-Themed Birthday Ball! </h3>
 <h5 class="m-1 text-muted">December 14, 2023 </h5>
-<img src="/assets/img/characters/bellereading.webp" class="img-fluid rounded mx-auto d-block w-75">
+<img loading="lazy" src="/assets/img/characters/bellereading.webp" class="img-fluid rounded mx-auto d-block w-75">
 <p>Greetings, noble hosts and admirers of fairytales! If you're longing to whisk your little ones into the enchanting world of Belle, where tales as old as time come to life, you've found your guide to hosting a celebration fit for royalty. Join me as we unravel the secrets to curating a dazzling Belle-themed birthday ball that will leave young hearts aflutter!</p>
 <h4>Enchanting Ambiance: Transforming Your Realm into a Fairytale Castle</h4>
 Regal Decor:<br/>
@@ -19,7 +19,7 @@ Adorn your party kingdom with touches of gold, luxurious fabrics, and opulent ro
 Belle's Throne:<br/>
 Craft a majestic throne fit for the birthday belle! A lavish chair adorned with golden trimmings, draped in royal hues, and crowned with roses will make your little princess feel like royalty.<br/>
 <br/>
-<img src="/assets/img/articles/belle1.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/belle1.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Costume Couture: Embracing Belle's Elegance</h4>
 Royal Attire:<br/>
 Encourage young guests to dress in their finest regal attire! Golden gowns, rose-coloured accessories, and a touch of sparkle will transform them into Belle's courtly companions.<br/>
@@ -40,7 +40,7 @@ Craft a menu worthy of a royal ball! Golden cupcakes, teapot-shaped cookies, and
 <br/>
 Majestic Buffet:<br/>
 Set up a banquet table adorned with golden accents and rose petals! Tea sandwiches, fruit tarts, and tea served in ornate teapots will add a touch of elegance to the festivities.<br/>
-<img src="/assets/img/articles/belle2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/belle2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Capturing Cherished Moments: Memories That Enchant</h4>
 Royal Portrait Parlor:<br/>
 Create a regal photo area fit for a princess! Let young guests capture their elegant transformations amidst Belle-themed backdrops and props.<br/>

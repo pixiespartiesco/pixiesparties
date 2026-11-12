@@ -8,7 +8,7 @@
 		{% for post in site.data.packages.packages %}
 		<div class="row g-0">
 			<div class="col-md-4">
-				<img src="{{ post.image }}" class="img rounded-start h-100 w-100 m-0 d-block" alt="{{ post.title }}">
+				<img src="{{ post.image }}" loading="lazy" class="img rounded-start h-100 w-100 m-0 d-block" alt="{{ post.title }}">
 			</div>
 			<div class="col-md-8">
 				<div class="card-body">

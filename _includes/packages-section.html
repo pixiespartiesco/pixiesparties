@@ -17,7 +17,7 @@
             {% for post in site.data.packages.packages %}
             <div class="col-12 col-lg-4 col-xl-3">
                 <div class="card p-1 h-100 bg-white text-secondary">
-                    <img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
+                    <img src="{{ post.image }}" loading="lazy" class="card-img-top" alt="{{ post.title }}">
                     <div class="card-header bg-white">
                         <h3 class="card-title">{{ post.title }}</h3>
                         <h4 class="card-subtitle">{{ post.duration }}</h4>

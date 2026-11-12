@@ -36,7 +36,7 @@
             <!-- Joins multiple categories into a single space-separated string (e.g., "magical pop-culture") -->
             <div class="col character-item" data-categories="{{ c.categories | join: ' ' | downcase }}">
                 <div class=" card h-100 border-0  bg-white text-secondary">
-                    <a href="{{ c.url }}"><img src="{{ c.img1 }}" class="card-img-top" alt="{{ c.keywords }}"></a>
+                    <a href="{{ c.url }}"><img src="{{ c.img1 }}" loading="lazy" class="card-img-top" alt="{{ c.keywords }}"></a>
                     <div class="card-body">
                         <h3 class="card-title">
                             {{ c.name }}

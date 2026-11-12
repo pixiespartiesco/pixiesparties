@@ -10,7 +10,7 @@ date: 2024-01-22
 <h1 class="m-1">Whisked Away to Neverland </h1>
 <h3 class="m-1">Creating a Magical Tinkerbell-Themed Birthday! </h3>
 <h5 class="m-1 text-muted">January 22, 2024 </h5>
-<img src="/assets/img/articles/tink-party.webp" class="img-fluid rounded mx-auto d-block w-75">
+<img loading="lazy" src="/assets/img/articles/tink-party.webp" class="img-fluid rounded mx-auto d-block w-75">
 <p>Join us on a magical journey to Neverland as we uncover the secrets to hosting the perfect Tinkerbell-themed birthday party for your little fairies! Immerse yourself in the enchantment of pixie dust, vibrant colors, and whimsical activities that will transport every young guest to the heart of fairyland.<br/><br/>
 
 <h4>Enchanting Decor Delights: Transforming Your Space into Fairy Hollow</h4>
@@ -19,7 +19,7 @@ Adorn your party haven with vibrant hues, twinkling lights, and fairy-themed dec
 <br/>
 Tinkerbell's Throne:<br/>
 Craft a whimsical throne fit for the birthday fairy! A dainty chair adorned with fairy wings, floral garlands, and a sparkling tiara will be the perfect seat for the day's enchanting honoree.<br/>
-<img src="/assets/img/articles/decor4.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/decor4.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Fairy Fashion: Embracing Pixie-Perfect Attire</h4>
 Fairy Dress Code:<br/>
 Encourage little fairies to don their most magical attire! From sparkly wings to floral headbands, let their imaginations soar with outfits fit for a journey to Neverland.<br/>
@@ -41,7 +41,7 @@ Let creativity soar with a fairy wing-making activity! Little fairies can design
 Fairy Dust Scavenger Hunt:<br/>
 Organize an enchanting scavenger hunt for fairy dust! Young fairies can follow clues and discover hidden treasures sprinkled with pixie-perfect magic.<br/>
 <br/>
-<img src="/assets/img/articles/tink-pirate.webp" class="img-fluid rounded mx-auto d-block w-75">
+<img loading="lazy" src="/assets/img/articles/tink-pirate.webp" class="img-fluid rounded mx-auto d-block w-75">
 <h4>Capturing Fairy Memories: Moments in the Land of Enchantment</h4>
 Fairy Photo Corner:<br/>
 Create a whimsical photo area with fairy wings, floral crowns, and fairy-themed backdrops! Let young fairies capture their enchanting transformations amidst the fairy decor.<br/>

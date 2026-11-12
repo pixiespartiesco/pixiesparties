@@ -17,7 +17,7 @@ We are dedicated to minimizing our ecological footprint through conscious operat
 * **Eco-Conscious Curation:** We actively seek out sustainable decor and low-impact logistics to ensure that our celebrations are as green as they are magical.
 * **Carbon Removal Initiative:** We recognize that every business has an impact. To mitigate ours, we are proud members of the Stripe Climate initiative.
 
-> <a href="https://climate.stripe.com/V0oELH" target="_blank"><img src="/assets/img/partners/stripeclimatebadge.webp" style="width: 5rem;" alt="Stripe Climate Badge"><strong>Carbon Commitment:</strong> Pixies Parties contributes 1% of our total revenue to scaling emerging carbon removal technologies.</a>
+> <a href="https://climate.stripe.com/V0oELH" target="_blank"> <img loading="lazy" src="/assets/img/partners/stripeclimatebadge.webp" style="width: 5rem;" alt="Stripe Climate Badge"><strong>Carbon Commitment:</strong> Pixies Parties contributes 1% of our total revenue to scaling emerging carbon removal technologies.</a>
 
 ## Social Impact & Community
 

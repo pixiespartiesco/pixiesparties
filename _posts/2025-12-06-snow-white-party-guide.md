@@ -10,7 +10,7 @@ date: 2025-12-06
 <h1 class="m-1">The Fairest Party of All </h1>
 <h3 class="m-1">Ideas for a Magical Snow White Celebration</h3>
 <h5 class="m-1 text-muted">December 4, 2025 </h5>
-<img src="/assets/img/characters/snowwhite.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+ <img loading="lazy" src="/assets/img/characters/snowwhite.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 
 <p>A Snow White party theme is a timeless choice, offering a gentle, enchanting, and surprisingly easy theme to execute. Focus on the charm of the deep forest, the warmth of friendship, and a touch of magic!</p>
 
@@ -21,7 +21,7 @@ date: 2025-12-06
 <li>Nature Elements: Use faux ivy garlands draped over doorways, and red plaid blankets or table runners. Place small, mossy rocks or pinecones on the center of the food table.</li>
 <li>Humble Cottage Feel: Display a rustic wooden sign that reads "Dwarf Mine Entrance" or "Snow White’s Wishing Well." Place small wooden stools around the party space instead of formal chairs.</li>
 </ul>
-<img src="/assets/img/articles/snowwhite1.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+ <img loading="lazy" src="/assets/img/articles/snowwhite1.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>⛏️ Games and Activities for the Dwarfs</h4>
 <p>Keep your little party guests busy with activities inspired by Snow White's loyal friends.</p>
 <ul class="hanging-indent-list">
@@ -29,7 +29,7 @@ date: 2025-12-06
 	<li>Whistle While You Work: Play Snow White's iconic song and have the children race to complete a simple task, like stacking blocks or sorting crayons, before the music stops.</li>
 	<li>The Big Clean-Up: A simple, high-energy game where children race to clean up a pile of scattered toys or blocks as fast as they can (like the dwarfs cleaning the cottage!).</li>
 </ul>
-<img src="/assets/img/articles/snowwhite2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+ <img loading="lazy" src="/assets/img/articles/snowwhite2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>🍎 Forest-Friendly Feast Ideas</h4>
 <p>Food for this theme should look naturally charming and be easy to handle.</p>
 <ul class="hanging-indent-list">

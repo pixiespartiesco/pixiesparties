@@ -9,7 +9,7 @@ date: 2024-03-14
 <h1 class="m-1">Perfect Party Guide </h1>
 <h3 class="m-1">A Beginner's Guide to Hosting a Memorable Kid's Birthday Party </h3>
 <h5 class="m-1 text-muted">March 14, 2024 </h5>
-<img src="/assets/img/articles/party-olderkids.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+ <img loading="lazy" src="/assets/img/articles/party-olderkids.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 
 <p>So, you’ve decided to take on the challenge of hosting your child’s birthday party for the first time? Congratulations! Get ready for a whirlwind of excitement, laughter, and maybe a little chaos. As someone who has never thrown a kid's party before, you might be feeling a tad overwhelmed, but fear not! I’m here to guide you through the process with some simple tips and tricks to ensure your little one has a birthday bash they’ll never forget.</p>
 <br>
@@ -25,7 +25,7 @@ date: 2024-03-14
 <li>Check availability and book in advance</li>
 <li>Consider parking and accessibility for guests</li>
 </ul>
-<img src="/assets/img/articles/decor9.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+ <img loading="lazy" src="/assets/img/articles/decor9.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Craft a Fun-Filled Schedule</h4>
 <p>Plan out a rough timeline for the party, including activities, games, and snack breaks. Keep in mind that kids have short attention spans, so it’s best to have a variety of activities planned to keep them engaged and entertained throughout the event.</p>
 <ul class="hanging-indent-list"><li>Schedule activities (games, crafts, entertainment)</li>
@@ -51,7 +51,7 @@ date: 2024-03-14
 <li>Consider dietary restrictions and allergies when selecting food options</li>
 <li>Personalize the birthday cake with your child’s favorite flavors and decorations</li>
 </ul>
-<img src="/assets/img/articles/buffet6.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+ <img loading="lazy" src="/assets/img/articles/buffet6.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Plan Kid-Friendly Activities</h4>
 <p>Keep the little ones entertained with a variety of age-appropriate games and activities. Whether it’s a scavenger hunt, a craft station, or a dance party, be sure to have plenty of options to keep everyone engaged and having fun.</p>
 <ul class="hanging-indent-list"><li>Organize outdoor games (sack race, relay race, tug-of-war)</li>
@@ -64,7 +64,7 @@ date: 2024-03-14
 <li>Include personalized thank-you notes or messages</li>
 <li>Consider adding a small souvenir from the party (instant photo, keychain, etc.)</li>
 </ul>
-<img src="/assets/img/articles/partytoys4.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+ <img loading="lazy" src="/assets/img/articles/partytoys4.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <p>Remember, the most important thing is to have fun and enjoy the celebration with your child. No matter how carefully you plan every detail, what matters most is the love and joy shared among family and friends. So, take a deep breath, embrace the chaos, and get ready to make some magical memories that will last a lifetime.</p>
 <br/>
 Happy Planning!<br/>

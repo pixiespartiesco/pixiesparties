@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{page.title}} | {{page.subtitle}}">
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo.webp">
+    <!-- Use the article's 'title' variable -->
+    <title>{{ page.title }} | Pixie's Parties</title>
+
+    {% include scripts.html %}
+    <script type="application/ld+json">
+		{% assign packages = site.data.packages.packages %}
+		{% assign item_list_elements = "" %}
+		{% for package in packages %}
+		  {% capture offer_item %}
+			{
+			  "@type": "Offer",
+			  "itemOffered": {
+				"@type": "Service",
+				"name": "{{ package.title | escape }}",
+				"description": "{{ package.description | escape }} ({{ package.duration }} of entertainment). Features include: {{ package.features | map: 'detail' | join: ', ' | escape }}",
+				"offers": {
+				  "@type": "Offer",
+				  "name": "{{ package.title | escape }} Price",
+				  "price": "{{ package.price | escape }}",
+				  "priceCurrency": "CAD"
+				}
+			  }
+			}
+		  {% endcapture %}
+		  {% assign item_list_elements = item_list_elements | append: offer_item %}
+		  {% unless forloop.last %}
+			{% assign item_list_elements = item_list_elements | append: ", " %}
+		  {% endunless %}
+		{% endfor %}		
+	  {
+		  "@context": "https://schema.org/",
+		  "@type": "Service",
+		  "serviceType": "Character Appearance",
+		  "name": "{{ page.title }} Party Appearance",
+		  "description": "{{ page.subtitle }}",
+		  "image": "{{ site.url }}{{ page.img1 }}",
+		  "provider": {
+			"@type": "LocalBusiness",
+			"name": "Pixie Parties"
+		  },
+		  "areaServed": "Calgary",
+		  "hasOfferCatalog": {
+			"@type": "OfferCatalog",
+			"name": "Party Packages",
+			"itemListElement": [
+			  {{ item_list_elements }}
+			]
+		  }  
+		}
+	</script>
+</head>
+
+<body class="bg-primary">
+    {% include navbar.html %}
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="bg-white text-secondary rounded p-3">
+                    <div class="article-body">
+                        <article class="package-details-page">
+                            <header class="package-header">
+                                <div class="package-hero-image">
+                                     <img loading="lazy" src="{{ pkg.image | relative_url }}" alt="{{ pkg.title }}">
+                                </div>
+                                <div class="package-intro">
+                                    <h1>{{ page.title }}</h1>
+                                    <p class="duration"><strong>Duration:</strong> {{ page.duration }}</p>
+                                    <p class="price"><strong>Price:</strong> {{ page.price }}</p>
+                                    {% if page.price_note %}
+                                    <p class="price-note"><em>{{ page.price_note }}</em></p>
+                                    {% endif %}
+
+                                    <p class="description">{{ page.description }}</p>
+
+                                    {% if page.url %}
+                                    <a href="{{ page.url }}" class="btn-book-now" target="_blank" rel="noopener noreferrer">Book Now</a>
+                                    {% endif %}
+                                </div>
+                            </header>
+
+                            <hr />
+
+                            <section class="package-body">
+                                <h2>Package Overview</h2>
+                                <div class="package-details-content">
+                                    {{ page.details | markdownify }}
+                                </div>
+
+                                {% if page.note %}
+                                <div class="package-note" {% if page.note-hover %}title="{{ page.note-hover }}" {% endif %}>
+                                    <p>📌 <strong>Note:</strong> {{ page.note }}</p>
+                                </div>
+                                {% endif %}
+                            </section>
+
+                            {% if page.features %}
+                            <section class="package-features">
+                                <h2>{{ page.features_header | default: "Features" }}</h2>
+                                <ul class="features-list">
+                                    {% for feature in page.features %}
+                                    <li>
+                                        <span class="feature-icon">{{ feature.icon }}</span>
+                                        <span class="feature-detail">{{ feature.detail }}</span>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </section>
+                            {% endif %}
+
+                            <!-- Additional page-specific Markdown content -->
+                            {% if content != "" %}
+                            <section class="additional-content">
+                                {{ content }}
+                            </section>
+                            {% endif %}
+                        </article>
+                    </div>
+                    {% include bookingsection.html %}
+                </div>
+                <div class="mt-5">
+                    <a href="/packages/" class="btn btn-secondary">← Back to Packages</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="sticky-top sticky-sidebar bg-white text-secondary p-4 rounded-3 shadow-sm border border-quaternary">
+                    <h3 class="fw-bold text-secondary mb-3">Packages</h3>
+
+                    <ul class="list-unstyled">
+                        {% for c in site.packages %}
+                        <li class="mb-3 border-bottom pb-2">
+                            <a href="{{ c.url | relative_url }}" class="text-decoration-none fw-medium">
+                                {{ c.title | truncatewords: 8 }}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+
+                    <a href="/packages/" class="btn btn-sm btn-secondary w-100 mt-2">View All Packages</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    {% include footer.html %}
+    </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

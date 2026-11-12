@@ -10,7 +10,7 @@ date: 2024-01-08
 <h1 class="m-1">A Frozen Fantasy </h1>
 <h3 class="m-1">The Ultimate Ice Queen Celebration </h3>
 <h5 class="m-1 text-muted">January 8, 2024 </h5>
-<img src="/assets/img/characters/snowqueen.webp" class="img-fluid rounded mx-auto d-block w-75"> 
+<img loading="lazy" src="/assets/img/characters/snowqueen.webp" class="img-fluid rounded mx-auto d-block w-75"> 
 <p>
 Let the snowflakes dance and the magic sparkle as we journey into the enchanting realm of Frozen! If your little one dreams of an icy adventure inspired by Elsa and Anna, join me as we unveil the secrets to hosting a Frozen-themed birthday party that'll warm every heart in the kingdom.<br/>
 <br/>
@@ -20,7 +20,7 @@ Adorn your party kingdom with shimmering snowflakes, icy blue hues, and twinklin
 <br/>
 Elsa's Throne:<br/>
 Craft a majestic throne fit for the birthday ice queen! A throne draped in snowy fabrics, adorned with snowflakes, and a sparkling tiara will ensure a regal seat for the birthday royalty.<br/>
-<img src="/assets/img/articles/frozen1.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/frozen1.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Frosty Fashions: Embracing the Frozen Magic</h4>
 Royal Attire:<br/>
 Encourage young guests to don their finest Frozen-inspired attire! Sparkling gowns, snowflake accessories, and hints of icy blue will have them ready to embark on a magical journey.<br/>
@@ -44,7 +44,7 @@ Craft a menu fit for the ice queen herself! Snowflake-shaped treats, frozen-them
 <br/>
 Winter Buffet:<br/>
 Create a feast table adorned with snowflake accents and frosty hues! Snowball cookies, hot cocoa stations, and sandwiches shaped like snowmen will delight the young partygoers.<br/>
-<img src="/assets/img/articles/frozen2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
+<img loading="lazy" src="/assets/img/articles/frozen2.webp" class="img-fluid rounded mx-auto d-block col-12 col-md-6 col-lg-4">
 <h4>Capturing Snowy Moments: Memories Fit for a Snow Queen</h4>
 Winter Wonderland Photo Corner:<br/>
 Create a picturesque photo area reminiscent of the wintry landscape! Let young guests capture their magical transformations amidst Frozen-themed backdrops and props.<br/>
