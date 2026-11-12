@@ -1,0 +1,36 @@
+---
+layout: none
+permalink: /llms.txt
+---
+# {{ site.title | default: "Pixies Parties" }}
+
+> {{ site.description | default: "Children's character party entertainment in Calgary, Airdrie, Cochrane, and Okotoks, Alberta." }}
+
+## Service Areas
+{% if site.cities %}
+{% for city in site.cities %}
+- **{{ city.city | default: city.title | default: city }}**{% if city.description or city.summary %}: {{ city.description | default: city.summary }}{% endif %}{% if city.url %} ([Details]({{ city.url | absolute_url }})){% endif %}
+{% endfor %}
+{% else %}
+Calgary, Airdrie, Cochrane, Okotoks, and surrounding Alberta communities.
+{% endif %}
+
+## Party Packages
+{% if site.data.packages.packages %}
+{% for pkg in site.data.packages.packages %}
+- **{{ pkg.title }} ({{ pkg.price }}):** {{ pkg.duration }}. {{ pkg.description | strip_newlines }} ([Details]({{ "/packages" | absolute_url }}))
+{% endfor %}
+{% else %}
+- **Classic Package ($250 CAD):** 60-minute character appearance including supplies for up to 10 children ($10/additional child).
+- **Deluxe Package ($350 CAD):** 90-minute character appearance including supplies for up to 10 children ($10/additional child), Royal Coronation, and Glitter Tattoos.
+{% endif %}
+
+## Available Characters
+{% for c in site.characters %}
+- **{{ c.name }}**{% if c.categories %} [{{ c.categories | join: ", " }}]{% elsif c.category %} [{{ c.category }}]{% endif %}: {{ c.summary | default: c.content | strip_html | strip_newlines | truncate: 160 }} ([Profile]({{ c.url | absolute_url }}))
+{% endfor %}
+
+## Key Pages
+- [Home]({{ "/" | absolute_url }})
+- [Characters]({{ "/characters" | absolute_url }})
+- [Packages]({{ "/packages" | absolute_url }})
