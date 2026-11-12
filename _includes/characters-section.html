@@ -1,27 +1,24 @@
-<div class="container bg-primary text-white" id="characters">
+<section class="container bg-primary text-white py-5" id="characters" aria-labelledby="characters-heading">
     <div class="text-center">
-        <h2 class="page-section-heading d-inline-block">
+        <h2 id="characters-heading" class="page-section-heading d-inline-block">
             <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i> Characters <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i>
         </h2>
     </div>
     <div class="container d-flex align-items-center flex-column">
         <p>
-            Meet our enchanting cast of characters, ready to make your child's party a magical experience! From the timeless charm of princesses like Belle and Cinderella to the adventurous spirit of pirates, the mystical allure of witches, the whimsical wonder of fairies, and the glamour of Barbie, we have the perfect character for every celebration. Each performer brings their unique magic to life, creating unforgettable moments and captivating the imaginations of children across Calgary. Explore our lineup and find the perfect star for your next party!
+            Meet our enchanting cast of characters, ready to make your child's party a magical experience! From the timeless charm of princesses like Belle and Cinderella to the adventurous spirit of pirates, the mystical allure of witches, the whimsical wonder of fairies, and the glamour of Barbie, we have the perfect character for every celebration.
         </p>
 
-        <!-- Dynamic Quick Filter Buttons for Multiple Categories -->
-        <div class="mb-4 d-flex flex-wrap justify-content-center gap-2" id="character-filters">
+        <!-- Semantic Nav for Category Filter Buttons -->
+        <nav class="mb-4 d-flex flex-wrap justify-content-center gap-2" id="character-filters" aria-label="Filter characters by category">
             <button class="btn btn-light active filter-btn" data-filter="all">All</button>
-
             {% assign all_cats = "" %}
             {% for c in site.characters %}
             {% for cat in c.categories %}
             {% assign all_cats = all_cats | append: cat | append: "|" %}
             {% endfor %}
             {% endfor %}
-
             {% assign unique_categories = all_cats | split: "|" | compact | uniq | sort %}
-
             {% for cat in unique_categories %}
             {% if cat and cat != "" %}
             <button class="btn btn-outline-light filter-btn" data-filter="{{ cat | downcase | strip }}">
@@ -29,29 +26,31 @@
             </button>
             {% endif %}
             {% endfor %}
-        </div>
+        </nav>
 
+        <!-- Semantic Article Cards -->
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-5 g-4 justify-content-md-center w-100" id="character-grid">
             {% for c in site.characters %}
-            <!-- Joins multiple categories into a single space-separated string (e.g., "magical pop-culture") -->
             <div class="col character-item" data-categories="{{ c.categories | join: ' ' | downcase }}">
-                <div class=" card h-100 border-0  bg-white text-secondary">
-                    <a href="{{ c.url }}"><img src="{{ c.img1 }}" loading="lazy" class="card-img-top" alt="{{ c.keywords }}"></a>
+                <article class="card h-100 border-0 bg-white text-secondary">
+                    <a href="{{ c.url | relative_url }}">
+                        <img src="{{ c.img1 | relative_url }}" class="card-img-top" alt="{{ c.keywords }}">
+                    </a>
                     <div class="card-body">
-                        <h3 class="card-title">
-                            {{ c.name }}
+                        <h3 class="card-title h5">
+                            <a href="{{ c.url | relative_url }}" class="text-decoration-none text-secondary">{{ c.name }}</a>
                         </h3>
-                        <p>{{ c.summary }}</p>
+                        <p class="card-text">{{ c.summary }}</p>
                     </div>
-                    <div class="card-footer text-end  bg-transparent border-0">
-                        <a href="{{ c.url }}">more...</a>
-                    </div>
-                </div>
+                    <footer class="card-footer text-end bg-transparent border-0">
+                        <a href="{{ c.url | relative_url }}" aria-label="Learn more about {{ c.name }}">&rarr;</a>
+                    </footer>
+                </article>
             </div>
             {% endfor %}
         </div>
     </div>
-</div>
+</section>
 
 <!-- Filtering JavaScript -->
 <script>

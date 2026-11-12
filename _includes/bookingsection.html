@@ -1,12 +1,11 @@
-<div class="container" id="booking">
+<div class="container p-4" id="booking">
 	<div class="text-center">
 		<h2 class="page-section-heading d-inline-block">
 			<i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i> Book Your Party Entertainment <i class="fa-solid fa-star" style="font-size: medium;vertical-align: middle;"></i>
 		</h2>
 		<p>Choose from our variety of party packages and book your perfect celebration!</p>
 	</div>
-
-	<ul class="nav nav-tabs" id="myTab" role="tablist">
+	<ul class="nav nav-tabs border-0" id="myTab" role="tablist">
 		<li class="nav-item" role="presentation">
 			<button class="nav-link active" id="birthday-tab" data-bs-toggle="tab" data-bs-target="#birthday-tab-pane" type="button" role="tab" aria-controls="birthday-tab-pane" aria-selected="true">Birthday Parties</button>
 		</li>
@@ -23,7 +22,7 @@
 			<button class="nav-link" id="faq-tab" data-bs-toggle="tab" data-bs-target="#faq-tab-pane" type="button" role="tab" aria-controls="faq-tab-pane" aria-selected="false">FAQ</button>
 		</li>
 	</ul>
-	<div class="tab-content" id="myTabContent">
+	<div class="tab-content text-center text-dark" style="border-radius: 0px 10px 10px 10px;" id="myTabContent">
 		<div class="tab-pane show active" id="birthday-tab-pane" role="tabpanel" aria-labelledby="birthday-tab" tabindex="0">
 			<!-- Koalendar Inline Embed Start -->
 			<div id="inline-widget-pixies-parties-party-package"></div>
@@ -56,12 +55,21 @@
 			<script>Koalendar('inline', { "url": "https://koalendar.com/e/pixies-parties-photo-backdrop", "selector": "#inline-widget-pixies-parties-castle-backdrop" });</script>
 			<!-- Koalendar Inline Embed End -->
 		</div>
-		<div class="tab-pane text-dark" id="faq-tab-pane" role="tabpanel" aria-labelledby="faq-tab" tabindex="0">
+		<div class="tab-pane" id="faq-tab-pane" role="tabpanel" aria-labelledby="faq-tab" tabindex="0">
 			<!-- FAQ Content -->
 			{% include faqsection.html %}
 		</div>
-		<p class="text-center text-dark">
+		<p>
 			*The calendar above displays real-time availability for the selected package.
 		</p>
+		<section class="booking-rules-summary p-4  mb-4" aria-labelledby="booking-rules-heading">
+			<h3 id="booking-rules-heading" class="h5">Booking &amp; Pricing Policies</h3>
+			<ul class="mb-0" style="list-style-type: none; padding-left: 0;">
+				<li><strong>Guest Limits:</strong> Classic ($250 CAD, 60 min) and Deluxe ($350 CAD, 90 min) packages include supplies for up to 10 children. Additional children are $10 CAD each.</li>
+				<li><strong>Deposit &amp; Payment:</strong> A $100 CAD non-refundable deposit secures your date and character, with the remaining balance due before the event.</li>
+				<li><strong>Service Areas &amp; Travel:</strong> Serving Calgary, Airdrie, Cochrane, Okotoks, and surrounding Southern Alberta communities. Events outside Calgary city limits may incur a <a href="{{ '/travelfees/' | relative_url }}">travel fee</a>.</li>
+				<li><strong>How to Book:</strong> Select your preferred package and date in the calendar above, or submit an inquiry via our <a href="{{ '/contact/' | relative_url }}">Contact Page</a>.</li>
+			</ul>
+		</section>
 	</div>
 </div>
