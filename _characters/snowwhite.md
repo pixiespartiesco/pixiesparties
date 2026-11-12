@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Snow White
+title: Princess Snow White
 permalink: /characters/snowwhite/
 name: Snow White
 summary: Gentle and kind, Snow White adds a touch of magic to every party.

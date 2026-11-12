@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Cinderella
+title: Princess Cinderella
 subtitle: A Royal Visit from Princess Cinderella
 permalink: /characters/cinderella/
 name: Cinderella

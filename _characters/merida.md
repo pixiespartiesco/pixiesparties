@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Merida
+title: Princess Merida
 subtitle: Brave and Bold Adventures in Calgary
 permalink: /characters/merida/
 name: Merida

@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Anna
+title: Princess Anna
 subtitle: Optimism and Adventure for Your Calgary Party
 permalink: /characters/anna/
 name: Anna

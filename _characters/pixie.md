@@ -1,7 +1,7 @@
 ---
 layout: character
-title: Pixie
-subtitle: 
+title: Pixie the Rainbow Fairy
+subtitle: Springtime Magic, all year around!
 permalink: /characters/pixie/
 name: Pixie
 summary: Sparkling and playful, Pixie brings a touch of enchantment and wonder to any event.

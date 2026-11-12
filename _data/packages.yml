@@ -136,7 +136,7 @@ addons:
     price: Price Varies
     image: /assets/img/addons/castle.webp
     linktext: More Info
-    url: /travelfees
+    url: /travelfees/
     
   - id: addon_guest
     title: Additional Guests

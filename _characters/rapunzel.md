@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Rapunzel
+title: Princess Rapunzel
 subtitle: Adventure and Art for Your Calgary Party
 permalink: /characters/rapunzel/
 name: Rapunzel

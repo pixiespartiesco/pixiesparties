@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Belle
+title: Princess Belle
 subtitle: A Royal Visit from Princess Belle
 permalink: /characters/belle/
 name: Belle

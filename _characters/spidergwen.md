@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Ghost Spider
+title: Ghost Spider - Spider Gwen
 permalink: /characters/ghostspider/
 name: Ghost Spider
 summary: Agile and awesome, Ghost Spider adds a web-slinging, high-energy adventure to your next party.

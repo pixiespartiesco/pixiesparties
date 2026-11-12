@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Fiona
+title: Princess Fiona
 subtitle: Brave, unconventional, and hilarious!
 permalink: /characters/fiona/
 name: Fiona

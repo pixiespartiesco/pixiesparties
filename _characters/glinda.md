@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Glinda
+title: Glinda the Good Witch
 subtitle: Bubble Magic for Your Calgary Party
 permalink: /characters/glinda/
 name: Glinda the Good Witch

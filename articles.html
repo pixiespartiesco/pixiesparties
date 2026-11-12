@@ -1,18 +1,22 @@
 ---
+description: "Pixies Parties' Ultimate Guide to Enchanting Events: Explore a Wonderland of Birthday Magic, From Princess Tea Parties to Pirate Adventures!"
+keywords: "Pixies Parties, Calgary, Princess Parties, Kids Birthday Parties, Children's Entertainment, Party Planning, Event Ideas"
+title: "Pixies Parties' Ultimate Guide to Enchanting Events"
 ---
 <!DOCTYPE html>
 <html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete">
 
 <head>
 	<meta charset="utf-8">
+	<title>{{ page.title }}</title>
+	<link rel="canonical" href="{{site.url}}{{page.url}}">
+	<meta name="description" content="{{page.description}}">
+	<meta name="keywords" content="{{ page.keywords }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="author" content="Erin Mackey">
-	<meta name="description" content="Hire the best children's party entertainers in Calgary! Pixies Parties offers princess, superhero, and character visits for unforgettable kids' birthday parties. Book your date today!">
-	<meta name="keywords" content="children's party entertainer, princess party, Calgary, kids party ideas">
-	<title>
-		Calgary Princess Parties and Children's Entertainment
-	</title>
-	<link rel="canonical" href="https://www.pixiesparties.ca/articles">
+
+	{% seo %}
+
 	{% include scripts.html %}
 	<script type="application/ld+json">
 	{
@@ -79,7 +83,7 @@
 				{% for post in site.posts %}
 				<div class="col">
 					<div class="card h-100 bg-white text-secondary border-1">
-						 <img loading="lazy" src="{{ post.img1 }}" class="card-img-top">
+						<img loading="lazy" src="{{ post.img1 }}" class="card-img-top">
 						<div class="card-title">
 							<a class="h3 card-title stretched-link" href="{{ post.url }}">{{ post.title }}</a>
 						</div>

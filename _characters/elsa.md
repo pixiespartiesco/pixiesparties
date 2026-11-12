@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Elsa
+title: Queen Elsa
 subtitle: Frozen Magic for Your Calgary Birthday
 permalink: /characters/elsa/
 name: Elsa

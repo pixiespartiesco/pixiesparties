@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Hermione
+title: Hermione - Harry Potter
 subtitle: Charms and Potions for Your Calgary Party
 permalink: /characters/hermione/
 name: Hermione

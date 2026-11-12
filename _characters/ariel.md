@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Ariel
+title: Princess Ariel
 subtitle: Dive into Adventure in Calgary!
 permalink: /characters/ariel/
 name: Ariel
