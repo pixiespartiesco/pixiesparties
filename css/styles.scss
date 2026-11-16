@@ -1,0 +1,685 @@
+---
+---
+
+// =========================================
+// 1. Sass Color & Typography Variables
+// =========================================
+$primary:             #EB76B1;
+$secondary:           #B560AC;
+$tertiary:            #E68AB6;
+$quaternary:          #c983c2;
+$info:                #e3a3dd;
+$light:               #efdced;
+$dark:                #452142;
+
+$btn-bg:              #a93dae;
+$btn-hover:           #923597;
+$filter-bg:           #c15bc7;
+$filter-active:       #a54caa;
+$form-bg:             #ece6ee;
+$table-striped:       #f7eef6;
+
+$blue:                #007bff;
+$indigo:              #6610f2;
+$purple:              #6f42c1;
+$pink:                #e83e8c;
+$red:                 #dc3545;
+$orange:              #fd7e14;
+$yellow:              #ffc107;
+$green:               #28a745;
+$teal:                #1abc9c;
+$cyan:                #17a2b8;
+$white:               #ffffff;
+$gray:                #6c757d;
+$gray-dark:           #343a40;
+
+$font-body:           Merriweather, "SB Body", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-heading:        Caveat, "SB Heading", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-mono:           SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+// =========================================
+// 2. CSS Custom Properties (:root)
+// =========================================
+:root {
+  --blue: #{$blue};
+  --indigo: #{$indigo};
+  --purple: #{$purple};
+  --pink: #{$pink};
+  --red: #{$red};
+  --orange: #{$orange};
+  --yellow: #{$yellow};
+  --green: #{$green};
+  --teal: #{$teal};
+  --cyan: #{$cyan};
+  --white: #{$white};
+  --gray: #{$gray};
+  --gray-dark: #{$gray-dark};
+
+  --bs-primary: #{$primary};
+  --bs-primary-rgb: #{red($primary)}, #{green($primary)}, #{blue($primary)};
+  --bs-secondary: #{$secondary};
+  --bs-secondary-rgb: #{red($secondary)}, #{green($secondary)}, #{blue($secondary)};
+  --bs-tertiary: #{$tertiary};
+  --bs-tertiary-rgb: #{red($tertiary)}, #{green($tertiary)}, #{blue($tertiary)};
+  --bs-quaternary: #{$quaternary};
+  --bs-quaternary-rgb: #{red($quaternary)}, #{green($quaternary)}, #{blue($quaternary)};
+  --bs-emphasis-color: #{$secondary};
+  --bs-emphasis-color-rgb: #{red($secondary)}, #{green($secondary)}, #{blue($secondary)};
+  --bs-table-striped-bg: #{$table-striped};
+  --bs-table-striped-bg-rgb: #{red($table-striped)}, #{green($table-striped)}, #{blue($table-striped)};
+  --bs-info: #{$info};
+  --bs-info-rgb: #{red($info)}, #{green($info)}, #{blue($info)};
+  --bs-light: #{$light};
+  --bs-light-rgb: #{red($light)}, #{green($light)}, #{blue($light)};
+  --bs-dark: #{$dark};
+  --bs-dark-rgb: #{red($dark)}, #{green($dark)}, #{blue($dark)};
+
+  --button-color: #{$btn-bg};
+  --button-color-rgb: #{red($btn-bg)}, #{green($btn-bg)}, #{blue($btn-bg)};
+  --button-hover-color: #{$btn-hover};
+  --button-hover-color-rgb: #{red($btn-hover)}, #{green($btn-hover)}, #{blue($btn-hover)};
+  --filter-color: #{$filter-bg};
+  --filter-color-rgb: #{red($filter-bg)}, #{green($filter-bg)}, #{blue($filter-bg)};
+  --filter-active-color: #{$filter-active};
+  --filter-active-color-rgb: #{red($filter-active)}, #{green($filter-active)}, #{blue($filter-active)};
+  --formfieldbg: #{$form-bg};
+  --formfieldbg-rgb: #{red($form-bg)}, #{green($form-bg)}, #{blue($form-bg)};
+
+  --success: #{$green};
+  --warning: #{$yellow};
+  --danger: #{$red};
+
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  --font-family-sans-serif: #{$font-body};
+  --font-family-monospace: #{$font-mono};
+}
+
+// =========================================
+// 3. Base & Typography
+// =========================================
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 140px;
+}
+
+body {
+  margin: 0;
+  font-family: $font-body;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $secondary;
+  background-color: $white;
+  text-align: center;
+  padding-top: 6em;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  color: inherit !important;
+  font-style: italic;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+table {
+  margin: auto;
+}
+
+blockquote {
+  background: $light;
+  border: 1px solid $dark;
+  border-radius: var(--bs-border-radius) !important;
+  padding: 1em;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.h4, .h5, .h6, h4, h5, h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.p {
+  margin: 0;
+  font-family: $font-body;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.lead {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+// =========================================
+// 4. Colors & Backgrounds
+// =========================================
+.bg-white {
+  background-color: $white !important;
+  scrollbar-color: #efebeb #e3e0e0;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+  scrollbar-color: #E390B9 #e7aac8;
+}
+
+.bg-secondary  { background-color: $secondary !important; }
+.bg-tertiary   { background-color: $tertiary !important; }
+.bg-quaternary { background-color: $quaternary !important; }
+.bg-light      { background-color: $light !important; }
+.bg-transparent { background-color: transparent !important; }
+
+.text-dark           { color: $dark !important; }
+.text-secondary,
+.text-body-secondary,
+.link-dark           { color: $secondary !important; }
+
+a.bg-primary, button.bg-primary {
+  &:focus, &:hover { background-color: $tertiary !important; }
+}
+
+a.bg-secondary, button.bg-secondary {
+  &:focus, &:hover { background-color: $quaternary !important; }
+}
+
+// Tailwind-compatible utility classes (Sass 3.7.4 safe)
+.text-green-600 { color: rgba(22, 163, 74, 1); }
+.bg-green-100   { background-color: rgba(220, 252, 231, 1); }
+.bg-pink-50     { background-color: rgba(253, 242, 248, 1); }
+.bg-blue-50     { background-color: rgba(239, 246, 255, 1); }
+.bg-yellow-50   { background-color: rgba(254, 252, 232, 1); }
+.bg-purple-50   { background-color: rgba(250, 245, 255, 1); }
+
+// =========================================
+// 5. Navigation & Masthead
+// =========================================
+.nav-link {
+  color: $white;
+  display: block;
+  font-family: Caveat, cursive;
+  font-size: x-large;
+}
+
+.navbar-nav {
+  --bs-nav-link-padding-y: 1.5rem;
+
+  .dropdown-menu {
+    background-color: $secondary;
+    color: $white;
+    border: 0;
+  }
+
+  .nav-link.active,
+  .nav-link.show {
+    text-decoration: underline;
+  }
+}
+
+.dropdown-item {
+  &:focus, &:hover, &:active {
+    background-color: #d466c9;
+  }
+}
+
+.navbar-toggler {
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: $white;
+  background-color: transparent;
+  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  border-radius: var(--bs-navbar-toggler-border-radius);
+  transition: var(--bs-navbar-toggler-transition);
+}
+
+.masthead {
+  padding-top: 2rem;
+  padding-bottom: 0;
+
+  .masthead-avatar {
+    width: 15rem;
+  }
+}
+
+// =========================================
+// 6. Layout, Dividers & Cards
+// =========================================
+.page-section {
+  padding: 6rem 0;
+
+  .page-section-heading {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+.portfolio-modal .portfolio-modal-title {
+  font-size: 3rem;
+  line-height: 2.5rem;
+}
+
+.divider-custom {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .divider-custom-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: $secondary;
+    border-radius: 1rem;
+    border-color: $secondary !important;
+
+    &:first-child { margin-right: 1rem; }
+    &:last-child  { margin-left: 1rem; }
+  }
+}
+
+.section-divider {
+  width: 50%;
+  margin: 3em 25% 1em;
+}
+
+.callout {
+  background-color: $light !important;
+  color: $dark !important;
+  border: 1px solid $dark !important;
+  width: 75%;
+  display: inline-block !important;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: $white;
+  background-clip: border-box;
+  border: transparent;
+  border-radius: 0.5rem;
+  color: inherit;
+  word-wrap: break-word;
+
+  > .list-group:first-child .list-group-item:first-child {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  color: var(--bs-card-color);
+}
+
+.card-title {
+  margin-top: var(--bs-card-title-spacer-y);
+}
+
+.selected-card {
+  border: 4px solid #d960cd;
+  box-shadow: 0 20px 25px rgba(201, 68, 197, 0.4);
+  transform: scale(1.02);
+}
+
+code {
+  word-wrap: break-word;
+}
+
+// =========================================
+// 7. Buttons, Tabs & Forms
+// =========================================
+.btn {
+  display: inline-block;
+  color: #212529;
+  user-select: none;
+  background-color: transparent;
+  border: 0.125rem solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-secondary {
+  color: $white !important;
+  background-color: $btn-bg;
+  border-color: $btn-bg;
+
+  &.active, &:hover {
+    color: $white !important;
+    background-color: $btn-hover;
+    border-color: $btn-hover;
+  }
+}
+
+.filter-btn {
+  color: $white !important;
+  background-color: $filter-bg;
+  border-color: $filter-bg;
+
+  &.active, &:hover {
+    color: $white !important;
+    background-color: $filter-active;
+    border-color: $filter-active;
+  }
+}
+
+.btn, .btn-link, .dropdown-item, .form-control, .small, small {
+  font-weight: 400;
+}
+
+img, svg {
+  vertical-align: middle;
+}
+
+.form-control,
+.form-select,
+.form-check-input {
+  background-color: $form-bg !important;
+}
+
+.searchBox {
+  background-image: url('/css/search.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  background-size: auto 50%;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.nav-tabs {
+  .nav-item.show .nav-link,
+  .nav-link {
+    background: $secondary;
+    border: 1px solid $secondary;
+
+    &.active {
+      background: $info;
+      border: 1px solid $info;
+    }
+  }
+
+  .nav-link:focus,
+  .nav-link:hover {
+    isolation: isolate;
+    color: $secondary;
+    background: $info;
+    border: 1px solid $info;
+  }
+}
+
+.tab-content {
+  border: 1px solid $info;
+  background: $info;
+}
+
+// =========================================
+// 8. Lists, Articles & Custom Components
+// =========================================
+.list-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.list-group-item {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  background-color: $white;
+  border: 0.125rem solid rgba(0, 0, 0, .125);
+
+  &:first-child {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  & + & {
+    border-top-width: 0;
+  }
+}
+
+.list-group-flush .list-group-item {
+  border-right-width: 0;
+  border-left-width: 0;
+  border-radius: 0;
+
+  &:first-child {
+    border-top-width: 0;
+  }
+}
+
+.list-group-item-action {
+  width: 100%;
+  color: #495057;
+  text-align: inherit;
+}
+
+.hanging-indent-list {
+  list-style: circle;
+  text-align: left;
+  display: inline-block;
+  padding: 0;
+
+  li {
+    padding-left: 2em;
+    text-indent: -2em;
+  }
+}
+
+.hanging-indent-list-emoji {
+  list-style: none;
+  text-align: left;
+  display: inline-block;
+  padding: 0;
+
+  li {
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+  }
+}
+
+.article-body {
+  margin: 7%;
+
+  img {
+    width: 70%;
+  }
+
+  ul, ol {
+    text-align: left;
+    display: inline-block;
+    padding: 0;
+  }
+
+  ul {
+    list-style: circle;
+  }
+
+  li {
+    padding-left: 2em;
+    text-indent: -2em;
+  }
+}
+
+.community-gradient {
+  background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
+}
+
+.contact-sidebar {
+  background: linear-gradient(135deg, #fce7f3 0%, $quaternary 150%);
+  color: $dark;
+  padding: 3rem;
+}
+
+.contact-card {
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  color: $dark;
+}
+
+.scrolling-wrapper {
+  overflow-x: auto;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #e7aac8;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #E390B9;
+    border-radius: 20px;
+    border: 3px solid #E390B9;
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+
+  .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: $white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  &:hover .tooltiptext {
+    visibility: visible;
+  }
+}
+
+.address a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+// =========================================
+// 9. Utility Classes
+// =========================================
+.d-flex          { display: flex !important; }
+.d-inline-block  { display: inline-block !important; }
+.hidden          { display: none; }
+.flex-column     { flex-direction: column !important; }
+.align-items-center  { align-items: center !important; }
+.align-items-stretch { align-items: stretch !important; }
+.flex-shrink-0   { flex-shrink: 0 !important; }
+.order-last      { order: 13; }
+.text-center     { text-align: center !important; }
+.text-left       { text-align: left !important; }
+.h-100           { height: 100% !important; }
+.border-bottom   { border-bottom: 0.125rem solid #dee2e6 !important; }
+
+.mb-0, .my-0     { margin-bottom: 0 !important; }
+.mb-1, .my-1     { margin-bottom: 0.25rem !important; }
+.mb-5, .my-5     { margin-bottom: 3rem !important; }
+.ml-3, .mx-3     { margin-left: 1rem !important; }
+.pt-3, .py-3     { padding-top: 1rem !important; }
+.pb-3, .py-3     { padding-bottom: 1rem !important; }
+
+@media (min-width: 992px) {
+  .mb-lg-0, .my-lg-0 {
+    margin-bottom: 0 !important;
+  }
+}
+
+// =========================================
+// 10. Footer & Mobile Sticky CTA
+// =========================================
+.footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: $secondary;
+  color: $white;
+}
+
+.social {
+  margin: 5px;
+  color: $white;
+  font-size: x-large;
+  text-decoration: none;
+}
+
+.copyright {
+  background-color: $secondary;
+}
+
+.mobile-sticky-btn {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-sticky-btn {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $btn-bg !important;
+    color: $white !important;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s ease;
+
+    &:hover, &:active {
+      background-color: $btn-hover !important;
+    }
+  }
+}
